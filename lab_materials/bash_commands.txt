@@ -1,0 +1,42 @@
+------------------------------ SOME BASIC BASH COMMANDS ----------------------------- 
+
+cat <path>                 # Print the whole content of a file into the terminal
+cd <path>                  # Move to path location, home folder if no path was provided 
+cp <source> <destination>  # Copy a file 
+        -r                 ## Copy directory 
+echo <what>                # Print something into the terminal
+grep <what> <where>        # Search for occurrences of <what> in <where>
+        -i                 ## Make search case insensitive 
+        -v                 ## Invert the match 
+        -c                 ## Counts matched instances 
+        -w                 ## Match the whole word
+        -m<num>            ## Stop after <num> matches 
+        -n                 ## Display the line number of the matches
+        -A<num>            ## Add <num> lines after the match
+        -B<num>            ## Add <num> lines before the match
+        -C<num>            ## Add <num> lines after and before the match
+head <path>                # Print first 10 lines (default) of a file 
+less <path>                # Visualize, without modifying, the content of a file 
+ls                         # List content of the current directory
+        -lh *.txt          ## Only list files matching some parameter
+man <command>              # Show info for <command> 
+mkdir <path>               # Create a directory
+mv <source> <destination>  # Move a file 
+rm <path>                  # Remove file
+        -r                 ## Remove folder 
+tail <path>                # Print last 10 lines (default) of a file 
+
+
+-------------------------------- MISCELLANEOUS SINTAX ------------------------------- 
+ 
+$(date)                    # Retrieves current time and date 
+..                         # Refers to the parent directory 
+<command1> | <command2>    # Concatenate commands
+< > >>                     # Used to redirect the output of a command
+>>                         # Used also to append content to a file 
+
+
+! When copying or moving, the destination path defines the name of the file
+  in the new folder, so to rename a file just change the name there 
+! When concatenating commands, the output of the former becomes the input for
+  the latter (even if it would print to terminal)
