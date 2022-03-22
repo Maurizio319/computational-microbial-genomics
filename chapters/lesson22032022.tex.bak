@@ -1,0 +1,52 @@
+illumina NovaSeq is the most used technology. 
+
+
+which are the microbes present in the sample? 
+How to go from reads to microbial species and relative abundances. The simplest way is to
+
+%quality check
+%alignment against the bacterial genome
+
+example: escherichia coli k12, 100nt reads, classify the reads based on best hit. 25.5\% of the sample is shigella, 61 escherichia. One of them is Yersinia Pestis, causes the plague.
+Low complexity regions are a problem.
+
+There is no Y. pestis, the reads were on a plasmid normally present in Y. pestis. Illumina sequence to each run 1 percent of the reads from phiX174, and Enterobacteria phage. Errors due to mapping. 
+
+THe problem is taxonomic profiling, which permits to arrive to organismal relative abundances. similarities of species could be considered to simplify the task. variety of organisms in spite of high DNA concentrations. Confident in getting the clades, by using short reads. ALl the cases without a reference genome.
+
+\subsection{Solution}
+X is used as a \textbf{unique marker gene} for clade Y. This is a core gene of that clade, not present in all the other clades. Uniquely characterizing the microorganisms in that clade.
+
+pre-identify markers from the reference genomes.\\
+ pan-genome \longrightarrow core-genome \rightarrow \textbf{unique marker genes} 
+ 
+arrows are gnees, identification of markers. It is done a MetaPhIAn database, and find the genes inside the metagenome. Markers are reported only once, not variants, in that way the database remains small. Analyze data. 
+
+MAG reconstructed through metagenomics, whose names have to be found. 5 milion markers.
+
+MetaPhIAn blastn is not used anymore, while instead BowTie2 is used. 
+Take genomes that you know very well, break in fragments, evaluate if the algorithm is able to understand weights and species. You should select metagenomes not present in the set of genomes known bt the algorithm. 
+
+in metagenomic assembly:
+generic assembly, contigs generated. The contigs have to be assigned to a species. What are the caracteristic to say that they come from the same genome. GC content, contigs, tetranucleotide frequencies, codon bias, ecc can be used to find putative genomes. On putative genomes, it has to be done a quality control. If you find 2 genes symilar that should be present in single copy, you can say that they belong to two different genomes, in this case, throw away the results. From the contigs found we can use refernce known genomes to find their relative positions. De novo metagenomic assembly to identify genome and find a context. 
+
+some methodologies don't use reference genomes, putting together the reads ...
+You can use more informations, use machine learning to understand if the GC content (for example, could be combined to k-mer frequencies) is peculiare of a genome.
+Selection of specific informations, generally unique marker genes. Mapping of read with some specific markers. 
+Read to genoms sequence mapping.
+
+shared species associated to specific deseases. The curated Metagenomic Data resource wsas made to avoid the need of downloading several heavy files. Manual curation was needed to create the metadata information.
+
+Is there a link to microbiome and colorectal cancer?
+Colibactin operon generates a genotoxin, which direct damage to cells. Many metabolites are produced and could be related to inflammation and cancer. 
+From a cohort in Milan, samples from individuals with potential colorectal cancer before diagnosis. confront after the bacteria present. Each col is a individual, if red colorectal cancer affected. on rows the markers of the bacteria. 
+It was made the same thing in Turin, obtaining different results. The microbiome is really different in all the different locations, patients. 
+Look to other results reported by other researchers, Cohort 1 and 2 are those made in Milan and Turin. overall 969 samples. Some biomarkers are consistent. Even though a lot of variability, it was possible to find some correlations between different datasets. 
+
+Machine learning: how much to use the microbiome to say 
+FangQ dataset 90\% of the data to train the model, while the remaining part was used for testing. AUC means if low low prediction power. 
+Integrate multiple data: \textbf{LODO} leave-one-dataset-out evaluating a model except the one where it is computed. All of the datasets had an high percentage of accuracy in predicting. 
+
+choline metabolism can be done by the human gut m
+ 
+ 
