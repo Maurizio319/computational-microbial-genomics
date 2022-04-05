@@ -1,0 +1,20 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}\emph {Escherichia Coli} general informations}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}\emph {E. coli} genomics}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}\emph {E. coli} long-term evolution experiment}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}\emph {E. coli} strains}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}PanPhlAn - strain detection and characterization}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Genomes of \emph {E. coli}}{3}{subsection.1.1.4}%
+\contentsline {chapter}{\numberline {2}NGS principles (second gen. sequencing) - From Sanger to third gen sequencing}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}History of Sequencing}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Progresses of sequencing}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The Chain Terminators}{8}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Sanger method: the first one}{8}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Automatic sequencing}{10}{subsubsection.2.1.3.1}%
+\contentsline {section}{\numberline {2.2}Development of Sequencing Machines}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Next Generation Sequencing NGS}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Fragments/Library preparation}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Clonal amplification and ILLUMINA sequencing procedure}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Pacific Bioscience (PacBio)}{17}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Nanopore sequencing}{17}{subsection.2.3.4}%
+\contentsline {chapter}{\numberline {3}Sequencing data}{18}{chapter.3}%

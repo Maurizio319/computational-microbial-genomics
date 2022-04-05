@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{chapter.1}{Escherichia Coli general informations}{}% 1
+\BOOKMARK [1][-]{section.1.1}{E. coli genomics}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{E. coli long-term evolution experiment}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{E. coli strains}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{PanPhlAn - strain detection and characterization}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Genomes of E. coli}{section.1.1}% 6
+\BOOKMARK [0][-]{chapter.2}{NGS principles \(second gen. sequencing\) - From Sanger to third gen sequencing}{}% 7
+\BOOKMARK [1][-]{section.2.1}{History of Sequencing}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Progresses of sequencing}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{The Chain Terminators}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.3}{Sanger method: the first one}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{Development of Sequencing Machines}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Next Generation Sequencing NGS}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Fragments/Library preparation}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{Clonal amplification and ILLUMINA sequencing procedure}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.3}{Pacific Bioscience \(PacBio\)}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.4}{Nanopore sequencing}{section.2.3}% 17
+\BOOKMARK [0][-]{chapter.3}{Sequencing data}{}% 18
