@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}\emph {Escherichia Coli} general informations}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}\emph {E. coli} genomics}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}\emph {E. coli} long-term evolution experiment}{2}{subsection.1.1.1}%
@@ -25,8 +25,5 @@
 \contentsline {subsection}{\numberline {2.5.1}Scoring matrices}{17}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}Spaced seed alignment}{17}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Burrows-Wheeler transform}{17}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Sequencing Data}{18}{chapter.3}%
-\contentsline {paragraph}{\numberline {3.0.0.0.1}a biological problem, which sequencing machine is optimal?}{18}{paragraph.3.0.0.0.1}%
-\contentsline {subsection}{\numberline {3.0.1}FASTQ format}{19}{subsection.3.0.1}%
-\contentsline {subsection}{\numberline {3.0.2}Quality control}{19}{subsection.3.0.2}%
-\contentsline {chapter}{\numberline {4}Staphylococcus aureus}{20}{chapter.4}%
+\contentsline {chapter}{\numberline {3}Sequencing data}{18}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Staphylococcus aureus}{19}{chapter.4}%
