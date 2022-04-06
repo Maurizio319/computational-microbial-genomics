@@ -15,4 +15,13 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{Clonal amplification and ILLUMINA sequencing procedure}{section.2.3}% 15
 \BOOKMARK [2][-]{subsection.2.3.3}{Pacific Bioscience \(PacBio\)}{section.2.3}% 16
 \BOOKMARK [2][-]{subsection.2.3.4}{Nanopore sequencing}{section.2.3}% 17
-\BOOKMARK [0][-]{chapter.3}{Sequencing data}{}% 18
+\BOOKMARK [1][-]{section.2.4}{Sequence mapping}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.4.1}{Coverage}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.2}{Smit-Waterman algorithm}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.3}{Needleman-Wunsch algorithm}{section.2.4}% 21
+\BOOKMARK [1][-]{section.2.5}{Blast}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.5.1}{Scoring matrices}{section.2.5}% 23
+\BOOKMARK [1][-]{section.2.6}{Spaced seed alignment}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.7}{Burrows-Wheeler transform}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{Sequencing data}{}% 26
+\BOOKMARK [0][-]{chapter.4}{Staphylococcus aureus}{}% 27
