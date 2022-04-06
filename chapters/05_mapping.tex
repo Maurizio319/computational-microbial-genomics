@@ -234,8 +234,8 @@ Those methods cut both the reads and the reference sequence (read-sized pieces o
 The idea is to do that for all possible k-mers. Eg. we choose a seed of 10: the first starts at position 1, the second at position 2, ecc. And then to look up seeds for each read and identify the positions in genome where spaced seed pair is found. 
 
 \begin{itemize}
-    \item 1 SNPs means that at most 1 seed is not-matching
-    \item X SNPs means that at most X seeds are not-matching
+    \item 1 SNPs means that at most 1 seed is not-matching.
+    \item X SNPs means that at most X seeds are not-matching.
 \end{itemize}
 
 Algorithms based on this approach are: Maq, SOAP, MOSAIK. 
