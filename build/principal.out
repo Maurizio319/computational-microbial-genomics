@@ -1,44 +1,47 @@
-\BOOKMARK [0][-]{chapter.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{}% 1
-\BOOKMARK [1][-]{section.1.1}{\376\377\000M\000i\000c\000r\000o\000b\000e\000s}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{\376\377\000P\000r\000e\000v\000a\000l\000e\000n\000c\000e\000\040\000o\000f\000\040\000m\000i\000c\000r\000o\000b\000e\000s}{section.1.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.2}{\376\377\000D\000i\000f\000f\000i\000c\000u\000l\000t\000i\000e\000s\000\040\000i\000n\000\040\000s\000t\000u\000d\000y\000i\000n\000g\000\040\000t\000h\000e\000m}{section.1.1}% 4
-\BOOKMARK [1][-]{section.1.2}{\376\377\000G\000e\000n\000o\000m\000i\000c\000s}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.2.1}{\376\377\000C\000o\000m\000p\000a\000r\000a\000t\000i\000v\000e\000\040\000g\000e\000n\000o\000m\000i\000c\000s}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.2}{\376\377\000M\000e\000t\000a\000g\000e\000n\000o\000m\000i\000c\000s}{section.1.2}% 7
-\BOOKMARK [1][-]{section.1.3}{\376\377\000L\000e\000v\000e\000r\000a\000g\000i\000n\000g\000\040\000c\000o\000m\000p\000u\000t\000a\000t\000i\000o\000n\000a\000l\000\040\000p\000o\000w\000e\000r}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.3.1}{\376\377\000C\000o\000m\000p\000a\000r\000i\000n\000g\000\040\000l\000o\000w\000-\000t\000h\000r\000o\000u\000g\000h\000p\000u\000t\000\040\000a\000n\000d\000\040\000h\000i\000g\000h\000-\000t\000h\000r\000o\000u\000g\000h\000p\000u\000t\000\040\000p\000i\000p\000e\000l\000i\000n\000e}{section.1.3}% 9
-\BOOKMARK [0][-]{chapter.2}{\376\377\000E\000s\000c\000h\000e\000r\000i\000c\000h\000i\000a\000\040\000C\000o\000l\000i\000\040\000g\000e\000n\000e\000r\000a\000l\000\040\000i\000n\000f\000o\000r\000m\000a\000t\000i\000o\000n\000s}{}% 10
-\BOOKMARK [1][-]{section.2.1}{\376\377\000E\000.\000\040\000c\000o\000l\000i\000\040\000g\000e\000n\000o\000m\000i\000c\000s}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.1.1}{\376\377\000E\000.\000\040\000c\000o\000l\000i\000\040\000l\000o\000n\000g\000-\000t\000e\000r\000m\000\040\000e\000v\000o\000l\000u\000t\000i\000o\000n\000\040\000e\000x\000p\000e\000r\000i\000m\000e\000n\000t}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.2}{\376\377\000E\000.\000\040\000c\000o\000l\000i\000\040\000s\000t\000r\000a\000i\000n\000s}{section.2.1}% 13
-\BOOKMARK [2][-]{subsection.2.1.3}{\376\377\000P\000a\000n\000P\000h\000l\000A\000n\000\040\000-\000\040\000s\000t\000r\000a\000i\000n\000\040\000d\000e\000t\000e\000c\000t\000i\000o\000n\000\040\000a\000n\000d\000\040\000c\000h\000a\000r\000a\000c\000t\000e\000r\000i\000z\000a\000t\000i\000o\000n}{section.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.1.4}{\376\377\000G\000e\000n\000o\000m\000e\000s\000\040\000o\000f\000\040\000E\000.\000\040\000c\000o\000l\000i}{section.2.1}% 15
-\BOOKMARK [0][-]{chapter.3}{\376\377\000N\000G\000S\000\040\000p\000r\000i\000n\000c\000i\000p\000l\000e\000s\000\040\000\050\000s\000e\000c\000o\000n\000d\000\040\000g\000e\000n\000.\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g\000\051\000\040\000-\000\040\000F\000r\000o\000m\000\040\000S\000a\000n\000g\000e\000r\000\040\000t\000o\000\040\000t\000h\000i\000r\000d\000\040\000g\000e\000n\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{}% 16
-\BOOKMARK [1][-]{section.3.1}{\376\377\000H\000i\000s\000t\000o\000r\000y\000\040\000o\000f\000\040\000S\000e\000q\000u\000e\000n\000c\000i\000n\000g}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.1.1}{\376\377\000P\000r\000o\000g\000r\000e\000s\000s\000e\000s\000\040\000o\000f\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{section.3.1}% 18
-\BOOKMARK [2][-]{subsection.3.1.2}{\376\377\000T\000h\000e\000\040\000C\000h\000a\000i\000n\000\040\000T\000e\000r\000m\000i\000n\000a\000t\000o\000r\000s}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.3}{\376\377\000S\000a\000n\000g\000e\000r\000\040\000m\000e\000t\000h\000o\000d\000:\000\040\000t\000h\000e\000\040\000f\000i\000r\000s\000t\000\040\000o\000n\000e}{section.3.1}% 20
-\BOOKMARK [1][-]{section.3.2}{\376\377\000D\000e\000v\000e\000l\000o\000p\000m\000e\000n\000t\000\040\000o\000f\000\040\000S\000e\000q\000u\000e\000n\000c\000i\000n\000g\000\040\000M\000a\000c\000h\000i\000n\000e\000s}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{\376\377\000N\000e\000x\000t\000\040\000G\000e\000n\000e\000r\000a\000t\000i\000o\000n\000\040\000S\000e\000q\000u\000e\000n\000c\000i\000n\000g\000\040\000N\000G\000S}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{\376\377\000F\000r\000a\000g\000m\000e\000n\000t\000s\000/\000L\000i\000b\000r\000a\000r\000y\000\040\000p\000r\000e\000p\000a\000r\000a\000t\000i\000o\000n}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.2}{\376\377\000C\000l\000o\000n\000a\000l\000\040\000a\000m\000p\000l\000i\000f\000i\000c\000a\000t\000i\000o\000n\000\040\000a\000n\000d\000\040\000I\000L\000L\000U\000M\000I\000N\000A\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g\000\040\000p\000r\000o\000c\000e\000d\000u\000r\000e}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.3}{\376\377\000P\000a\000c\000i\000f\000i\000c\000\040\000B\000i\000o\000s\000c\000i\000e\000n\000c\000e\000\040\000\050\000P\000a\000c\000B\000i\000o\000\051}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.4}{\376\377\000N\000a\000n\000o\000p\000o\000r\000e\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{section.3.3}% 26
-\BOOKMARK [0][-]{chapter.4}{\376\377\000S\000e\000q\000u\000e\000n\000c\000i\000n\000g\000\040\000d\000a\000t\000a}{}% 27
-\BOOKMARK [0][-]{chapter.5}{\376\377\000M\000a\000p\000p\000i\000n\000g}{}% 28
-\BOOKMARK [0][-]{chapter.6}{\376\377\000A\000s\000s\000e\000m\000b\000l\000y}{}% 29
-\BOOKMARK [0][-]{chapter.7}{\376\377\0001\0006\000S\000-\000r\000R\000N\000A\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{}% 30
-\BOOKMARK [1][-]{section.7.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n\000\040\000t\000o\000\040\000m\000e\000t\000a\000g\000e\000n\000o\000m\000i\000c\000s}{chapter.7}% 31
-\BOOKMARK [2][-]{subsection.7.1.1}{\376\377\000D\000e\000f\000i\000n\000i\000t\000i\000o\000n\000\040\000o\000f\000\040\000m\000e\000t\000a\000g\000e\000n\000o\000m\000i\000c\000s}{section.7.1}% 32
-\BOOKMARK [2][-]{subsection.7.1.2}{\376\377\000W\000h\000y\000\040\000s\000t\000u\000d\000y\000i\000n\000g\000\040\000t\000h\000e\000\040\000m\000e\000t\000a\000g\000e\000n\000o\000m\000e}{section.7.1}% 33
-\BOOKMARK [2][-]{subsection.7.1.3}{\376\377\000D\000i\000f\000f\000e\000r\000e\000n\000c\000e\000s\000\040\000w\000i\000t\000h\000\040\000o\000l\000d\000e\000r\000\040\000m\000i\000c\000r\000o\000b\000i\000o\000m\000e\000\040\000s\000t\000u\000d\000i\000e\000s}{section.7.1}% 34
-\BOOKMARK [2][-]{subsection.7.1.4}{\376\377\000E\000x\000a\000m\000p\000l\000e\000:\000\040\000s\000k\000i\000n\000\040\000m\000i\000c\000r\000o\000b\000i\000o\000m\000e}{section.7.1}% 35
-\BOOKMARK [1][-]{section.7.2}{\376\377\0001\0006\000S\000\040\000r\000R\000N\000A\000\040\000s\000e\000q\000u\000e\000n\000c\000i\000n\000g}{chapter.7}% 36
-\BOOKMARK [2][-]{subsection.7.2.1}{\376\377\000S\000i\000m\000p\000l\000i\000f\000i\000e\000d\000\040\0001\0006\000S\000\040\000r\000R\000N\000A\000\040\000a\000n\000a\000l\000y\000s\000i\000s\000\040\000w\000o\000r\000k\000f\000l\000o\000w}{section.7.2}% 37
-\BOOKMARK [2][-]{subsection.7.2.2}{\376\377\0001\0006\000S\000\040\000r\000R\000N\000A\000\040\000g\000e\000n\000e}{section.7.2}% 38
-\BOOKMARK [2][-]{subsection.7.2.3}{\376\377\000P\000r\000i\000m\000e\000r\000\040\000a\000n\000d\000\040\000h\000i\000g\000h\000-\000t\000h\000r\000o\000u\000g\000h\000p\000u\000t\000\040\000m\000a\000c\000h\000i\000n\000e\000\040\000c\000h\000o\000i\000c\000e}{section.7.2}% 39
-\BOOKMARK [2][-]{subsection.7.2.4}{\376\377\000I\000n\000\040\000d\000e\000p\000t\000h\000\040\0001\0006\000S\000\040\000r\000R\000N\000A\000\040\000a\000n\000a\000l\000y\000s\000i\000s\000\040\000w\000o\000r\000k\000f\000l\000o\000w}{section.7.2}% 40
-\BOOKMARK [2][-]{subsection.7.2.5}{\376\377\000O\000T\000U\000\040\000c\000l\000u\000s\000t\000e\000r\000i\000n\000g}{section.7.2}% 41
-\BOOKMARK [2][-]{subsection.7.2.6}{\376\377\000O\000T\000U\000\040\000t\000a\000x\000o\000n\000o\000m\000i\000c\000\040\000a\000n\000n\000o\000t\000a\000t\000i\000o\000n}{section.7.2}% 42
-\BOOKMARK [0][-]{chapter.8}{\376\377\000S\000h\000o\000t\000g\000u\000n\000\040\000m\000e\000t\000a\000g\000e\000n\000o\000m\000i\000c\000s}{}% 43
-\BOOKMARK [0][-]{chapter.9}{\376\377\000S\000t\000a\000p\000h\000y\000l\000o\000c\000o\000c\000c\000u\000s\000\040\000a\000u\000r\000e\000u\000s}{}% 44
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Microbes}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Prevalence of microbes}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Difficulties in studying them}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Genomics}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{Comparative genomics}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{Metagenomics}{section.1.2}% 7
+\BOOKMARK [1][-]{section.1.3}{Leveraging computational power}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{Comparing low-throughput and high-throughput pipeline}{section.1.3}% 9
+\BOOKMARK [0][-]{chapter.2}{Escherichia Coli general informations}{}% 10
+\BOOKMARK [1][-]{section.2.1}{E. coli genomics}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{E. coli long-term evolution experiment}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{E. coli strains}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{PanPhlAn - strain detection and characterization}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.4}{Genomes of E. coli}{section.2.1}% 15
+\BOOKMARK [0][-]{chapter.3}{NGS principles \(second gen. sequencing\) - From Sanger to third gen sequencing}{}% 16
+\BOOKMARK [1][-]{section.3.1}{History of Sequencing}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{Progresses of sequencing}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.2}{The Chain Terminators}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.3}{Sanger method: the first one}{section.3.1}% 20
+\BOOKMARK [1][-]{section.3.2}{Development of Sequencing Machines}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Next Generation Sequencing NGS}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Fragments/Library preparation}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Clonal amplification and ILLUMINA sequencing procedure}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Pacific Bioscience \(PacBio\)}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Nanopore sequencing}{section.3.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Sequencing data}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Intro to sequencing raw data}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.1.1}{Base caller}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.2}{FASTQ format}{section.4.1}% 30
+\BOOKMARK [0][-]{chapter.5}{Mapping}{}% 31
+\BOOKMARK [0][-]{chapter.6}{Assembly}{}% 32
+\BOOKMARK [0][-]{chapter.7}{16S-rRNA sequencing}{}% 33
+\BOOKMARK [1][-]{section.7.1}{Introduction to metagenomics}{chapter.7}% 34
+\BOOKMARK [2][-]{subsection.7.1.1}{Definition of metagenomics}{section.7.1}% 35
+\BOOKMARK [2][-]{subsection.7.1.2}{Why studying the metagenome}{section.7.1}% 36
+\BOOKMARK [2][-]{subsection.7.1.3}{Differences with older microbiome studies}{section.7.1}% 37
+\BOOKMARK [2][-]{subsection.7.1.4}{Example: skin microbiome}{section.7.1}% 38
+\BOOKMARK [1][-]{section.7.2}{16S rRNA sequencing}{chapter.7}% 39
+\BOOKMARK [2][-]{subsection.7.2.1}{Simplified 16S rRNA analysis workflow}{section.7.2}% 40
+\BOOKMARK [2][-]{subsection.7.2.2}{16S rRNA gene}{section.7.2}% 41
+\BOOKMARK [2][-]{subsection.7.2.3}{Primer and high-throughput machine choice}{section.7.2}% 42
+\BOOKMARK [2][-]{subsection.7.2.4}{In depth 16S rRNA analysis workflow}{section.7.2}% 43
+\BOOKMARK [2][-]{subsection.7.2.5}{OTU clustering}{section.7.2}% 44
+\BOOKMARK [2][-]{subsection.7.2.6}{OTU taxonomic annotation}{section.7.2}% 45
+\BOOKMARK [0][-]{chapter.8}{Shotgun metagenomics}{}% 46
+\BOOKMARK [0][-]{chapter.9}{Staphylococcus aureus}{}% 47
