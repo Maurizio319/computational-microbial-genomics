@@ -89,7 +89,75 @@ We can use FastQC to plot the quality distribution of our data. FastQC on
 Nanopore data: the reads are really long, but the quality is low (expected result). On PacBio data we also see the distribution falling entirely in the red zone, but here we have the box plot in the central part. 
 \\
 We can also plot differently the PacBio data. Here we still have PacBio, but in a different view. Instead of looking at each position separately, here we look at the average quality for the whole read. Probably you will discard the low-quality reads, like 1-2 score. When thinking at what technology use, think also at the length of the genome you want to sequence!
- 
+
+\subsubsection{FastQC on PacBio vs ONT}
+The analyses were performed using long-read and short-read data from E. coli strain K12 sub-strains DH5$\alpha$ and MG16. Substitutions were more frequent in  ONT, while insertions were more frequent in PacBio. On nanopore A>G, T>C, C>T and G>A are 3 times more frequent than the other, while in PacBio the frequencies are more alike.
+\\
+\textbf{k-mer frequencies}: we know the frequency in the reference, so we assume that if the sequencing is systematic, without biases and without errors we should have the same frequency. In this example, it’s clear that nanopore has done a better job.
+\\
+(By looking at 6-mer you have a larger potential combination, but it is easier to find errors in it). Moreover, one can look at which are the over-represented and the under-represented k-mers in the reads compared to the genome, and this may give you an idea about where the errors are. Both in nanopore and PacBio, the most troubling k-mers are those containing the same repeated nucleotide (this is a frequent sequencing error).
+\\
+This is interesting because the low entropy of the repeated sequences can be detected by the quality control software and are usually discarded. We will see that sometimes it is not the right thing to do, since in non bacterial genomes there are repeated sequences (consideration to take when you decide which technology use for your experiment).
+
+\subsection{Duplication artifacts}
+It is not frequent to see duplication, but it can be a problem. If you want to reconstruct a genome from a scratch of a bacterium you don’t really care whether if there are duplicates or not. But if you want to quantify the gene expression or the copy number of genes in a bacterial genome, this can really skew your analysis. The distribution of the duplicates should be very similar to the distribution of the reads.
+\\
+There shouldn’t be any bias along the length of the reads.  If you see something like this, you probably sequenced the same thing over and over again, and so something went wrong. This happens when you sequence the adapter or the primer (they are always the same sequence).  
+
+\subsubsection{GC content analysis}
+We know that each single organism has a signature GC content. We expect to see a peak and a normal (gaussian) distribution. Therefor, if two peaks are seen, it means that we have sequenced two different organisms (maybe, a contamination). The problem is that these two organisms may share some sequences. 
+
+\subsubsection{K-mers frequency plot}
+Frequent k-mers can be a signature, as the GC content. For example: 15-mer coverage model fit to 76x coverage of 36bp reads from E. coli. 
+The expected coverage of a k-mer with reads of length L:
+\begin{equation}
+L_{cov} = \frac{L-k+1}{L} \, \times \, Cov
+\end{equation}
+Than, given a k-mer, we can see in how many reads that k-mer was present. And in this case the coverage is around 40\%. However, there is a huge amount of k-mers present with coverage 1 (i.e. that you have seen only once in your reads). So, there are errors in that specific k-mers (remove these results). Instead, coverage higher than 80\% would mean that the k-mers are located in more than one position.
+
+\subsubsection{Low-complexity artifacts}
+Same nucleotide repeats (especially A) are in a lot of cases artifacts. It’s an error of the machine and the quality control looking at the quality scores, that in this case are very high.\\
+How to measure their ‘artificiality’? Some parameters to take into consideration are:
+\begin{itemize}
+\item Low complexity 
+\item Low entropy 
+\item High compression (the artifacts increase the information inside the file) 
+\end{itemize}
+But some low-complexity sequences are not artifacts!
+\begin{itemize}
+\item Hydrophobic transmembrane alpha-helical sequences in membrane proteins 
+\item CAG repeats in genes causing Huntington disease, spinal and bulbar muscular atrophy, dentatorubropallidoluysian atrophy. 
+\item Proline-rich regions in proteins 
+\item Poly-A tails in nucleotide sequence 
+\item Micro-satellites 
+\end{itemize}
+
+\subsection{FASTQ quality control (QC)}
+This is the first step (or sub-pipeline) in any NGS pipeline 
+\begin{description}
+\item[Clipping/trimming]: removing (low quality) parts of reads
+\item[Masking]: avoiding to consider (e.g. low entropy) parts of reads
+\item[Read removal]: discard low quality reads or reads that are too short after clipping
+\end{description}
+
+Additional features that can be exploited for QC are the GC content, clustering for contamination detection, TAG identification,ambiguous bases. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
