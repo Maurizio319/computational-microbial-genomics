@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.30)  6 APR 2022 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.30)  6 APR 2022 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -851,43 +851,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./build/principal.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./build/principal.tocpdfT
+eX warning (ext4): destination with the same identifier (name{page.1}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 ...ne {8}Shotgun metagenomics}{23}{chapter.8}
+                                                  % [1
+
+])
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
 
-(./chapters/01_introduction.texpdfTeX warning (ext4): destination with the same
- identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Introduction} [1
-
-]
+(./chapters/01_introduction.tex [2]
 Chapter 1.
-) (./chapters/02_Ecoli-genomics.tex [2
-
-]
-Chapter 2.
 [3
 
+]) (./chapters/02_Ecoli-genomics.tex [4]
+Chapter 2.
+[5
+
 ]
 
-LaTeX Warning: Reference `corepangenome' on page 4 undefined on input line 47.
+LaTeX Warning: Reference `corepangenome' on page 6 undefined on input line 47.
 
 
-LaTeX Warning: Reference `balancepancore' on page 4 undefined on input line 77.
+LaTeX Warning: Reference `balancepancore' on page 6 undefined on input line 77.
 
 
-[4]) (./chapters/03_NGS-principles.tex [5]
+[6]) (./chapters/03_NGS-principles.tex [7]
 Chapter 3.
-<chapters/images/03//history-seq.png, id=167, 540.0175pt x 296.10625pt>
+<chapters/images/03//history-seq.png, id=219, 540.0175pt x 296.10625pt>
 File: chapters/images/03//history-seq.png Graphic file (type png)
 <use chapters/images/03//history-seq.png>
 Package pdftex.def Info: chapters/images/03//history-seq.png  used on input lin
 e 7.
 (pdftex.def)             Requested size: 260.17464pt x 142.66252pt.
-<chapters/images/03//sequencingCost.png, id=170, 629.85312pt x 339.76938pt>
+<chapters/images/03//sequencingCost.png, id=222, 629.85312pt x 339.76938pt>
 File: chapters/images/03//sequencingCost.png Graphic file (type png)
 <use chapters/images/03//sequencingCost.png>
 Package pdftex.def Info: chapters/images/03//sequencingCost.png  used on input 
@@ -896,22 +897,22 @@ line 20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6
+[8
 
  <./chapters/images/03/history-seq.PNG>]
-<chapters/images/03//DNA-molecule.png, id=179, 700.6175pt x 190.7125pt>
+<chapters/images/03//DNA-molecule.png, id=230, 700.6175pt x 190.7125pt>
 File: chapters/images/03//DNA-molecule.png Graphic file (type png)
 <use chapters/images/03//DNA-molecule.png>
 Package pdftex.def Info: chapters/images/03//DNA-molecule.png  used on input li
 ne 39.
 (pdftex.def)             Requested size: 212.47617pt x 57.83693pt.
-<chapters/images/03//chain-term.png, id=180, 480.79625pt x 185.19188pt>
+<chapters/images/03//chain-term.png, id=231, 480.79625pt x 185.19188pt>
 File: chapters/images/03//chain-term.png Graphic file (type png)
 <use chapters/images/03//chain-term.png>
 Package pdftex.def Info: chapters/images/03//chain-term.png  used on input line
  46.
 (pdftex.def)             Requested size: 212.47617pt x 81.84071pt.
-<chapters/images/03//Sanger.png, id=183, 659.46375pt x 405.01312pt>
+<chapters/images/03//Sanger.png, id=234, 659.46375pt x 405.01312pt>
 File: chapters/images/03//Sanger.png Graphic file (type png)
 <use chapters/images/03//Sanger.png>
 Package pdftex.def Info: chapters/images/03//Sanger.png  used on input line 61.
@@ -921,14 +922,14 @@ Package pdftex.def Info: chapters/images/03//Sanger.png  used on input line 61.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./chapters/images/03/sequencingCost.PNG> <./chapters/images/03/DNA-molecule
+[9 <./chapters/images/03/sequencingCost.PNG> <./chapters/images/03/DNA-molecule
 .PNG> <./chapters/images/03/chain-term.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[8 <./chapters/images/03/Sanger.PNG>]
-<chapters/images/03//automaticSang.png, id=210, 396.48125pt x 307.64937pt>
+[10 <./chapters/images/03/Sanger.PNG>]
+<chapters/images/03//automaticSang.png, id=259, 396.48125pt x 307.64937pt>
 File: chapters/images/03//automaticSang.png Graphic file (type png)
 <use chapters/images/03//automaticSang.png>
 Package pdftex.def Info: chapters/images/03//automaticSang.png  used on input l
@@ -938,7 +939,7 @@ ine 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/03//elettroferogramma.png, id=211, 376.90813pt x 175.15437pt>
+<chapters/images/03//elettroferogramma.png, id=260, 376.90813pt x 175.15437pt>
 File: chapters/images/03//elettroferogramma.png Graphic file (type png)
 <use chapters/images/03//elettroferogramma.png>
 Package pdftex.def Info: chapters/images/03//elettroferogramma.png  used on inp
@@ -947,7 +948,7 @@ ut line 112.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/03//progressSangerMachines.png, id=212, 575.14874pt x 291.5893
+<chapters/images/03//progressSangerMachines.png, id=261, 575.14874pt x 291.5893
 7pt>
 File: chapters/images/03//progressSangerMachines.png Graphic file (type png)
 <use chapters/images/03//progressSangerMachines.png>
@@ -958,23 +959,23 @@ n input line 119.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `progressSangerMachines' on page 9 undefined on input 
-line 123.
+LaTeX Warning: Reference `progressSangerMachines' on page 11 undefined on input
+ line 123.
 
-<chapters/images/03//sequencingMachines.png, id=213, 510.40688pt x 347.79938pt>
+<chapters/images/03//sequencingMachines.png, id=262, 510.40688pt x 347.79938pt>
 
 File: chapters/images/03//sequencingMachines.png Graphic file (type png)
 <use chapters/images/03//sequencingMachines.png>
 Package pdftex.def Info: chapters/images/03//sequencingMachines.png  used on in
 put line 137.
 (pdftex.def)             Requested size: 433.62pt x 295.49287pt.
-[9]
+[11]
 Overfull \vbox (56.51132pt too high) has occurred while \output is active []
 
 
-[10 <./chapters/images/03/automaticSang.PNG> <./chapters/images/03/sequencingMa
+[12 <./chapters/images/03/automaticSang.PNG> <./chapters/images/03/sequencingMa
 chines.PNG>]
-<chapters/images/03//sequencingMachinesIllumina.png, id=234, 536.50438pt x 346.
+<chapters/images/03//sequencingMachinesIllumina.png, id=284, 536.50438pt x 346.
 79562pt>
 File: chapters/images/03//sequencingMachinesIllumina.png Graphic file (type png
 )
@@ -982,9 +983,9 @@ File: chapters/images/03//sequencingMachinesIllumina.png Graphic file (type png
 Package pdftex.def Info: chapters/images/03//sequencingMachinesIllumina.png  us
 ed on input line 146.
 (pdftex.def)             Requested size: 346.89731pt x 224.23444pt.
- [11 <./chapters/images/03/elettroferogramma.PNG> <./chapters/images/03/sequenc
+ [13 <./chapters/images/03/elettroferogramma.PNG> <./chapters/images/03/sequenc
 ingMachinesIllumina.PNG>]
-<chapters/images/03//tagmentedFragments.png, id=244, 555.07375pt x 142.03062pt>
+<chapters/images/03//tagmentedFragments.png, id=294, 555.07375pt x 142.03062pt>
 
 File: chapters/images/03//tagmentedFragments.png Graphic file (type png)
 <use chapters/images/03//tagmentedFragments.png>
@@ -995,7 +996,7 @@ put line 174.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/03//clusterAmplification.png, id=245, 425.08812pt x 113.92563p
+<chapters/images/03//clusterAmplification.png, id=295, 425.08812pt x 113.92563p
 t>
 File: chapters/images/03//clusterAmplification.png Graphic file (type png)
 <use chapters/images/03//clusterAmplification.png>
@@ -1005,7 +1006,7 @@ input line 185.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/03//rigidGeneration.png, id=247, 530.98375pt x 244.915pt>
+<chapters/images/03//rigidGeneration.png, id=297, 530.98375pt x 244.915pt>
 File: chapters/images/03//rigidGeneration.png Graphic file (type png)
 <use chapters/images/03//rigidGeneration.png>
 Package pdftex.def Info: chapters/images/03//rigidGeneration.png  used on input
@@ -1019,8 +1020,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-[12 <./chapters/images/03/progressSangerMachines.PNG>]
-<chapters/images/03//randomPatternCells.png, id=260, 384.93813pt x 258.9675pt>
+[14 <./chapters/images/03/progressSangerMachines.PNG>]
+<chapters/images/03//randomPatternCells.png, id=309, 384.93813pt x 258.9675pt>
 File: chapters/images/03//randomPatternCells.png Graphic file (type png)
 <use chapters/images/03//randomPatternCells.png>
 Package pdftex.def Info: chapters/images/03//randomPatternCells.png  used on in
@@ -1044,30 +1045,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--218
 
  []
 
-<chapters/images/03//singleIndex.png, id=262, 493.845pt x 294.60063pt>
+<chapters/images/03//singleIndex.png, id=311, 493.845pt x 294.60063pt>
 File: chapters/images/03//singleIndex.png Graphic file (type png)
 <use chapters/images/03//singleIndex.png>
 Package pdftex.def Info: chapters/images/03//singleIndex.png  used on input lin
 e 225.
 (pdftex.def)             Requested size: 169.11153pt x 100.88211pt.
-<chapters/images/03//doubleIndex.png, id=263, 524.45938pt x 258.9675pt>
+<chapters/images/03//doubleIndex.png, id=312, 524.45938pt x 258.9675pt>
 File: chapters/images/03//doubleIndex.png Graphic file (type png)
 <use chapters/images/03//doubleIndex.png>
 Package pdftex.def Info: chapters/images/03//doubleIndex.png  used on input lin
 e 231.
 (pdftex.def)             Requested size: 260.17464pt x 128.47182pt.
-[13 <./chapters/images/03/tagmentedFragments.PNG> <./chapters/images/03/cluster
+[15 <./chapters/images/03/tagmentedFragments.PNG> <./chapters/images/03/cluster
 Amplification.PNG>]
-<chapters/images/03//ILLUMINArev.png, id=273, 509.905pt x 252.44313pt>
+<chapters/images/03//ILLUMINArev.png, id=323, 509.905pt x 252.44313pt>
 File: chapters/images/03//ILLUMINArev.png Graphic file (type png)
 <use chapters/images/03//ILLUMINArev.png>
 Package pdftex.def Info: chapters/images/03//ILLUMINArev.png  used on input lin
 e 244.
 (pdftex.def)             Requested size: 303.53267pt x 150.28062pt.
- [14 <./chapters/images/03/rigidGeneration.PNG> <./chapters/images/03/randomPat
+ [16 <./chapters/images/03/rigidGeneration.PNG> <./chapters/images/03/randomPat
 ternCells.PNG> <./chapters/images/03/singleIndex.PNG> <./chapters/images/03/dou
 bleIndex.PNG>]
-<chapters/images/03//ChannelILLUMINA.png, id=285, 749.80125pt x 262.48062pt>
+<chapters/images/03//ChannelILLUMINA.png, id=335, 749.80125pt x 262.48062pt>
 File: chapters/images/03//ChannelILLUMINA.png Graphic file (type png)
 <use chapters/images/03//ChannelILLUMINA.png>
 Package pdftex.def Info: chapters/images/03//ChannelILLUMINA.png  used on input
@@ -1078,43 +1079,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[15 <./chapters/images/03/ILLUMINArev.PNG> <./chapters/images/03/ChannelILLUMIN
+[17 <./chapters/images/03/ILLUMINArev.PNG> <./chapters/images/03/ChannelILLUMIN
 A.PNG>]
-<chapters/images/03//PacBIO.png, id=296, 589.70313pt x 363.3575pt>
+<chapters/images/03//PacBIO.png, id=346, 589.70313pt x 363.3575pt>
 File: chapters/images/03//PacBIO.png Graphic file (type png)
 <use chapters/images/03//PacBIO.png>
 Package pdftex.def Info: chapters/images/03//PacBIO.png  used on input line 274
 .
 (pdftex.def)             Requested size: 433.62pt x 267.18929pt.
-) (./chapters/04_sequencing-data.tex [16 <./chapters/images/03/PacBIO.PNG>]
+) (./chapters/04_sequencing-data.tex [18 <./chapters/images/03/PacBIO.PNG>]
 Chapter 4.
-) (./chapters/05_mapping.tex [17
+) (./chapters/05_mapping.tex [19
 
 ]
 Chapter 5.
-) (./chapters/06_assembly.tex [18
+) (./chapters/06_assembly.tex [20
 
 ]
 Chapter 6.
-) (./chapters/07_16s-sequencing.tex [19
+) (./chapters/07_16s-sequencing.tex [21
 
 ]
 Chapter 7.
-) (./chapters/08_shotgun-metagenomics.tex [20
+) (./chapters/08_shotgun-metagenomics.tex [22
 
 ]
 Chapter 8.
-) (./chapters/09_staphylococcus-aureus.tex [21
+) (./chapters/09_staphylococcus-aureus.tex [23
 
 ]
 Chapter 9.
-) (./build/principal.bbl [22
-
-]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [23
+) [24
 
 ] (./build/principal.aux)
 
@@ -1124,42 +1119,43 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 259854211CBFBF00686C61AA5A861F8B;4668.
+(rerunfilecheck)             Checksum: C9C94D9F72F454BB544207D600B01791;6089.
  ) 
 Here is how much of TeX's memory you used:
- 22805 strings out of 478276
- 420823 string characters out of 5853013
- 734842 words of memory out of 5000000
- 40589 multiletter control sequences out of 15000+600000
+ 22816 strings out of 478276
+ 420977 string characters out of 5853013
+ 734855 words of memory out of 5000000
+ 40595 multiletter control sequences out of 15000+600000
  493877 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,82p,1307b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,82p,1307b,926s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
 texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfbi2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0
-900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on ./build/principal.pdf (24 pages, 4636716 bytes).
+r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfbi2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on ./build/principal.pdf (25 pages, 4652639 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 344 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 288 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
