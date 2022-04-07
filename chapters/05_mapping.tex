@@ -23,11 +23,15 @@ Problems related to mapping and assembly:
 \section{Mapping}
 
 The coverage, or read depth, is the average number of reads representing a given nucleotide in the reconstructed sequence (Some points of the reference sequence will be aligned with more reads, some with less. The average number of reads for each nucleotide is the coverage). 
-The coverage of a genome is defined as the average coverage of each single nucleotide across all nucleotides of the genome. Additional info and examples at:  
-% https://thesequencingcenter.com/knowledge-base/coverage/#:~:text=Coverage%20is%20defined%20as%20the,reference%20genome%20Escherichia%20coli%20BW2952.
+The coverage of a genome is defined as the average coverage of each single nucleotide across all nucleotides of the genome. 
+%Additional info and examples at:  https://thesequencingcenter.com/knowledge-base/coverage/#:~:text=Coverage%20is%20defined%20as%20the,reference%20genome%20Escherichia%20coli%20BW2952.
 A coverage of 1x does not mean that all reads are read once. This would be true if sampling were systematic, but sampling is not systematic, it is random and is biased. Hence, a coverage of 1x means that on average each nucleotide is covered once, but there will be some nucleotides covered more and some not covered (0 coverage). 
 The coverage can be represented with a coverage map and can also be defined theoretically as:
-Cov = (N * L)/G
+
+\begin{center}
+    Pval = K e\textsuperscript{-lambda S} = Evalue/mn
+\end{center}
+
 where G is the length of the genome; N is the  number of reads; L is the average read length.
 Knowing the wanted coverage is important to set up the machine in order to obtain the right number of reads (to achieve a certain coverage). A higher coverage means indeed more reads to be obtained. 
 
@@ -227,7 +231,9 @@ There is a relationship between the E-value and the p-value.
     \item The p-value measures the probability of finding by chance another sequence with an equal or better score.
 \end{itemize}
 
-%aggiungi formula
+\begin{center}
+    Pval = K e\textsuperscript{-lambda S} = Evalue/mn
+\end{center}
 
 \subsection{Speed seed alignment}
 
