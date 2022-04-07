@@ -11,36 +11,61 @@
 \contentsline {chapter}{\numberline {2}\emph {Escherichia Coli} general informations}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}\emph {E. coli} genomics}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}\emph {E. coli} long-term evolution experiment}{5}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}\emph {E. coli} strains}{5}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}\emph {E. coli} strains}{6}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}PanPhlAn - strain detection and characterization}{6}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Genomes of \emph {E. coli}}{6}{subsection.2.1.4}%
-\contentsline {chapter}{\numberline {3}NGS principles (second gen. sequencing) - From Sanger to third gen sequencing}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}History of Sequencing}{8}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Progresses of sequencing}{8}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}The Chain Terminators}{9}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Sanger method: the first one}{9}{subsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.3.1}Automatic sequencing}{11}{subsubsection.3.1.3.1}%
-\contentsline {section}{\numberline {3.2}Development of Sequencing Machines}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Next Generation Sequencing NGS}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Fragments/Library preparation}{14}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Clonal amplification and ILLUMINA sequencing procedure}{14}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Pacific Bioscience (PacBio)}{18}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Nanopore sequencing}{18}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {4}Sequencing data}{19}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Mapping}{20}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Assembly}{21}{chapter.6}%
-\contentsline {chapter}{\numberline {7}16S-rRNA sequencing}{22}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction to metagenomics}{22}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Definition of metagenomics}{22}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Why studying the metagenome}{22}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Differences with older microbiome studies}{22}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Example: skin microbiome}{22}{subsection.7.1.4}%
-\contentsline {section}{\numberline {7.2}16S rRNA sequencing}{23}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Simplified 16S rRNA analysis workflow}{23}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}16S rRNA gene}{23}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Primer and high-throughput machine choice}{24}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}In depth 16S rRNA analysis workflow}{26}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}OTU clustering}{27}{subsection.7.2.5}%
-\contentsline {subsection}{\numberline {7.2.6}OTU taxonomic annotation}{29}{subsection.7.2.6}%
-\contentsline {chapter}{\numberline {8}Shotgun metagenomics}{31}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Staphylococcus aureus}{32}{chapter.9}%
+\contentsline {chapter}{\numberline {3}NGS principles (second gen. sequencing) - From Sanger to third gen sequencing}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}History of Sequencing}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Progresses of sequencing}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}The Chain Terminators}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Sanger method: the first one}{11}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}Automatic sequencing}{12}{subsubsection.3.1.3.1}%
+\contentsline {section}{\numberline {3.2}Development of Sequencing Machines}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Next Generation Sequencing NGS}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Fragments/Library preparation}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Clonal amplification and ILLUMINA sequencing procedure}{16}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Pacific Bioscience (PacBio)}{19}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Nanopore sequencing}{19}{subsection.3.3.4}%
+\contentsline {chapter}{\numberline {4}Sequencing data}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Intro to sequencing raw data}{22}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Base caller}{22}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Errors solved by Ilumina's base caller}{23}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}Density on the flow cell}{23}{subsubsection.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}An ecology of base callers}{24}{subsubsection.4.1.1.3}%
+\contentsline {subsection}{\numberline {4.1.2}FASTQ format}{24}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Quality control: read length distribution}{24}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}FastQC on PacBio vs ONT}{25}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Duplication artifacts}{26}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}GC content analysis}{26}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}K-mers frequency plot}{26}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}Low-complexity artifacts}{26}{subsubsection.4.1.3.3}%
+\contentsline {subsection}{\numberline {4.1.4}FASTQ quality control (QC)}{27}{subsection.4.1.4}%
+\contentsline {chapter}{\numberline {5}Mapping}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Mapping}{28}{section.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.0.1}Exercise on coverage}{29}{subsubsection.5.1.0.1}%
+\contentsline {section}{\numberline {5.2}Mapping algorithm}{29}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Local vs Global alignment}{30}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Smith-Waterman algorithm (local alignment) - 1981}{30}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Needleman-Wunsch algorithm (global alignment)}{33}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}BLAST (Basic Local Alignment Search Tool)}{34}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}BLAST E-value}{35}{subsubsection.5.2.4.1}%
+\contentsline {subsection}{\numberline {5.2.5}Speed seed alignment}{36}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Burrow-Wheeler alignment}{36}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}LF (Last-First) property}{37}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Exact mapping using LF property}{38}{subsection.5.2.8}%
+\contentsline {chapter}{\numberline {6}Assembly}{40}{chapter.6}%
+\contentsline {chapter}{\numberline {7}16S-rRNA sequencing}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction to metagenomics}{41}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Definition of metagenomics}{41}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Why studying the metagenome}{41}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Differences with older microbiome studies}{41}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Example: skin microbiome}{42}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}16S rRNA sequencing}{42}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Simplified 16S rRNA analysis workflow}{42}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}16S rRNA gene}{42}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Primer and high-throughput machine choice}{43}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}In depth 16S rRNA analysis workflow}{45}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}OTU clustering}{46}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}OTU taxonomic annotation}{48}{subsection.7.2.6}%
+\contentsline {chapter}{\numberline {8}Shotgun metagenomics}{50}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Staphylococcus aureus}{51}{chapter.9}%
