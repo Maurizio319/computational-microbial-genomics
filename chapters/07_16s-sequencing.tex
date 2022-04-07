@@ -129,3 +129,106 @@
   \subsection{OTU taxonomic annotation}
     \textbf{NOTE: this topic continues in the next lecture; when done merge together}
     Assigning a taxonomic annotation to an OTU cannot be done simply using BLAST to get the best matching sequence; this is because there is too much noise in the sequences and because it is difficult to classify new strains. A better way is using some other algorithm that assigns the terms of the taxonomic notation (since it is more than just one label) and provides some degree of confidence in the prediction. For instance the algorithm may be able to correctly assign the first taxonomical terms, up until \textit{Enterobacteriaceae}, but then it provides a prediction of the OTU belonging to \textit{E. coli} with some confidence interval, say 85\%, and some alternative like \textit{S. dysenteriae}, say with 15\% confidence.
+
+\subsection{RDP classifier (Naive Bayes Model)}
+
+P(S|G) is computed by RDP using a 8-mer strategy basically comparing the 8-mers in S with the 8-mers in all the training sequences available for genus G. The confidence of each prediction is computed by bootstrapping: 
+
+\begin{itemize}
+    \item Select a (random) subsequence of S, Say S’ 
+    \item Compute the G that maximizes P(S’|G) 
+    \item Repeat the procedure 100 times 
+    \item The number of time G is selected by the bootstrapping procedure is the confidence 
+\end{itemize}
+
+Leave one-out-cross validation: 
+
+\begin{itemize}
+    \item Take out one data point from the training set
+    \item Apply the classifier on the left-out point (without using it in the training set)
+    \item Check the accuracy of the prediction
+    \item Repeat the procedure for each training data point
+\end{itemize}
+
+The RDP classification accuracy is evaluated with the leave-one-out cross validation on the training set of hundreds thousands of 16S references: 
+
+\begin{itemize}
+    \item Accuracy $\xrightarrow[]{}$ percentage of correct classification (over the all leave-one-out runs)
+    \item Varying levels of the taxonomic resolution (from phylum to genus)
+    \item Varying sequence lengths
+    \item In real applications accuracies are probably smaller:
+    \begin{itemize}
+        \item Sequencing errors
+        \item "unknown bacteria"
+    \end{itemize}
+
+\end{itemize}
+
+\section{Diversity analysis}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Diversity.png}
+\caption{}
+\end{figure}
+
+\subsection{Alpha diversity analysis}
+
+Alpha diversity analysis is a measure of how diverse, so complex, is a microbial community. "Within sample" diversity. Species richness is a widely use alpha diversity index. 
+All individuals considered have non-zero abundance, some will have high abundance ($\sim$~99$\%$) or low abundance (1$\%$). High alpha diversity are usually associated with populations that are more robust and resilient to changes.
+For examples gut microbiome with a high richness is usually associated with healthy state, instead of disease. 
+
+\subsection{Beta diversity analysis}
+
+Beta diversity analysis is a measure of how different two microbial communities are. "Between sample" diversity. It is possible to measure the beta-diversity using the inverse of number of shared species.
+An example of beta-diversity is \textbf{UniFrac}. In UniFrac the distance is equal to the fraction of the total branch length that is unique to any particular environment. UniFrac can be also weighted in order to include abundances for each OTU.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{UniFrac.png}
+\caption{\textbf{D=0.} Blue and orange samples always have the same OTUs. Each 16S (each ramo) is present in both samples. \textbf{D=$\sim$0.5.}In reality we usually have a mix of the 2 situations. Some OTUs are present only in one of the samples and are either quite distant from the others or close (based on upstream the branch goes). \textbf{D=1.} Completely distinct OTUs . The difference is also in the upstream branches, which have different colors.}
+\end{figure}
+
+\section{Principal Coordinate Analysis (PCoA}
+
+PCoA is also known as multidimensional scaling. It is one of the most powerful approaches for exploratory analysis. The idea is to represent the multidimensional relationship between samples in a two or three dimensional space. It is possible to use any similarity function as Euclidean distance, UniFrac, bray-Curtis distance. We find frequently hierarchical clustering plots. 
+
+\section{Study: \textit{Enhanced microbial diversity in the saliva microbiome induced by short-term probiotic intake revealed by 16S rRNA sequencing on the IonTorrent PGM platform}}
+
+The pool was made of 14 samples and some of them with probiotic administration, so a very small number of high-quality reads. The samples number 1 and 2 are of the same student that repeat the sampling twice in order to see the reproducibility of the technique.
+All the students had firmicutes, proteobacteria and Bacteroidetes, plus a little bit of actinobacteria.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Level.png}
+\caption{}
+\end{figure}
+
+You cannot compare alpha-diversity of different student at different sequencing depth, but at the same.
+When you do PCR, multiplexing and you put multiple samples on the same sequencing run the sequencing machine
+will not get the exact n° of reads for each sample, you have a quite high variability. Since you cannot compare alpha-diversities at multiple sequencing depths, usually you have to decide a sequencing depth cut-off at least for alpha-diversity analysis. The greater the sequencing depth, the greater the alpha-diversity. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{AlphaDiversity.png}
+\caption{\textbf{Alpha diversity and rarefaction plots.} The cut-off should not be too high, otherwise some samples will not be included in the further analysis. (If they do not reach depth, like the student 4 in light green.)}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Probiotic.png}
+\caption{\textbf{Probiotic effect on saliva microbiome?} Students that took the probiotic had a more diverse microbiome, and the maximum diversity was reached by taking probiotics at lunch.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Probiotic2.png}
+\caption{\textbf{Is the effect due to the probiotic Streptococcus?} The probiotic product contained \emph{}{Streptococcus thermophilus}, \emph{}{Lactobacillus delbrueckii subsp. bulgaricus} and
+\emph{Lactobacillus paracasei}. What if we remove OTUs from these genera from the dataset?The analysis is still significant. This means that the probiotics yogurt induces a variation in the microbiome that make it more diverse.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{BetaDiversity.png}
+\caption{\textbf{Looking at beta diversity} There is no clusters.}
+\end{figure}
