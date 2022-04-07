@@ -1,0 +1,130 @@
+sequencing along doesn't permit to calculate precise amoutns. 
+
+strain level analysis with metagenomic data. OTUs are not really specific to a given species. With metagenomic data, you can distinguish species. 
+different use of informations.
+
+strain level profiling.
+\begin{itemize}
+	\item identify strains, check the presence, 
+	\item it is important to discover new strains.
+	\item Track the same strain across the samples 
+	\item Characterie genomically the strains found. 
+\end{itemize}\\
+
+E. coli presents a pangenome of 20000 genes, group genes into functinal gene-families. accessory or unique genes. 
+Metagenomics sample mapped against E.coli Genomes. Estimate abundance in the community, and recapitulate with the covarage of each gene family in the pan-genome. \\
+
+Thousand of genes with the same abundance. \\
+
+...
+
+
+PaPhIAn was red with the genes on the left. It is possible to view the genes characterizing a strain.\\
+
+Eubacterium rectale common in humans, onyl 1 reference genome, still it was possible to see a structure. specific genes associate to cohorts. 3 possible groups identified, one from chinese, 1 from the Zeller cancer in the green group.\\
+
+Preterm infants, Necrotizing enterocolitis (NEC). Escherichia coli really high in 20\% infants. Different strains found (different IDs), two clades caused NEC, idea of which genes present in the metagenome. \\
+
+SNPs, core genes compared to species specific markers. ...\\
+
+Comparing different subjects. \\
+\\
+subspecies. Bacteria most present in the world. The abundancy over different populations in the world are really different, not balanced. \\
+Variability of the species. some are really variable. some other not, Bacteroide could ave diverged in a short time and so ipotetically why the variance is so low. 
+
+
+APPUNTI ELISA
+Lesson 24/03
+
+With sequencing alone you cannot see more than relative abundance. Tricks (known sample with known abundance?).
+
+Strain level analysis with metagenomic data
+With 16S nRNA -> genus level
+Mtagenomics -> higher resolution: species
+At the basis of the resolution there is the signal. 
+Strain level - Questions asked:
+- Identify strains: say if a strain is present or not in a given sample. Chances that we will find a strain that we already cataloged in a different sample are small.
+- Discover new strains in the sample and discover new species 
+- Characterize: understand which are the genes in the strains
+- Track the same strain being present in two samples, eg. to infer trasmission.
+The data for strain analysis is the same used for species analysis -> computational improvements. 
+
+Pan-genome strategy
+Detect gene position and define gene-families.
+Map all reads against the reference genome with genes annotated. Estimate the abundance of each gene in the community and recapitulate it a a gene-family level. 
+- some multi-copy genes
+- Thousands of genes present at the same abundance -> E. coli pan-genes, present in all 
+- some non-present genes
+Another exp: 
+- grey line: there is no E. coli in the sample, no plateau for E. coli genes
+- 2 strains present 
+Same but on more samples:
+- in some samples E. coli was very abundant (higher lines)
+This approach is of course heavily based on mapping. We also need to put a threshold at the end of the plateau, to define non-present and present genes. 
+Red-yellow graph:
+- in red: genes on the left of the plateau region (present)
+- in yellow: those in the right: non present
+*There might be some errors: due to limit in detection (small yellow points in the middle of the graph)
+The graph contains also gene functions, obtained by mapping the genes against databases. 
+
+Eubacterium rectale -> present in all healthy intestines (?)
+Only one genome available when the experiment was done. Clustering of subtypes associated with different choorts (age, nationality, ...)
+One subtype was only populated by the two samples with chines origin.
+Ex: Cohort of pre-term infants
+Many of them had E. coli, often dominant (no adults with dominant E. coli).
+Different strains with different IDs, we find that there are a few types more responsible of the NEC (disease). 
+
+complementary approach - another way of looking at strains
+Looking at genetic variance of core genomes (unique combination of SNPs of genes that are always present vs. unique combination of genes that are always present of missing).
+We look if we have the same variance or if we have sono SNPs with a different variance that can be used to define new strains. 
+Markers -> species-specific genes
+Map the reads against marker genes (reference - present always but only in certain species), for all samples, ad take note of the variances (recurrence) found.
+- non variant positions: when, for each position of the gene, the NT is always matching
+- SNPs: when we find a position in the gene which recurrently diverges
+ We get a multiple alignment. Phylogenetic tree, which can be cut at many levels. 
+This approach can be applied to many different species. Eg. for E. rectale it seems to have a higher resolution compared to the previous approach.
+
+Strains in the human gut
+Genetic distance measured by the SNPs on the markers in different strains. Individuals from different countries. 
+Distribution -> very few pairs of individuals in which have the same strain of a given specie (1.27%).
+Pick: many thousands of different SNPs between species. 
+Whereas over time, the strains remain the same (different diets usually change the abundance of different species, instead of the species composition).
+Sub-spieces 
+Most present bacteria in the human population -> all countries fairly represented.
+With subspecies things change -> some of them are tightly associated with specific populations or geographic areas.
+Circular barplot -> different intra-species diversity 
+
+Those were examples of strains of known and characterized species
+However, there are thousands of uncaracterized species. In order to reduce this number, they looked at global metagenome data and applied metagenomic assembly. 
+-> Single sample metagenomic assemble: for each sample they apply one of the 2 metagenomic assembler -> this generates contigs (not linked with specific genomes)
+-> Binning: contigs included in >300.000 putative genomes
+-> quality control -> 70 thousands genomes with high quality (see parameters) and 84 th. medium quality (more that genomes available at the time in NCBI)
+-> distance measured between pairs of genomes and assembly in groups. Species-level genome bins (within 5% genetic distance) 15 thousands detected -> species to which we can give a name (many of them were un-cataloged - new)
+-> Now markers can be defined using SGBs (increase in mappability)
+
+Cibiobacter -> unknown species discovered thanks to that analysis. Can be studied thanks to the availability of the genome. 
+Many new thousands species actually, without a name. 
+E. rectale -> graphs created in different moments in time -> improvement in available tools. 
+Matagenomic assembly can only retrieve some bacteria form a sample. 
+Interesting discovery: subtype 3: no operon characterized for coding for motility (present in all the other subtypes). Some other genes no comprised in the operon were lost too in this subspecies (lost due to the fact that the bacteria cannot move anymore so those genes become useless and 'expensive' to maintain).
+CAZy genes -> involved in metabolism. The non motile subspecies have more of them -> higher efficiency if needed to make use of source carbs (being that they cannot move to reach them). 
+
+Prevotella copri 
+Present at high abundances in just a fraction of individuals. 
+-> 4 distant subtypes
+-> the difference in population distribution is due to lifestyle. In the westernized world 2/3 of individuals have lost it (eve more in US). 
+-> small % of individuals having all 4 subtypes
+Carbs. degradation profiling reveals 4 different clusters. Ability to degrade complex fibers (not consumed much in Western world).
+To check how things were many years ago, they extracted DNA from 'poo' samples and Otzi. 
+Prevotella copri (3 or 4 species) were found in all samples basically.  At least for this bacteria, the non-westernized populations resemble quite good how our gut microbiome was in ancient times. 
+Blastocystis 
+parasite
+-> associated to the healthy microbiome
+Must be co-cultivated with bacteria (since it eats them to grow) -> difficult to sequence (bacteria genomes contamination)
+
+Functional potential profiling
+Mapping genes against repositories of proteins with known functions. Computationally expensive (blastx too heavy). Trick: map only against the proteins that are know to be present in the bacteria present in the sample -> reduced dataset.
+Many functions are more stable across different bacteria.
+
+
+ 

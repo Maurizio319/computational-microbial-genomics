@@ -8,3 +8,13 @@ See this [Github gist](https://gist.github.com/giacThePhantom/e080a777782754542d
 The "lab_materials" folder will be populated with useful materials (cheat sheets, installation guides...) since both slides and solutions for the lab are already provided. They are **NOT** included in the "principal.pdf" file.
 
 ## TODO
+- [x] introduction
+- [ ] Ecoli-genomics
+- [ ] NGS-principles
+- [ ] equencingAlgorithms
+- [ ] sequencing-data
+- [ ] mapping
+- [ ] assembly
+- [ ] 16s-sequencing
+- [ ] shotgun-metagenomics
+- [ ] staphylococcus-aureus
