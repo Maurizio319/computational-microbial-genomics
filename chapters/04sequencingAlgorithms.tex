@@ -1,35 +1,32 @@
-input fragments. the order of the contigs cannot be established unless we have a connection. De novo assembly without prior information about the sequence of the organism. Sometimes it could be useful to use abailable reference sequences. Artifacts have to be discriminated. 
-It is possible to genearte a consensus sequence. 
+input fragments. the order of the contigs cannot be established unless we have a connection. De novo assembly without prior information about the sequence of the organism. Sometimes it could be useful to use abailable reference sequences. Artifacts have to be discriminated.
+It is possible to genearte a consensus sequence.
 
-Sequence mapping aligning: find dna sequences dsimilarities betwen query sequences and reference sequences. 
+Sequence mapping aligning: find dna sequences dsimilarities betwen query sequences and reference sequences.
 
 \section{Sequence mapping}
-Query short sequence and reference is much longer. Could be deletions, insertions, substitutions. THe first rwo can be longer than 1. You would search for the best match or the best matches, or all matches, the latter is very computationally demanding. 
+Query short sequence and reference is much longer. Could be deletions, insertions, substitutions. THe first rwo can be longer than 1. You would search for the best match or the best matches, or all matches, the latter is very computationally demanding.
 
 \subsection{Coverage}
-Average numberof reads representing a given nucleotide in the reconstructed sequence. Some positions could have 0 coverage. 
+Average numberof reads representing a given nucleotide in the reconstructed sequence. Some positions could have 0 coverage.
 
-\begin{equation}
-Cov = \frac{N x L}{G}
-\end{equation} 
+$$Cov = \frac{N x L}{G}$$
 
 where G: length of hte genome, N: number of reads, L: average read length.
 
-The coverage  is an essential parameter, more coverage means more reads to do. 
+The coverage  is an essential parameter, more coverage means more reads to do.
 
-\\
 
 \textbf{Exercise}:
 I want to sequence a genome which I knw is 3M bases. I can use Illumina single.end sequencing with read length of 100 nt.
 
-From sequence comparison it is possible to obtain new informations. 
+From sequence comparison it is possible to obtain new informations.
 
 
-Simplest aligning algorithm: start from 0 position and slide along the sequence. It doesn't consider indels. 
+Simplest aligning algorithm: start from 0 position and slide along the sequence. It doesn't consider indels.
 
-Global alignments focuses on total sequence, while local alignment only in fractions of the total sequence. 
+Global alignments focuses on total sequence, while local alignment only in fractions of the total sequence.
 
-Evolutionary distance doesn't reflect precisely evolutionary distances when the observed percent identities are low. 
+Evolutionary distance doesn't reflect precisely evolutionary distances when the observed percent identities are low.
 
 
 \subsection{Smit-Waterman algorithm}
@@ -37,10 +34,10 @@ Evolutionary distance doesn't reflect precisely evolutionary distances when the 
 
 We have to find best substrings. It has to be built a big matrix, consider a score, used when nucleotides match or not. Populate the matrix, in each cell a number described by the formula. Select values of match and mismatch and a penalty value for gaps.
 
-more than one best solutions. 
+more than one best solutions.
 
 
-This is not used anymore, as it would result in too much computational expense.  
+This is not used anymore, as it would result in too much computational expense.
 
 \subsection{Needleman-Wunsch algorithm}
 Optimal align algorithm. initialized with 0, 0 is not possible anymore for iteration. Termination in the bottom right corner.
@@ -53,14 +50,14 @@ very used nowadays, still working. Allowed sequence matching to everyone through
 
 Find k-mer matches. Once you find some good seeds, it is possible to extend the matches to seee if there are some more extended regions. The evaluations are made with algorithms inspired on...
 
-k is generally between 5 and much larger numbers. 
+k is generally between 5 and much larger numbers.
 
-several BLAST programmes are available depending on the type of need. 
+several BLAST programmes are available depending on the type of need.
 
 E-value: the number of distinct alignments with a score equivalent to or higher than S, that are expected to occut in a dataase search by chance
 
 \begin{equation}
-E = Kmne^{-\lambdaS}
+E = Kmne^{-\lambda}
 \end{equation}
 
 There is a relation between P.value and the E- value. P-value: the provavil to obtain by chance another score with an equal or better score.
@@ -69,9 +66,9 @@ There is a relation between P.value and the E- value. P-value: the provavil to o
 \frac{E}{mn}
 \end{equation}
 
-where 
+where
 \begin{enumerate}
-\item Parameter K and \lambda depend on the substit matrix and on the gap...
+\item Parameter K and $\lambda$ depend on the substit matrix and on the gap...
 \end{enumerate}
 
 \subsection{Scoring matrices}
@@ -82,7 +79,7 @@ A protein which changes an AA with another not always changes it with a complete
 They are not used anymore. Reads are cut down in small seeds. The seeds are stored in an index, and then seeds are searched inside the sequence.
 
 It is possible to have SNPs.
-The look up table is actually enormous in human genome 
+The look up table is actually enormous in human genome
 
 
 Maq, SOAP, MOSAIK, Novoalign are based on this approach.
@@ -93,6 +90,4 @@ Reversible permutation of the characters in a text. Compress a file, it takes a 
 
 Fast reconstruction using the LF  property: the ith occurrence of character X...
 
-Several ways  to decompress com 
-
-
+Several ways  to decompress com
