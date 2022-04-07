@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  7 APR 2022 03:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  7 APR 2022 03:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -864,32 +864,32 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 ...e {5.2}Mapping algorithm}{29}{section.5.2}
+l.46 ...e {5.2}Mapping algorithm}{30}{section.5.2}
                                                   % [1
 
-])
+] [2])
 \tf@toc=\write4
 \openout4 = `principal.toc'.
 
 
-(./chapters/01_introduction.tex [2]
+(./chapters/01_introduction.tex [3]
 Chapter 1.
-[3
+[4
 
-]) (./chapters/02_Ecoli-genomics.tex [4]
+]) (./chapters/02_Ecoli-genomics.tex [5]
 Chapter 2.
-[5
+[6
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+qbk on input line 4
 1.
  (/usr/share/texmf-dist/tex/latex/tex-gyre/ts1qbk.fd
 File: ts1qbk.fd 2009/09/25 v1.2 font definition file for TS1/qbk
-) [6]
+) [7]
 
-LaTeX Warning: Reference `corepangenome' on page 7 undefined on input line 47.
+LaTeX Warning: Reference `corepangenome' on page 8 undefined on input line 47.
 
-<chapters/images/01//genesSharedDifferentGenomes.png, id=342, 490.83376pt x 364
+<chapters/images/01//genesSharedDifferentGenomes.png, id=575, 490.83376pt x 364
 .36125pt>
 File: chapters/images/01//genesSharedDifferentGenomes.png Graphic file (type pn
 g)
@@ -897,22 +897,22 @@ g)
 Package pdftex.def Info: chapters/images/01//genesSharedDifferentGenomes.png  u
 sed on input line 53.
 (pdftex.def)             Requested size: 260.17464pt x 193.13834pt.
-<chapters/images/01//corePanGenEcoli.png, id=345, 545.53813pt x 286.57062pt>
+<chapters/images/01//corePanGenEcoli.png, id=578, 545.53813pt x 286.57062pt>
 File: chapters/images/01//corePanGenEcoli.png Graphic file (type png)
 <use chapters/images/01//corePanGenEcoli.png>
 Package pdftex.def Info: chapters/images/01//corePanGenEcoli.png  used on input
  line 62.
 (pdftex.def)             Requested size: 227.62204pt x 119.56737pt.
-) (./chapters/03_NGS-principles.tex [7 <./chapters/images/01/genesSharedDiffere
-ntGenomes.PNG> <./chapters/images/01//corePanGenEcoli.png>] [8]
+) (./chapters/03_NGS-principles.tex [8 <./chapters/images/01/genesSharedDiffere
+ntGenomes.PNG> <./chapters/images/01//corePanGenEcoli.png>] [9]
 Chapter 3.
-<chapters/images/03//history-seq.png, id=358, 540.0175pt x 296.10625pt>
+<chapters/images/03//history-seq.png, id=591, 540.0175pt x 296.10625pt>
 File: chapters/images/03//history-seq.png Graphic file (type png)
 <use chapters/images/03//history-seq.png>
 Package pdftex.def Info: chapters/images/03//history-seq.png  used on input lin
 e 7.
 (pdftex.def)             Requested size: 260.17464pt x 142.66252pt.
-<chapters/images/03//sequencingCost.png, id=360, 629.85312pt x 339.76938pt>
+<chapters/images/03//sequencingCost.png, id=593, 629.85312pt x 339.76938pt>
 File: chapters/images/03//sequencingCost.png Graphic file (type png)
 <use chapters/images/03//sequencingCost.png>
 Package pdftex.def Info: chapters/images/03//sequencingCost.png  used on input 
@@ -921,22 +921,22 @@ line 20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9
+[10
 
  <./chapters/images/03/history-seq.PNG>]
-<chapters/images/03//DNA-molecule.png, id=367, 700.6175pt x 190.7125pt>
+<chapters/images/03//DNA-molecule.png, id=600, 700.6175pt x 190.7125pt>
 File: chapters/images/03//DNA-molecule.png Graphic file (type png)
 <use chapters/images/03//DNA-molecule.png>
 Package pdftex.def Info: chapters/images/03//DNA-molecule.png  used on input li
 ne 39.
 (pdftex.def)             Requested size: 212.47617pt x 57.83693pt.
-<chapters/images/03//chain-term.png, id=368, 480.79625pt x 185.19188pt>
+<chapters/images/03//chain-term.png, id=601, 480.79625pt x 185.19188pt>
 File: chapters/images/03//chain-term.png Graphic file (type png)
 <use chapters/images/03//chain-term.png>
 Package pdftex.def Info: chapters/images/03//chain-term.png  used on input line
  46.
 (pdftex.def)             Requested size: 212.47617pt x 81.84071pt.
-<chapters/images/03//Sanger.png, id=371, 659.46375pt x 405.01312pt>
+<chapters/images/03//Sanger.png, id=604, 659.46375pt x 405.01312pt>
 File: chapters/images/03//Sanger.png Graphic file (type png)
 <use chapters/images/03//Sanger.png>
 Package pdftex.def Info: chapters/images/03//Sanger.png  used on input line 61.
@@ -946,19 +946,19 @@ Package pdftex.def Info: chapters/images/03//Sanger.png  used on input line 61.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 <./chapters/images/03/sequencingCost.PNG> <./chapters/images/03/DNA-molecul
+[11 <./chapters/images/03/sequencingCost.PNG> <./chapters/images/03/DNA-molecul
 e.PNG> <./chapters/images/03/chain-term.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[11 <./chapters/images/03/Sanger.PNG>]
+[12 <./chapters/images/03/Sanger.PNG>]
 Overfull \hbox (1.73952pt too wide) in paragraph at lines 83--84
 []\T1/qbk/m/n/10 four aliquotes of the same primer were used marked with four d
 if-fer-ent flu-o-rochromes,
  []
 
-<chapters/images/03//automaticSang.png, id=392, 396.48125pt x 307.64937pt>
+<chapters/images/03//automaticSang.png, id=626, 396.48125pt x 307.64937pt>
 File: chapters/images/03//automaticSang.png Graphic file (type png)
 <use chapters/images/03//automaticSang.png>
 Package pdftex.def Info: chapters/images/03//automaticSang.png  used on input l
@@ -967,7 +967,7 @@ ine 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/03//elettroferogramma.png, id=393, 376.90813pt x 175.15437pt>
+<chapters/images/03//elettroferogramma.png, id=627, 376.90813pt x 175.15437pt>
 File: chapters/images/03//elettroferogramma.png Graphic file (type png)
 <use chapters/images/03//elettroferogramma.png>
 Package pdftex.def Info: chapters/images/03//elettroferogramma.png  used on inp
@@ -976,7 +976,7 @@ ut line 112.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/03//progressSangerMachines.png, id=394, 575.14874pt x 291.5893
+<chapters/images/03//progressSangerMachines.png, id=628, 575.14874pt x 291.5893
 7pt>
 File: chapters/images/03//progressSangerMachines.png Graphic file (type png)
 <use chapters/images/03//progressSangerMachines.png>
@@ -987,19 +987,19 @@ n input line 119.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `progressSangerMachines' on page 12 undefined on input
+LaTeX Warning: Reference `progressSangerMachines' on page 13 undefined on input
  line 123.
 
-[12]
-<chapters/images/03//sequencingMachines.png, id=409, 510.40688pt x 347.79938pt>
+[13]
+<chapters/images/03//sequencingMachines.png, id=643, 510.40688pt x 347.79938pt>
 
 File: chapters/images/03//sequencingMachines.png Graphic file (type png)
 <use chapters/images/03//sequencingMachines.png>
 Package pdftex.def Info: chapters/images/03//sequencingMachines.png  used on in
 put line 137.
 (pdftex.def)             Requested size: 433.62pt x 295.49287pt.
- [13 <./chapters/images/03/automaticSang.PNG>]
-<chapters/images/03//sequencingMachinesIllumina.png, id=416, 536.50438pt x 346.
+ [14 <./chapters/images/03/automaticSang.PNG>]
+<chapters/images/03//sequencingMachinesIllumina.png, id=650, 536.50438pt x 346.
 79562pt>
 File: chapters/images/03//sequencingMachinesIllumina.png Graphic file (type png
 )
@@ -1007,36 +1007,36 @@ File: chapters/images/03//sequencingMachinesIllumina.png Graphic file (type png
 Package pdftex.def Info: chapters/images/03//sequencingMachinesIllumina.png  us
 ed on input line 146.
 (pdftex.def)             Requested size: 346.89731pt x 224.23444pt.
- [14 <./chapters/images/03/elettroferogramma.PNG> <./chapters/images/03/sequenc
-ingMachines.PNG>] [15 <./chapters/images/03/progressSangerMachines.PNG> <./chap
+ [15 <./chapters/images/03/elettroferogramma.PNG> <./chapters/images/03/sequenc
+ingMachines.PNG>] [16 <./chapters/images/03/progressSangerMachines.PNG> <./chap
 ters/images/03/sequencingMachinesIllumina.PNG>]
-<chapters/images/03//tagmentedFragments.png, id=436, 555.07375pt x 142.03062pt>
+<chapters/images/03//tagmentedFragments.png, id=670, 555.07375pt x 142.03062pt>
 
 File: chapters/images/03//tagmentedFragments.png Graphic file (type png)
 <use chapters/images/03//tagmentedFragments.png>
 Package pdftex.def Info: chapters/images/03//tagmentedFragments.png  used on in
 put line 174.
 (pdftex.def)             Requested size: 346.89731pt x 88.76457pt.
-<chapters/images/03//clusterAmplification.png, id=437, 425.08812pt x 113.92563p
+<chapters/images/03//clusterAmplification.png, id=671, 425.08812pt x 113.92563p
 t>
 File: chapters/images/03//clusterAmplification.png Graphic file (type png)
 <use chapters/images/03//clusterAmplification.png>
 Package pdftex.def Info: chapters/images/03//clusterAmplification.png  used on 
 input line 185.
 (pdftex.def)             Requested size: 260.17464pt x 69.73094pt.
-<chapters/images/03//rigidGeneration.png, id=439, 530.98375pt x 244.915pt>
+<chapters/images/03//rigidGeneration.png, id=673, 530.98375pt x 244.915pt>
 File: chapters/images/03//rigidGeneration.png Graphic file (type png)
 <use chapters/images/03//rigidGeneration.png>
 Package pdftex.def Info: chapters/images/03//rigidGeneration.png  used on input
  line 196.
 (pdftex.def)             Requested size: 346.89731pt x 160.00754pt.
- [16 <./chapters/images/03/tagmentedFragments.PNG> <./chapters/images/03/cluste
+ [17 <./chapters/images/03/tagmentedFragments.PNG> <./chapters/images/03/cluste
 rAmplification.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-<chapters/images/03//randomPatternCells.png, id=450, 384.93813pt x 258.9675pt>
+<chapters/images/03//randomPatternCells.png, id=684, 384.93813pt x 258.9675pt>
 File: chapters/images/03//randomPatternCells.png Graphic file (type png)
 <use chapters/images/03//randomPatternCells.png>
 Package pdftex.def Info: chapters/images/03//randomPatternCells.png  used on in
@@ -1057,27 +1057,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--218
 
  []
 
-[17 <./chapters/images/03/rigidGeneration.PNG> <./chapters/images/03/randomPatt
+[18 <./chapters/images/03/rigidGeneration.PNG> <./chapters/images/03/randomPatt
 ernCells.PNG>]
-<chapters/images/03//singleIndex.png, id=460, 493.845pt x 294.60063pt>
+<chapters/images/03//singleIndex.png, id=695, 493.845pt x 294.60063pt>
 File: chapters/images/03//singleIndex.png Graphic file (type png)
 <use chapters/images/03//singleIndex.png>
 Package pdftex.def Info: chapters/images/03//singleIndex.png  used on input lin
 e 225.
 (pdftex.def)             Requested size: 169.11153pt x 100.88211pt.
-<chapters/images/03//doubleIndex.png, id=461, 524.45938pt x 258.9675pt>
+<chapters/images/03//doubleIndex.png, id=696, 524.45938pt x 258.9675pt>
 File: chapters/images/03//doubleIndex.png Graphic file (type png)
 <use chapters/images/03//doubleIndex.png>
 Package pdftex.def Info: chapters/images/03//doubleIndex.png  used on input lin
 e 231.
 (pdftex.def)             Requested size: 260.17464pt x 128.47182pt.
-<chapters/images/03//ILLUMINArev.png, id=463, 509.905pt x 252.44313pt>
+<chapters/images/03//ILLUMINArev.png, id=698, 509.905pt x 252.44313pt>
 File: chapters/images/03//ILLUMINArev.png Graphic file (type png)
 <use chapters/images/03//ILLUMINArev.png>
 Package pdftex.def Info: chapters/images/03//ILLUMINArev.png  used on input lin
 e 244.
 (pdftex.def)             Requested size: 303.53267pt x 150.28062pt.
-<chapters/images/03//ChannelILLUMINA.png, id=465, 749.80125pt x 262.48062pt>
+<chapters/images/03//ChannelILLUMINA.png, id=700, 749.80125pt x 262.48062pt>
 File: chapters/images/03//ChannelILLUMINA.png Graphic file (type png)
 <use chapters/images/03//ChannelILLUMINA.png>
 Package pdftex.def Info: chapters/images/03//ChannelILLUMINA.png  used on input
@@ -1098,9 +1098,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[18 <./chapters/images/03/singleIndex.PNG> <./chapters/images/03/doubleIndex.PN
+[19 <./chapters/images/03/singleIndex.PNG> <./chapters/images/03/doubleIndex.PN
 G> <./chapters/images/03/ILLUMINArev.PNG>]
-<chapters/images/03//PacBIO.png, id=481, 589.70313pt x 363.3575pt>
+<chapters/images/03//PacBIO.png, id=714, 589.70313pt x 363.3575pt>
 File: chapters/images/03//PacBIO.png Graphic file (type png)
 <use chapters/images/03//PacBIO.png>
 Package pdftex.def Info: chapters/images/03//PacBIO.png  used on input line 274
@@ -1110,28 +1110,28 @@ Package pdftex.def Info: chapters/images/03//PacBIO.png  used on input line 274
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/04_sequencing-data.tex [19 <./chapters/images/03/ChannelILLUMINA.
-PNG>] [20 <./chapters/images/03/PacBIO.PNG>]
+) (./chapters/04_sequencing-data.tex [20 <./chapters/images/03/ChannelILLUMINA.
+PNG>] [21 <./chapters/images/03/PacBIO.PNG>]
 Chapter 4.
-[21
+[22
 
-] [22] [23]
+] [23] [24]
 Overfull \hbox (25.92967pt too wide) in paragraph at lines 65--66
 []\T1/qbk/m/n/10 GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
  []
 
-[24] [25] [26]) (./chapters/05_mapping.tex [27]
+[25] [26] [27]) (./chapters/05_mapping.tex [28]
 Chapter 5.
-[28
+[29
 
 ]
-<chapters/images/05//coverage.png, id=546, 398.99063pt x 296.60812pt>
+<chapters/images/05//coverage.png, id=780, 398.99063pt x 296.60812pt>
 File: chapters/images/05//coverage.png Graphic file (type png)
 <use chapters/images/05//coverage.png>
 Package pdftex.def Info: chapters/images/05//coverage.png  used on input line 4
 0.
 (pdftex.def)             Requested size: 260.17464pt x 193.42209pt.
-<chapters/images/05//SequenceComparison.png, id=547, 410.2828pt x 243.15843pt>
+<chapters/images/05//SequenceComparison.png, id=781, 410.2828pt x 243.15843pt>
 File: chapters/images/05//SequenceComparison.png Graphic file (type png)
 <use chapters/images/05//SequenceComparison.png>
 Package pdftex.def Info: chapters/images/05//SequenceComparison.png  used on in
@@ -1141,8 +1141,8 @@ put line 48.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <./chapters/images/05//coverage.png>]
-<chapters/images/05//EvolutionaryDistance.png, id=555, 405.515pt x 261.97874pt>
+[30 <./chapters/images/05//coverage.png>]
+<chapters/images/05//EvolutionaryDistance.png, id=790, 405.515pt x 261.97874pt>
 
 File: chapters/images/05//EvolutionaryDistance.png Graphic file (type png)
 <use chapters/images/05//EvolutionaryDistance.png>
@@ -1153,7 +1153,7 @@ input line 70.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/images/05//Waterman.png, id=556, 483.30562pt x 104.64093pt>
+<chapters/images/05//Waterman.png, id=791, 483.30562pt x 104.64093pt>
 File: chapters/images/05//Waterman.png Graphic file (type png)
 <use chapters/images/05//Waterman.png>
 Package pdftex.def Info: chapters/images/05//Waterman.png  used on input line 8
@@ -1162,28 +1162,28 @@ Package pdftex.def Info: chapters/images/05//Waterman.png  used on input line 8
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./chapters/images/05//SequenceComparison.png>] [31 <./chapters/images/05//
+[31 <./chapters/images/05//SequenceComparison.png>] [32 <./chapters/images/05//
 EvolutionaryDistance.png> <./chapters/images/05//Waterman.png>]
-<chapters/images/05//Aligning.png, id=574, 483.8075pt x 197.73875pt>
+<chapters/images/05//Aligning.png, id=808, 483.8075pt x 197.73875pt>
 File: chapters/images/05//Aligning.png Graphic file (type png)
 <use chapters/images/05//Aligning.png>
 Package pdftex.def Info: chapters/images/05//Aligning.png  used on input line 1
 26.
 (pdftex.def)             Requested size: 260.17464pt x 106.33983pt.
- [32 <./chapters/images/05//Aligning.png>]
-<chapters/images/05//Needleman.png, id=581, 310.66063pt x 233.87375pt>
+ [33 <./chapters/images/05//Aligning.png>]
+<chapters/images/05//Needleman.png, id=815, 310.66063pt x 233.87375pt>
 File: chapters/images/05//Needleman.png Graphic file (type png)
 <use chapters/images/05//Needleman.png>
 Package pdftex.def Info: chapters/images/05//Needleman.png  used on input line 
 147.
 (pdftex.def)             Requested size: 260.17464pt x 195.86732pt.
-<chapters/images/05//Needleman2.png, id=582, 464.4853pt x 168.63pt>
+<chapters/images/05//Needleman2.png, id=816, 464.4853pt x 168.63pt>
 File: chapters/images/05//Needleman2.png Graphic file (type png)
 <use chapters/images/05//Needleman2.png>
 Package pdftex.def Info: chapters/images/05//Needleman2.png  used on input line
  160.
 (pdftex.def)             Requested size: 260.17464pt x 94.45787pt.
-<chapters/images/05//LocalAlignment.png, id=583, 345.54094pt x 228.855pt>
+<chapters/images/05//LocalAlignment.png, id=817, 345.54094pt x 228.855pt>
 File: chapters/images/05//LocalAlignment.png Graphic file (type png)
 <use chapters/images/05//LocalAlignment.png>
 Package pdftex.def Info: chapters/images/05//LocalAlignment.png  used on input 
@@ -1193,15 +1193,15 @@ line 169.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <./chapters/images/05//Needleman.png> <./chapters/images/05//Needleman2.png
->] [34 <./chapters/images/05//LocalAlignment.png>]
-<chapters/images/05//Blast.png, id=602, 377.91188pt x 281.55188pt>
+[34 <./chapters/images/05//Needleman.png> <./chapters/images/05//Needleman2.png
+>] [35 <./chapters/images/05//LocalAlignment.png>]
+<chapters/images/05//Blast.png, id=835, 377.91188pt x 281.55188pt>
 File: chapters/images/05//Blast.png Graphic file (type png)
 <use chapters/images/05//Blast.png>
 Package pdftex.def Info: chapters/images/05//Blast.png  used on input line 194.
 
 (pdftex.def)             Requested size: 260.17464pt x 193.83708pt.
-<chapters/images/05//Evalue.png, id=603, 484.05844pt x 117.43875pt>
+<chapters/images/05//Evalue.png, id=836, 484.05844pt x 117.43875pt>
 File: chapters/images/05//Evalue.png Graphic file (type png)
 <use chapters/images/05//Evalue.png>
 Package pdftex.def Info: chapters/images/05//Evalue.png  used on input line 216
@@ -1211,41 +1211,113 @@ Package pdftex.def Info: chapters/images/05//Evalue.png  used on input line 216
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35 <./chapters/images/05//Blast.png>] [36 <./chapters/images/05//Evalue.png>]
-<chapters/images/05//1LF.png, id=618, 369.63094pt x 153.57375pt>
+[36 <./chapters/images/05//Blast.png>] [37 <./chapters/images/05//Evalue.png>]
+<chapters/images/05//1LF.png, id=851, 369.63094pt x 153.57375pt>
 File: chapters/images/05//1LF.png Graphic file (type png)
 <use chapters/images/05//1LF.png>
 Package pdftex.def Info: chapters/images/05//1LF.png  used on input line 270.
 (pdftex.def)             Requested size: 260.17464pt x 108.09843pt.
-<chapters/images/05//2LF.png, id=619, 483.30562pt x 110.66344pt>
+<chapters/images/05//2LF.png, id=852, 483.30562pt x 110.66344pt>
 File: chapters/images/05//2LF.png Graphic file (type png)
 <use chapters/images/05//2LF.png>
 Package pdftex.def Info: chapters/images/05//2LF.png  used on input line 276.
 (pdftex.def)             Requested size: 260.17464pt x 59.57498pt.
 
-[37 <./chapters/images/05//1LF.png> <./chapters/images/05//2LF.png>]
-<chapters/images/05//3LF.png, id=628, 451.6875pt x 200.24812pt>
+[38 <./chapters/images/05//1LF.png> <./chapters/images/05//2LF.png>]
+<chapters/images/05//3LF.png, id=861, 451.6875pt x 200.24812pt>
 File: chapters/images/05//3LF.png Graphic file (type png)
 <use chapters/images/05//3LF.png>
 Package pdftex.def Info: chapters/images/05//3LF.png  used on input line 296.
 (pdftex.def)             Requested size: 260.17464pt x 115.34955pt.
- [38 <./chapters/images/05//3LF.png>]
-<chapters/images/05//Choices.png, id=635, 327.47343pt x 260.47313pt>
+ [39 <./chapters/images/05//3LF.png>]
+<chapters/images/05//Choices.png, id=868, 327.47343pt x 260.47313pt>
 File: chapters/images/05//Choices.png Graphic file (type png)
 <use chapters/images/05//Choices.png>
 Package pdftex.def Info: chapters/images/05//Choices.png  used on input line 32
 2.
 (pdftex.def)             Requested size: 260.17464pt x 206.94398pt.
-) (./chapters/06_assembly.tex [39 <./chapters/images/05//Choices.png>]
+) (./chapters/06_assembly.tex [40 <./chapters/images/05//Choices.png>]
 Chapter 6.
-) (./chapters/07_16s-sequencing.tex [40
+<chapters/images/06//Assembly.png, id=875, 374.90062pt x 283.0575pt>
+File: chapters/images/06//Assembly.png Graphic file (type png)
+<use chapters/images/06//Assembly.png>
+Package pdftex.def Info: chapters/images/06//Assembly.png  used on input line 2
+1.
+(pdftex.def)             Requested size: 260.17464pt x 196.4458pt.
 
-]
-Chapter 7.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [41
 
+] [42 <./chapters/images/06//Assembly.png>]
+<chapters/images/06//Feasibility.png, id=893, 401.24907pt x 155.07938pt>
+File: chapters/images/06//Feasibility.png Graphic file (type png)
+<use chapters/images/06//Feasibility.png>
+Package pdftex.def Info: chapters/images/06//Feasibility.png  used on input lin
+e 70.
+(pdftex.def)             Requested size: 260.17464pt x 100.56139pt.
+ [43 <./chapters/images/06//Feasibility.png>]
+<chapters/images/06//Repeats.png, id=900, 356.83313pt x 265.74281pt>
+File: chapters/images/06//Repeats.png Graphic file (type png)
+<use chapters/images/06//Repeats.png>
+Package pdftex.def Info: chapters/images/06//Repeats.png  used on input line 98
+.
+(pdftex.def)             Requested size: 260.17464pt x 193.76761pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44]
+File: chapters/images/06//Repeats.png Graphic file (type png)
+<use chapters/images/06//Repeats.png>
+Package pdftex.def Info: chapters/images/06//Repeats.png  used on input line 11
+9.
+(pdftex.def)             Requested size: 260.17464pt x 193.76761pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <./chapters/images/06//Repeats.png>]
+<chapters/images/06//DBG.png, id=914, 319.1925pt x 118.19156pt>
+File: chapters/images/06//DBG.png Graphic file (type png)
+<use chapters/images/06//DBG.png>
+Package pdftex.def Info: chapters/images/06//DBG.png  used on input line 157.
+(pdftex.def)             Requested size: 260.17464pt x 96.33879pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/images/06//DBGAssembly.png, id=915, 395.97937pt x 277.78781pt>
+File: chapters/images/06//DBGAssembly.png Graphic file (type png)
+<use chapters/images/06//DBGAssembly.png>
+Package pdftex.def Info: chapters/images/06//DBGAssembly.png  used on input lin
+e 167.
+(pdftex.def)             Requested size: 260.17464pt x 182.51819pt.
+[46] [47 <./chapters/images/06//DBG.png> <./chapters/images/06//DBGAssembly.png
+>]
+<chapters/images/06//Scaffolding.png, id=929, 365.86688pt x 274.77657pt>
+File: chapters/images/06//Scaffolding.png Graphic file (type png)
+<use chapters/images/06//Scaffolding.png>
+Package pdftex.def Info: chapters/images/06//Scaffolding.png  used on input lin
+e 187.
+(pdftex.def)             Requested size: 260.17464pt x 195.40717pt.
+<chapters/images/06//Evalueate.png, id=930, 240.9pt x 118.94438pt>
+File: chapters/images/06//Evalueate.png Graphic file (type png)
+<use chapters/images/06//Evalueate.png>
+Package pdftex.def Info: chapters/images/06//Evalueate.png  used on input line 
+207.
+(pdftex.def)             Requested size: 260.17464pt x 128.47252pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./chapters/07_16s-sequencing.tex [48 <./chapters/images/06//Scaffolding.png>
+] [49 <./chapters/images/06//Evalueate.png>]
+Chapter 7.
+[50
+
 ]
-<chapters/images/07//general_workflow.png, id=650, 529.98pt x 359.09157pt>
+<chapters/images/07//general_workflow.png, id=948, 529.98pt x 359.09157pt>
 File: chapters/images/07//general_workflow.png Graphic file (type png)
 <use chapters/images/07//general_workflow.png>
 Package pdftex.def Info: chapters/images/07//general_workflow.png  used on inpu
@@ -1255,8 +1327,8 @@ t line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42]
-<chapters/images/07//16S_rRNA.png, id=656, 573.64313pt x 362.10281pt>
+[51]
+<chapters/images/07//16S_rRNA.png, id=953, 573.64313pt x 362.10281pt>
 File: chapters/images/07//16S_rRNA.png Graphic file (type png)
 <use chapters/images/07//16S_rRNA.png>
 Package pdftex.def Info: chapters/images/07//16S_rRNA.png  used on input line 4
@@ -1266,7 +1338,7 @@ Package pdftex.def Info: chapters/images/07//16S_rRNA.png  used on input line 4
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chapters/images/07//silva_analysis.png, id=657, 677.53125pt x 418.56375pt>
+<chapters/images/07//silva_analysis.png, id=954, 677.53125pt x 418.56375pt>
 File: chapters/images/07//silva_analysis.png Graphic file (type png)
 <use chapters/images/07//silva_analysis.png>
 Package pdftex.def Info: chapters/images/07//silva_analysis.png  used on input 
@@ -1275,31 +1347,31 @@ line 54.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43 <./chapters/images/07//general_workflow.png>]
+[52 <./chapters/images/07//general_workflow.png>]
 
-LaTeX Warning: Text page 44 contains only floats.
+LaTeX Warning: Text page 53 contains only floats.
 
-[44 <./chapters/images/07//16S_rRNA.png> <./chapters/images/07//silva_analysis.
+[53 <./chapters/images/07//16S_rRNA.png> <./chapters/images/07//silva_analysis.
 png>]
-<chapters/images/07//primer_placement.png, id=671, 575.90157pt x 119.69719pt>
+<chapters/images/07//primer_placement.png, id=968, 575.90157pt x 119.69719pt>
 File: chapters/images/07//primer_placement.png Graphic file (type png)
 <use chapters/images/07//primer_placement.png>
 Package pdftex.def Info: chapters/images/07//primer_placement.png  used on inpu
 t line 63.
 (pdftex.def)             Requested size: 390.25534pt x 81.11539pt.
- [45 <./chapters/images/07//primer_placement.png>]
+ [54 <./chapters/images/07//primer_placement.png>]
 Overfull \hbox (2.68349pt too wide) in paragraph at lines 87--88
 []\T1/qbk/b/n/10 Downstream anal-y-sis \T1/qbk/m/n/10 is per-formed, such as cl
 us-ter-ing to vi-su-al-ize sim-i-lar-i-ties among
  []
 
-<chapters/images/07//expanded_workflow.png, id=678, 648.17157pt x 392.21532pt>
+<chapters/images/07//expanded_workflow.png, id=976, 648.17157pt x 392.21532pt>
 File: chapters/images/07//expanded_workflow.png Graphic file (type png)
 <use chapters/images/07//expanded_workflow.png>
 Package pdftex.def Info: chapters/images/07//expanded_workflow.png  used on inp
 ut line 92.
 (pdftex.def)             Requested size: 390.25534pt x 236.15091pt.
-<chapters/images/07//zoom_in_16S.png, id=679, 576.65437pt x 360.59718pt>
+<chapters/images/07//zoom_in_16S.png, id=977, 576.65437pt x 360.59718pt>
 File: chapters/images/07//zoom_in_16S.png Graphic file (type png)
 <use chapters/images/07//zoom_in_16S.png>
 Package pdftex.def Info: chapters/images/07//zoom_in_16S.png  used on input lin
@@ -1308,17 +1380,17 @@ e 98.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chapters/images/07//OTU_general.png, id=680, 531.48563pt x 284.56313pt>
+<chapters/images/07//OTU_general.png, id=978, 531.48563pt x 284.56313pt>
 File: chapters/images/07//OTU_general.png Graphic file (type png)
 <use chapters/images/07//OTU_general.png>
 Package pdftex.def Info: chapters/images/07//OTU_general.png  used on input lin
 e 106.
 (pdftex.def)             Requested size: 390.25534pt x 208.94946pt.
-[46 <./chapters/images/07//expanded_workflow.png>]
+[55 <./chapters/images/07//expanded_workflow.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chapters/images/07//clustering_methods.png, id=687, 566.115pt x 234.1247pt>
+<chapters/images/07//clustering_methods.png, id=985, 566.115pt x 234.1247pt>
 File: chapters/images/07//clustering_methods.png Graphic file (type png)
 <use chapters/images/07//clustering_methods.png>
 Package pdftex.def Info: chapters/images/07//clustering_methods.png  used on in
@@ -1327,7 +1399,7 @@ put line 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chapters/images/07//overclustering.png, id=688, 541.27219pt x 216.81pt>
+<chapters/images/07//overclustering.png, id=986, 541.27219pt x 216.81pt>
 File: chapters/images/07//overclustering.png Graphic file (type png)
 <use chapters/images/07//overclustering.png>
 Package pdftex.def Info: chapters/images/07//overclustering.png  used on input 
@@ -1336,17 +1408,491 @@ line 125.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/08_shotgun-metagenomics.tex [47 <./chapters/images/07//zoom_in_16
-S.png>] [48 <./chapters/images/07//OTU_general.png> <./chapters/images/07//clus
-tering_methods.png>] [49 <./chapters/images/07//overclustering.png>]
+) (./chapters/08_shotgun-metagenomics.tex [56 <./chapters/images/07//zoom_in_16
+S.png>] [57 <./chapters/images/07//OTU_general.png> <./chapters/images/07//clus
+tering_methods.png>] [58 <./chapters/images/07//overclustering.png>]
 Chapter 8.
-) (./chapters/09_staphylococcus-aureus.tex [50
+<chapters/images/08//Shotgun_workflow.png, id=1007, 969.6225pt x 727.71875pt>
+File: chapters/images/08//Shotgun_workflow.png Graphic file (type png)
+<use chapters/images/08//Shotgun_workflow.png>
+Package pdftex.def Info: chapters/images/08//Shotgun_workflow.png  used on inpu
+t line 9.
+(pdftex.def)             Requested size: 390.25534pt x 292.8923pt.
+[59
 
+ <./chapters/images/08//Shotgun_workflow.png>]
+Underfull \hbox (badness 3977) in paragraph at lines 41--42
+[]|\T1/qbk/m/n/10 Expensive (but costs are de-creas-ing:
+ []
+
+
+Overfull \hbox (11.2676pt too wide) in paragraph at lines 54--54
+[]\T1/qbk/b/n/14.4 Identification of mi-crobes from Shot-gun Metage-nomics
+ []
+
+<chapters/images/08//Loman.png, id=1014, 611.28375pt x 639.38875pt>
+File: chapters/images/08//Loman.png Graphic file (type png)
+<use chapters/images/08//Loman.png>
+Package pdftex.def Info: chapters/images/08//Loman.png  used on input line 58.
+(pdftex.def)             Requested size: 173.44534pt x 181.41791pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+<chapters/images/08//markerGene.png, id=1022, 697.60625pt x 310.15875pt>
+File: chapters/images/08//markerGene.png Graphic file (type png)
+<use chapters/images/08//markerGene.png>
+Package pdftex.def Info: chapters/images/08//markerGene.png  used on input line
+ 83.
+(pdftex.def)             Requested size: 303.53267pt x 134.9511pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[61 <./chapters/images/08//Loman.png>]
+<chapters/images/08//MetaPhlAn.png, id=1030, 961.5925pt x 619.31375pt>
+File: chapters/images/08//MetaPhlAn.png Graphic file (type png)
+<use chapters/images/08//MetaPhlAn.png>
+Package pdftex.def Info: chapters/images/08//MetaPhlAn.png  used on input line 
+93.
+(pdftex.def)             Requested size: 411.93767pt x 265.30748pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[62 <./chapters/images/08//markerGene.png>]
+<chapters/images/08//taxApproaches.png, id=1038, 994.71625pt x 608.2725pt>
+File: chapters/images/08//taxApproaches.png Graphic file (type png)
+<use chapters/images/08//taxApproaches.png>
+Package pdftex.def Info: chapters/images/08//taxApproaches.png  used on input l
+ine 123.
+(pdftex.def)             Requested size: 411.93767pt x 251.89934pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[63 <./chapters/images/08//MetaPhlAn.png>]
+<chapters/images/08//curatedMetagenomicData.png, id=1047, 527.9725pt x 667.4937
+4pt>
+File: chapters/images/08//curatedMetagenomicData.png Graphic file (type png)
+<use chapters/images/08//curatedMetagenomicData.png>
+Package pdftex.def Info: chapters/images/08//curatedMetagenomicData.png  used o
+n input line 135.
+(pdftex.def)             Requested size: 173.44534pt x 219.27547pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+<chapters/images/08//MilanCRC.png, id=1050, 1065.9825pt x 583.17876pt>
+File: chapters/images/08//MilanCRC.png Graphic file (type png)
+<use chapters/images/08//MilanCRC.png>
+Package pdftex.def Info: chapters/images/08//MilanCRC.png  used on input line 1
+49.
+(pdftex.def)             Requested size: 195.12767pt x 106.74736pt.
+<chapters/images/08//TurinCRC.png, id=1051, 1053.9375pt x 608.2725pt>
+File: chapters/images/08//TurinCRC.png Graphic file (type png)
+<use chapters/images/08//TurinCRC.png>
+Package pdftex.def Info: chapters/images/08//TurinCRC.png  used on input line 1
+55.
+(pdftex.def)             Requested size: 195.12767pt x 112.61218pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/images/08//CRCbiomarkers.png, id=1054, 1069.9975pt x 681.54625pt>
+File: chapters/images/08//CRCbiomarkers.png Graphic file (type png)
+<use chapters/images/08//CRCbiomarkers.png>
+Package pdftex.def Info: chapters/images/08//CRCbiomarkers.png  used on input l
+ine 167.
+(pdftex.def)             Requested size: 195.12767pt x 124.28496pt.
+<chapters/images/08//CRC_ML.png, id=1055, 974.64125pt x 709.65125pt>
+File: chapters/images/08//CRC_ML.png Graphic file (type png)
+<use chapters/images/08//CRC_ML.png>
+Package pdftex.def Info: chapters/images/08//CRC_ML.png  used on input line 173
+.
+(pdftex.def)             Requested size: 195.12767pt x 142.0685pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[64 <./chapters/images/08//taxApproaches.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/images/08//cutC.png, id=1065, 1083.04625pt x 712.6625pt>
+File: chapters/images/08//cutC.png Graphic file (type png)
+<use chapters/images/08//cutC.png>
+Package pdftex.def Info: chapters/images/08//cutC.png  used on input line 186.
+(pdftex.def)             Requested size: 216.81pt x 142.66046pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+[65 <./chapters/images/08//curatedMetagenomicData.png> <./chapters/images/08//M
+ilanCRC.png> <./chapters/images/08//TurinCRC.png>] [66 <./chapters/images/08//C
+RCbiomarkers.png> <./chapters/images/08//CRC_ML.png> <./chapters/images/08//cut
+C.png>]
+<chapters/images/08//panphlan1.png, id=1087, 1024.82875pt x 342.27875pt>
+File: chapters/images/08//panphlan1.png Graphic file (type png)
+<use chapters/images/08//panphlan1.png>
+Package pdftex.def Info: chapters/images/08//panphlan1.png  used on input line 
+210.
+(pdftex.def)             Requested size: 390.25534pt x 130.33885pt.
+<chapters/images/08//panphlan2.png, id=1088, 1073.00874pt x 416.55624pt>
+File: chapters/images/08//panphlan2.png Graphic file (type png)
+<use chapters/images/08//panphlan2.png>
+Package pdftex.def Info: chapters/images/08//panphlan2.png  used on input line 
+216.
+(pdftex.def)             Requested size: 390.25534pt x 151.4983pt.
+<chapters/images/08//Coverage.png, id=1089, 931.48pt x 673.51625pt>
+File: chapters/images/08//Coverage.png Graphic file (type png)
+<use chapters/images/08//Coverage.png>
+Package pdftex.def Info: chapters/images/08//Coverage.png  used on input line 2
+22.
+(pdftex.def)             Requested size: 260.17464pt x 188.12079pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+[67 <./chapters/images/08//panphlan1.png> <./chapters/images/08//panphlan2.png>
 ]
-Chapter 9.
-) [51
+<chapters/images/08//Ecoli1.png, id=1104, 882.29625pt x 634.37pt>
+File: chapters/images/08//Ecoli1.png Graphic file (type png)
+<use chapters/images/08//Ecoli1.png>
+Package pdftex.def Info: chapters/images/08//Ecoli1.png  used on input line 238
+.
+(pdftex.def)             Requested size: 212.47617pt x 152.76492pt.
+<chapters/images/08//Ecoli2.png, id=1105, 1073.00874pt x 659.46375pt>
+File: chapters/images/08//Ecoli2.png Graphic file (type png)
+<use chapters/images/08//Ecoli2.png>
+Package pdftex.def Info: chapters/images/08//Ecoli2.png  used on input line 244
+.
+(pdftex.def)             Requested size: 212.47617pt x 130.58228pt.
+<chapters/images/08//Erectale.png, id=1107, 1079.03125pt x 652.4375pt>
+File: chapters/images/08//Erectale.png Graphic file (type png)
+<use chapters/images/08//Erectale.png>
+Package pdftex.def Info: chapters/images/08//Erectale.png  used on input line 2
+58.
+(pdftex.def)             Requested size: 260.17464pt x 157.31494pt.
+ [68 <./chapters/images/08//Coverage.png> <./chapters/images/08//Ecoli1.png> <.
+/chapters/images/08//Ecoli2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
-] (./build/principal.aux)
+ []
+
+<chapters/images/08//nec1.png, id=1119, 1055.945pt x 435.6275pt>
+File: chapters/images/08//nec1.png Graphic file (type png)
+<use chapters/images/08//nec1.png>
+Package pdftex.def Info: chapters/images/08//nec1.png  used on input line 272.
+(pdftex.def)             Requested size: 195.12767pt x 80.49677pt.
+<chapters/images/08//nec2.png, id=1120, 990.70125pt x 627.34375pt>
+File: chapters/images/08//nec2.png Graphic file (type png)
+<use chapters/images/08//nec2.png>
+Package pdftex.def Info: chapters/images/08//nec2.png  used on input line 278.
+(pdftex.def)             Requested size: 195.12767pt x 123.5616pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Overfull \hbox (1.74937pt too wide) in paragraph at lines 290--291
+[]\T1/qbk/b/n/10 StrainPhlAn \T1/qbk/m/n/10 ex-ploits Meta-PlAn to com-pute spe
+cies-level abun-dances thanks to species-
+ []
+
+<chapters/images/08//StrainPhlAn.png, id=1122, 1018.80624pt x 713.66624pt>
+File: chapters/images/08//StrainPhlAn.png Graphic file (type png)
+<use chapters/images/08//StrainPhlAn.png>
+Package pdftex.def Info: chapters/images/08//StrainPhlAn.png  used on input lin
+e 296.
+(pdftex.def)             Requested size: 390.25534pt x 273.37392pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/images/08//strainGut.png, id=1123, 1037.8775pt x 646.415pt>
+File: chapters/images/08//strainGut.png Graphic file (type png)
+<use chapters/images/08//strainGut.png>
+Package pdftex.def Info: chapters/images/08//strainGut.png  used on input line 
+306.
+(pdftex.def)             Requested size: 346.89731pt x 216.05966pt.
+[69 <./chapters/images/08//Erectale.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[70 <./chapters/images/08//nec1.png> <./chapters/images/08//nec2.png> <./chapte
+rs/images/08//StrainPhlAn.png>]
+<chapters/images/08//strainGeo.png, id=1145, 579.16376pt x 501.875pt>
+File: chapters/images/08//strainGeo.png Graphic file (type png)
+<use chapters/images/08//strainGeo.png>
+Package pdftex.def Info: chapters/images/08//strainGeo.png  used on input line 
+317.
+(pdftex.def)             Requested size: 216.81pt x 187.87337pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+[71 <./chapters/images/08//strainGut.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
+
+ []
+
+
+Overfull \hbox (12.42937pt too wide) in paragraph at lines 347--348
+\T1/qbk/b/n/10 Genome Bins \T1/qbk/m/n/10 (SGBs) by mea-sur-ing the dis-tance s
+cores be-tween cou-ples of pu-ta-tive genomes.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+<chapters/images/08//workflow2.jpg, id=1156, 558.085pt x 368.37625pt>
+File: chapters/images/08//workflow2.jpg Graphic file (type jpg)
+<use chapters/images/08//workflow2.jpg>
+Package pdftex.def Info: chapters/images/08//workflow2.jpg  used on input line 
+351.
+(pdftex.def)             Requested size: 390.25534pt x 257.60304pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+[72 <./chapters/images/08//strainGeo.png>]
+<chapters/images/08//Erec2.png, id=1170, 1033.8625pt x 709.65125pt>
+File: chapters/images/08//Erec2.png Graphic file (type png)
+<use chapters/images/08//Erec2.png>
+Package pdftex.def Info: chapters/images/08//Erec2.png  used on input line 365.
+
+(pdftex.def)             Requested size: 346.89731pt x 238.11633pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+<chapters/images/08//Prevotella.png, id=1172, 1051.93pt x 452.69125pt>
+File: chapters/images/08//Prevotella.png Graphic file (type png)
+<use chapters/images/08//Prevotella.png>
+Package pdftex.def Info: chapters/images/08//Prevotella.png  used on input line
+ 377.
+(pdftex.def)             Requested size: 346.89731pt x 149.28496pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[73 <./chapters/images/08//workflow2.jpg>]
+Overfull \hbox (4.44606pt too wide) in paragraph at lines 388--389
+[]\T1/qbk/m/it/10 Karcher, N., Ni-gro, E., Pun£ochá°, M. et al. Ge-nomic di-ver
+-sity and ecol-ogy of human-associated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+[74 <./chapters/images/08//Erec2.png> <./chapters/images/08//Prevotella.png>]
+<chapters/images/08//akkermansia.png, id=1198, 944.52875pt x 430.60875pt>
+File: chapters/images/08//akkermansia.png Graphic file (type png)
+<use chapters/images/08//akkermansia.png>
+Package pdftex.def Info: chapters/images/08//akkermansia.png  used on input lin
+e 395.
+(pdftex.def)             Requested size: 346.89731pt x 158.15317pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+<chapters/images/08//phages.png, id=1200, 1031.855pt x 645.41125pt>
+File: chapters/images/08//phages.png Graphic file (type png)
+<use chapters/images/08//phages.png>
+Package pdftex.def Info: chapters/images/08//phages.png  used on input line 419
+.
+(pdftex.def)             Requested size: 346.89731pt x 216.97488pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[75 <./chapters/images/08//akkermansia.png>]
+<chapters/images/08//human2.png, id=1212, 1045.9075pt x 653.44125pt>
+File: chapters/images/08//human2.png Graphic file (type png)
+<use chapters/images/08//human2.png>
+Package pdftex.def Info: chapters/images/08//human2.png  used on input line 432
+.
+(pdftex.def)             Requested size: 346.89731pt x 216.73305pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./chapters/09_staphylococcus-aureus.tex [76 <./chapters/images/08//phages.pn
+g>] [77 <./chapters/images/08//human2.png>]
+Chapter 9.
+[78
+
+] [79]
+<chapters/images/09//Workflow.png, id=1239, 614.89725pt x 244.5135pt>
+File: chapters/images/09//Workflow.png Graphic file (type png)
+<use chapters/images/09//Workflow.png>
+Package pdftex.def Info: chapters/images/09//Workflow.png  used on input line 6
+9.
+(pdftex.def)             Requested size: 433.62pt x 172.43427pt.
+ [80]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[81 <./chapters/images/09//Workflow.png>]
+<chapters/images/09//SCCmec.png, id=1251, 415.5525pt x 77.088pt>
+File: chapters/images/09//SCCmec.png Graphic file (type png)
+<use chapters/images/09//SCCmec.png>
+Package pdftex.def Info: chapters/images/09//SCCmec.png  used on input line 135
+.
+(pdftex.def)             Requested size: 260.17464pt x 48.26573pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[82]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[83 <./chapters/images/09//SCCmec.png>]
+<chapters/images/09//Highlights.png, id=1277, 370.38374pt x 194.52675pt>
+File: chapters/images/09//Highlights.png Graphic file (type png)
+<use chapters/images/09//Highlights.png>
+Package pdftex.def Info: chapters/images/09//Highlights.png  used on input line
+ 185.
+(pdftex.def)             Requested size: 260.17464pt x 136.64566pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[84 <./chapters/images/09//Highlights.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[85]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 254.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 254.
+
+
+Overfull \hbox (6.48923pt too wide) in paragraph at lines 256--257
+\T1/qbk/m/n/10 They in-ves-ti-gated the hy-poth-e-sis that some of the preva-le
+nt STs could be hospital-associated
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[86])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46501pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46501pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.46501pt}.
+
+[87] (./build/principal.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1354,32 +1900,33 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: A9B3EDDA6351CC7C2F024CD3EC4246AD;11515.
+(rerunfilecheck)             Checksum: 3D78DBA09929D162AC7B3664A71FF646;22485.
  ) 
 Here is how much of TeX's memory you used:
- 23245 strings out of 478276
- 432106 string characters out of 5853013
- 738379 words of memory out of 5000000
- 40900 multiletter control sequences out of 15000+600000
- 544745 words of font info for 85 fonts, out of 8000000 for 9000
+ 23809 strings out of 478276
+ 445586 string characters out of 5853013
+ 746340 words of memory out of 5000000
+ 41250 multiletter control sequences out of 15000+600000
+ 551127 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,82p,1307b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf-d
 ist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
-ist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/tex-gyre/qbkbi.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qbkr.
-pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb>
-Output written on ./build/principal.pdf (52 pages, 6996376 bytes).
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1
+/public/tex-gyre/qbkb.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qb
+kbi.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/share
+/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb>
+Output written on ./build/principal.pdf (88 pages, 14043715 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 648 compressed objects within 7 object streams
- 188 named destinations out of 1000 (max. 500000)
- 693 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1459 PDF objects out of 1728 (max. 8388607)
+ 1165 compressed objects within 12 object streams
+ 360 named destinations out of 1000 (max. 500000)
+ 1243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
