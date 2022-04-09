@@ -186,135 +186,131 @@ They use sequencing by synthesis and they amplify the signal through the use of 
 \label{}
 \end{figure}
 
-\section{Next Generation Sequencing NGS}
+\section{Next Generation Sequencing}
+The NGS protocol requires $3$ steps:
 
-The NGS protocol requires $3$ steps, that are:
+\begin{multicols}{2}
+    \begin{enumerate}
+          \item Sample preparation: series of fragments added.
+          \item Clonal amplification: needed to replicate fragments attached to the solid surfaces, since machines are not sensible to single molecules.
+          \item Sequencing: ILLUMINA sequencing is one of the techniques used to obtain sequence data nowadays.
+    \end{enumerate}
+\end{multicols}
 
-\begin{enumerate}
-	\item \textbf{Sample preparation}: series of fragments added
-	\item \textbf{Clonal amplification}: which is is needed to replicate fragments attached to the solid surfaces, since machines are not sensible to single molecules
-	\item \textbf{Sequencing}: ILLUMINA sequencing is one of the techniques used to obtain sequence data nowadays
-\end{enumerate}
+$3^{rd}$ generation allow to read a molecule without replicating it.
 
-Tools pertaining to the $3^{rd}$ generation are those that permit to read a molecule without replicating it.
+    \subsection{ILLUMINA sequencing}
 
-\subsection{Fragments/Library preparation}
-Most of the sequences sequenced are fragmented in short read sequences, since most of the machines today used aren't able to sequence reads longer than some hundreds of nucleotides.
+        \subsubsection{Fragments and Library preparation}
+        During fragmentation the DNA or RNA polymers that need to be sequenced are fragmented in short read sequences.
+        This is because the machines are able to sequence only read with a length of a few hundred nucleotides.
+        These fragments need to be tagmented: in this process one or two indexes, or barcodes are added to the fragment so that it has two sequencing primer binding sites and regions complementary to the oligonucleotides in the chamber.
+        Indexes allow to distinguish between sample and, in the case of pair end sequencing, allow to distinguish between the forward and reverse read.
 
-% Fragmantation is so required to generate shorter filaments from the sequences. In the case of mRNA (cDNA libraries) the fragmentation process is not needed, as the lengths are already short enough.
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.8\textwidth]{tagmentedFragments}
+            \caption{Figure representing the a good prepeared fragment, it has two indexes, two sequencing primer binding sites and regions complementary to the oligonucleotides present in the chamber}
+            \label{}
+        \end{figure}
 
-The fragments obtained have to be prepeared for the sequencing process, through a process called \textbf{tagmentation}. The obtained fragments are shown in the figure. Those fragments are provided with one or two indexes, called also barcodes, two sequencing primer binding sites and regions complementary to the oligonucleotides present in the chamber (see in Clonal amplification chapter). The fragments' length has to be checked, depending on the scope of the process. Indexes are needed to run sequencing process on multiple samples, they are needed to distinguish those; when they are two, they permit to distinguisch also the 2 types of sequencing that are performed, forward and reverse.
+        \subsubsection{Clonal amplification and ILLUMINA sequencing procedure}
 
-P5 and P7 are the oligos needed to attach fragments to ILLUMINA sequencing machines.
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.6\textwidth]{clusterAmplification}
+            \caption{}
+            \label{clusters}
+        \end{figure}
 
-\begin{figure}[h]
-\caption{Figure representing the a good prepeared fragment, it has two indexes, two sequencing primer binding sites and regions complementary to the oligonucleotides present in the chamber}
-\centering
-\includegraphics[width=0.8\textwidth]{tagmentedFragments}
-\label{}
-\end{figure}
+        Clonal amplification is necessary to amplify the signal from each fragment.
+        ILLUMINA machines make use of clusters to sequence DNA: group of DNA strand positioned near each other that generate from a single fragment.
+        Each cluter represents thousands of copies of the same DNA strand in a $1$-$2\mu m$ spot \ref{clusters}.
 
-%what is a good fragment? %TODO
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.8\textwidth]{rigidGeneration}
+            \caption{}
+            \label{rigid}
+        \end{figure}
 
-\subsection{Clonal amplification and ILLUMINA sequencing procedure}
+        The clonal amplification process happens in flow cells, slides of glass in which fragments flow over channels.
+        Changes in temperature allow for ligations and separations.
+        The surface of the cells is functionalized with a series of oligos complementary to library adapters.
+        These flow cell can be patterned (cluster in specific positions) or random (cluster randomly positioned).
+        In the former the location of the cluster can be known (rigid registration \ref{rigid}) or unknown.
 
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.6\textwidth]{clusterAmplification}
-\label{clusters}
-\end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.6\textwidth]{randomPatternCells}
+            \caption{}
+            \label{}
+        \end{figure}
 
-Clonal amplification are necessary to amplify the signal from each single fragment.
-ILLUMINA machines make use of clusters to sequence DNA. Clusters are a group of DNA
-strands positioned closely together and generated from a single DNA filament. Generally, Each cluster represents thousands of copies of the same DNA strand in a 1–2 micron spot (figure \ref{clusters}).
+        \subsubsection{Fragment attachment to the clusters}
+        Once the fragments start flowing over the chambers, they can bind only to one of the two oligos functionalizing the plate.
+        Once they are attached to the surface the sequencing process is controlled through solvents and temperature.
+        As shown in \ref{singDoubInd} the sequencing process differs between single end and paired end sequencing.
 
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{rigidGeneration}
-\label{rigid}
-\end{figure}
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}[b]{0.39\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{singleIndex}
+                \caption{single index}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[b]{0.60\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{doubleIndex}
+                \caption{double index}
+            \end{subfigure}
+            \caption{Single/double index for ILLUMINA sequencing}
+            \label{singDoubInd}
+        \end{figure}
 
-On patterned flow cells, the clusters' formation location could be known or not, in the first case it is said that there is a "Rigid registration" (figure \ref{rigid}).\\
+        \subsubsection{Sequencing}
 
+        \begin{figure}[H]
+            \caption{}
+            \centering
+            \includegraphics[width=0.7\textwidth]{ILLUMINArev}
+            \label{ILLUMINArev}
+        \end{figure}
 
-ILLUMINA sequencers normally use slides of glass, named flow cells, and the fragments to be sequenced are able to flow over the channels. The temperature inside the cells can be changed to produce ligations or separations. The surface of the cells is functionalized with a series of oligos complementary to library adapters.
+        Reversible terminators \ref{ILLUMINArev} allow a real time analysis of the sequencing through the syntheses reaction.
+        The fluorophore part of the terminator can be cleaved to eliminate the signal.
 
-Two kids of flow cells, the \textit{patterned} flow cell permits to create clusters in specific positions, inside nanowalls, contrarily to \textit{Random Flow Cell} which instead have randomly positioned clusters.
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.6\textwidth]{randomPatternCells}
-\label{}
-\end{figure}
-\\
+        \begin{figure}[h]
+        \caption{}
+        \centering
+        \includegraphics[width=0.8\textwidth]{ChannelILLUMINA}
+        \label{ChannelILLUMINA}
+        \end{figure}
 
-Once the fragments are made flow over the chambers, they can bind only to p5 or p7 (ILLUMINA oligos), the two oligos functionalizing the plate. Once the fragments are attached to the surface, using temperature and solvents flows you can control the sequencing process. To see the entire procedure:
-(procedure on Youtube: \href{https://www.youtube.com/watch?v=womKfikWlxM}{video about ILLUMINA sequencing}). In the video, it is shown the two index sequencing process.
-\\
-\\
+        Depending on the number of fluorescent molecules used ILLUMINA sequencers are distinguished in the $4$-channel, $2$-channel or $1$-channel type.
+        In the case of the $4$-channel $4$ images are taken in each cycle and each cluster apperas in only one of the four images \ref{ChannelILLUMINA}.
+        The highest intensity base in a cluster is the called base for that cluster.
+        In case no base is clearly related to a position the base calling returns $N$.
+        This reading process can be done through single end reads on a single extreme of the fragment or through paired-ends reading, where each fragment is read in a forward and reverse way.
+        This latter method gives structural information.
 
+    \subsection{Pacific Bioscience}
+    In the Pacific Bioscience PacBio sequencer the long DNA filament to be sequenced is attached to a polymerase, over the surface of a SMRT (Single Molecule Real Time) cell.
+    This cell is really small, and at each nucleation process a light signal is emitted.
+    The produced light is not able to get out of the walls, and its duration is extremely restricted.
+    The registration of the light signal correspond to a base calling.
+    Its main advantage over ILLUMINA is the possibility of sequencing really long DNA molecules.
 
-\begin{figure}[H]
+    \begin{figure}[H]
     \centering
-
-    \begin{subfigure}[b]{0.39\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{singleIndex}
-        \caption{single index}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.60\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{doubleIndex}
-        \caption{double index}
-    \end{subfigure}
-    \caption{Single/double index for ILLUMINA sequencing}
-    \label{singDoubInd}
-\end{figure}
-
-With 1 and 2 indexes the sequencing process actually differs, as shown in figure \ref{singDoubInd}
-
-
-\begin{figure}[H]
-\caption{}
-\centering
-\includegraphics[width=0.7\textwidth]{ILLUMINArev}
-\label{ILLUMINArev}
-\end{figure}
-
-To perform the sequencing process, ILLUMINA machines utilize \textit{reversible terminators} (figure \ref{ILLUMINArev}). They permit a real time analysis of the sequencing by synthesys reaction, and because of this they are different from the Sanger method. Fluorophores are reversible, they can be cleaved to eliminate the light signal.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{ChannelILLUMINA}
-\label{ChannelILLUMINA}
-\end{figure}
-
-To perform their activity, ILLUMINA sequencers could be of 3 different types: 4-Channel, 2-Channel or 1-Channel, depending on the number of fluorescent molecules used. In the case of the 4-Channel technology, 4 images are taken in each cycle, and each  cluster appears in only one of four images \ref{ChannelILLUMINA}. 2-Channel technique is used by some sequencing machines, like NextSeq 550, MiniSeq, NovaSeq 6000\\
-
-4-Colors base calling
-is needed to to make
-the true signal the purest, and after, The base with the highest intensity becomes the called base for that cluster. In the case no base is clearly related to a position, \textit{N} is the result.
-
-
-The reading process could be done in two ways: through single reads, on a single extreme of the fragments, of paired-end, on both the extremes. The second one in particular gives structural and 2 sequence  informations.
-
-
-\subsection{Pacific Bioscience (PacBio)}
-the long DNA filement to be sequenced is attached to a polymerase, over the surface of a SMRT (Single Molecule Real Time) cell. This cell is really small, and at each nucleation process a light signal is emitted. The produced light is not able to get out of the walls, and its duration is extremely restricted. Sequencing, also in this case, is made by sequencing, and the main advantage consists in the possiblity of sequencing really big DNA molecules.\\
-In the video \href{https://www.youtube.com/watch?v=_lD8JyAbwEo}{PacBio procedure} it is briefly shown how the process works and what are the strategies used to reduce errors.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=1\textwidth]{PacBIO}
-\label{}
-\end{figure}
+    \includegraphics[width=1\textwidth]{PacBIO}
+    \caption{}
+    \label{}
+    \end{figure}
 
 
 \subsection{Nanopore sequencing}
-Intramembrane proteins are used, sequence detected through the passage of DNA nucleotides, which produce different voltage changes. During the first periods, this type of instruments gave great amount of errors, nowadays the technique is improving.
-\href{https://www.youtube.com/watch?v=E9-Rm5AoZGw}{Nanopore Sequencing}
+In nanopore sequencing the sequence is detected through the passage of DNA molecule into intramembrane protein.
+This produces a voltage changes that corresponds to a base calling.
+This technology is in constant development and is not widely used because of the, although improving, high error rate.
