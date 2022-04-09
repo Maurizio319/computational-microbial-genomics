@@ -52,95 +52,102 @@
 \contentsline {subsection}{\numberline {4.3.6}Low-complexity artefacts}{25}{subsection.4.3.6}%
 \contentsline {subsection}{\numberline {4.3.7}FASTQ quality control (QC)}{25}{subsection.4.3.7}%
 \contentsline {chapter}{\numberline {5}Mapping}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Mapping}{27}{section.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.0.1}Exercise on coverage}{28}{subsubsection.5.1.0.1}%
-\contentsline {section}{\numberline {5.2}Mapping algorithm}{28}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Local vs Global alignment}{29}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Smith-Waterman algorithm (local alignment) - 1981}{29}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Needleman-Wunsch algorithm (global alignment)}{32}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}BLAST (Basic Local Alignment Search Tool)}{33}{subsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.4.1}BLAST E-value}{34}{subsubsection.5.2.4.1}%
-\contentsline {subsection}{\numberline {5.2.5}Speed seed alignment}{35}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Burrow-Wheeler alignment}{35}{subsection.5.2.6}%
-\contentsline {subsection}{\numberline {5.2.7}LF (Last-First) property}{36}{subsection.5.2.7}%
-\contentsline {subsection}{\numberline {5.2.8}Exact mapping using LF property}{37}{subsection.5.2.8}%
-\contentsline {chapter}{\numberline {6}Assembly}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Feasibility of sequence assembly}{41}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Last year exercise}{41}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Merging overlapping reads}{42}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Overlap graphs}{42}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}How to solve an overlapping graph?}{43}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Graph simplification operations}{44}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}De Brujin graph assembly}{45}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Scaffolding}{46}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Evaluating assemblies}{46}{subsection.6.3.3}%
-\contentsline {chapter}{\numberline {7}16S-rRNA sequencing}{48}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction to metagenomics}{48}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Definition of metagenomics}{48}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Why studying the metagenome}{48}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Differences with older microbiome studies}{48}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Example: skin microbiome}{49}{subsection.7.1.4}%
-\contentsline {section}{\numberline {7.2}16S rRNA sequencing}{49}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Simplified 16S rRNA analysis workflow}{49}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}16S rRNA gene}{49}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Primer and high-throughput machine choice}{50}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}In depth 16S rRNA analysis workflow}{52}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}OTU clustering}{53}{subsection.7.2.5}%
-\contentsline {subsection}{\numberline {7.2.6}OTU taxonomic annotation}{55}{subsection.7.2.6}%
-\contentsline {subsection}{\numberline {7.2.7}RDP classifier (Naive Bayes Model)}{56}{subsection.7.2.7}%
-\contentsline {section}{\numberline {7.3}Diversity analysis}{57}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Alpha diversity analysis}{57}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Beta diversity analysis}{57}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Principal Coordinate Analysis (PCoA}{58}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Study: \textit {Enhanced microbial diversity in the saliva microbiome induced by short-term probiotic intake revealed by 16S rRNA sequencing on the IonTorrent PGM platform}}{58}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Shotgun Metagenomics}{61}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Workflow}{61}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Comparison with the 16s sequencing}{62}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Latest technology}{62}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Identification of microbes from Shotgun Metagenomics data: do we really need something fancy?}{63}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}MetaPhlAn: unique marker genes for taxonomic profiling}{64}{subsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.1.1}The problem of the unknowns}{64}{subsubsection.8.4.1.1}%
-\contentsline {subsection}{\numberline {8.4.2}Other approaches}{65}{subsection.8.4.2}%
-\contentsline {subsection}{\numberline {8.4.3}The curatedMetagenomicData resource}{66}{subsection.8.4.3}%
-\contentsline {subsection}{\numberline {8.4.4}The link between the gut microbiome and colorectal cancer}{66}{subsection.8.4.4}%
-\contentsline {subsubsection}{\numberline {8.4.4.1}Hypothesis-driven analysis}{67}{subsubsection.8.4.4.1}%
-\contentsline {section}{\numberline {8.5}PanPhlAn: strain-level profiling}{67}{section.8.5}%
-\contentsline {subsection}{\numberline {8.5.1}Investigating population genomics thanks to PanPhlAn}{69}{subsection.8.5.1}%
-\contentsline {subsubsection}{\numberline {8.5.1.1}\emph {E. coli} population genomics with PanPhlAn}{69}{subsubsection.8.5.1.1}%
-\contentsline {subsubsection}{\numberline {8.5.1.2}PanPhlAn on \emph {Eubacterium rectale}}{71}{subsubsection.8.5.1.2}%
-\contentsline {subsubsection}{\numberline {8.5.1.3}The infant gut microbiome in disease}{71}{subsubsection.8.5.1.3}%
-\contentsline {subsection}{\numberline {8.5.2}StrainPhlAn: a complementary approach}{71}{subsection.8.5.2}%
-\contentsline {subsection}{\numberline {8.5.3}StrainPhlAn applications}{72}{subsection.8.5.3}%
-\contentsline {subsubsection}{\numberline {8.5.3.1}The stability of strains in the human gut}{72}{subsubsection.8.5.3.1}%
-\contentsline {subsubsection}{\numberline {8.5.3.2}Identification of subspecies}{73}{subsubsection.8.5.3.2}%
-\contentsline {subsection}{\numberline {8.5.4}Uncharacterized species}{73}{subsection.8.5.4}%
-\contentsline {subsection}{\numberline {8.5.5}Applications of strain-level metagenomic profiling}{74}{subsection.8.5.5}%
-\contentsline {subsubsection}{\numberline {8.5.5.1}\emph {E.rectale} refined population genomics}{74}{subsubsection.8.5.5.1}%
-\contentsline {subsubsection}{\numberline {8.5.5.2}\emph {Prevotella copri} is strongly lifestyle-associated}{75}{subsubsection.8.5.5.2}%
-\contentsline {subsubsection}{\numberline {8.5.5.3}Identification of \emph {Akkermansia} candidate subspecies}{76}{subsubsection.8.5.5.3}%
-\contentsline {subsubsection}{\numberline {8.5.5.4}An example of eukaryotic microorganism: \emph {Blastocystis}}{77}{subsubsection.8.5.5.4}%
-\contentsline {subsubsection}{\numberline {8.5.5.5}Bacteriophages profiling}{77}{subsubsection.8.5.5.5}%
-\contentsline {subsection}{\numberline {8.5.6}HUMAnN2: Functional profiling}{78}{subsection.8.5.6}%
-\contentsline {chapter}{\numberline {9}Staphylococcus aureus}{80}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Immune evasion strategies}{80}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Antibiotic resistance in \emph {S. aureus}}{81}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Methicillin-resistant \emph {S. aureus} (MRSA)}{81}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Methicillin resistance: where is it encoded?}{81}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Methicillin-resistant \emph {S. aureus} (MRSA)}{82}{subsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.3.1}\emph {S.aureus} worldwide}{82}{subsubsection.9.2.3.1}%
-\contentsline {section}{\numberline {9.3}Whole genome epidemiology, characterization, and phylogenetic reconstruction of \emph {S. aureus} strains in a pediatric hospitals}{83}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Methods}{83}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Typing methods}{84}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}MLST}{84}{subsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.3.4}Spa-typing}{84}{subsection.9.3.4}%
-\contentsline {subsection}{\numberline {9.3.5}SCC\emph {mec}}{85}{subsection.9.3.5}%
-\contentsline {subsection}{\numberline {9.3.6}PVL}{85}{subsection.9.3.6}%
-\contentsline {subsection}{\numberline {9.3.7}The cohort}{86}{subsection.9.3.7}%
-\contentsline {subsection}{\numberline {9.3.8}Typing highlights common clones and newly sequenced ones}{86}{subsection.9.3.8}%
-\contentsline {subsection}{\numberline {9.3.9}Co-presence of local, global, animal-associated and hypervirulent clones}{86}{subsection.9.3.9}%
-\contentsline {subsection}{\numberline {9.3.10}Genomic signature of chronic versus acute \emph {S. aureus} infections}{87}{subsection.9.3.10}%
-\contentsline {subsection}{\numberline {9.3.11}Variability in SCC\emph {mec} cassettes}{87}{subsection.9.3.11}%
-\contentsline {subsection}{\numberline {9.3.12}Diversity of virulence factors and antigens}{87}{subsection.9.3.12}%
-\contentsline {subsection}{\numberline {9.3.13}Virulence factors with available vaccines targets}{88}{subsection.9.3.13}%
-\contentsline {subsection}{\numberline {9.3.14}Phylogenetic of specific STs highlights the aggressive spread of a novel independently acquired ST$1$ clone}{88}{subsection.9.3.14}%
-\contentsline {subsection}{\numberline {9.3.15}Conclusions}{89}{subsection.9.3.15}%
+\contentsline {section}{\numberline {5.1}Introduction}{27}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Coverage}{27}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Mapping process}{28}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Mapping algorithms}{28}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Local vs Global alignment}{28}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Smith-Waterman algorithm}{29}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Needleman-Wunsch algorithm}{30}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Heuristic methods}{30}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}BLAST (Basic Local Alignment Search Tool)}{31}{subsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.5.1}Blast flavours}{31}{subsubsection.5.2.5.1}%
+\contentsline {subsubsection}{\numberline {5.2.5.2}Scoring matrices}{32}{subsubsection.5.2.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.5.3}Blast parameters}{32}{subsubsection.5.2.5.3}%
+\contentsline {subsubsection}{\numberline {5.2.5.4}BLAST E-value}{32}{subsubsection.5.2.5.4}%
+\contentsline {subsection}{\numberline {5.2.6}Speed seed alignment}{33}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Burrow-Wheeler alignment}{33}{subsection.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.2.7.1}Reversibility of the Borrow-Wheeler compression}{33}{subsubsection.5.2.7.1}%
+\contentsline {subsubsection}{\numberline {5.2.7.2}LF (Last-First) property}{34}{subsubsection.5.2.7.2}%
+\contentsline {subsubsection}{\numberline {5.2.7.3}Exact mapping using LF property}{34}{subsubsection.5.2.7.3}%
+\contentsline {subsubsection}{\numberline {5.2.7.4}Inexact mapping}{34}{subsubsection.5.2.7.4}%
+\contentsline {chapter}{\numberline {6}Assembly}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Feasibility of sequence assembly}{37}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Last year exercise}{37}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Merging overlapping reads}{38}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Overlap graphs}{38}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}How to solve an overlapping graph?}{39}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Graph simplification operations}{40}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}De Brujin graph assembly}{41}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Scaffolding}{42}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Evaluating assemblies}{42}{subsection.6.3.3}%
+\contentsline {chapter}{\numberline {7}16S-rRNA sequencing}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction to metagenomics}{44}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Definition of metagenomics}{44}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Why studying the metagenome}{44}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Differences with older microbiome studies}{44}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Example: skin microbiome}{45}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}16S rRNA sequencing}{45}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Simplified 16S rRNA analysis workflow}{45}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}16S rRNA gene}{45}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Primer and high-throughput machine choice}{46}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}In depth 16S rRNA analysis workflow}{48}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}OTU clustering}{49}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}OTU taxonomic annotation}{51}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}RDP classifier (Naive Bayes Model)}{52}{subsection.7.2.7}%
+\contentsline {section}{\numberline {7.3}Diversity analysis}{53}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Alpha diversity analysis}{53}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Beta diversity analysis}{53}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Principal Coordinate Analysis (PCoA}{54}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Study: \textit {Enhanced microbial diversity in the saliva microbiome induced by short-term probiotic intake revealed by 16S rRNA sequencing on the IonTorrent PGM platform}}{54}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Shotgun Metagenomics}{57}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Workflow}{57}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Comparison with the 16s sequencing}{58}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Latest technology}{58}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Identification of microbes from Shotgun Metagenomics data: do we really need something fancy?}{59}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}MetaPhlAn: unique marker genes for taxonomic profiling}{60}{subsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.1.1}The problem of the unknowns}{60}{subsubsection.8.4.1.1}%
+\contentsline {subsection}{\numberline {8.4.2}Other approaches}{61}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}The curatedMetagenomicData resource}{62}{subsection.8.4.3}%
+\contentsline {subsection}{\numberline {8.4.4}The link between the gut microbiome and colorectal cancer}{62}{subsection.8.4.4}%
+\contentsline {subsubsection}{\numberline {8.4.4.1}Hypothesis-driven analysis}{63}{subsubsection.8.4.4.1}%
+\contentsline {section}{\numberline {8.5}PanPhlAn: strain-level profiling}{63}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Investigating population genomics thanks to PanPhlAn}{65}{subsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.1.1}\emph {E. coli} population genomics with PanPhlAn}{65}{subsubsection.8.5.1.1}%
+\contentsline {subsubsection}{\numberline {8.5.1.2}PanPhlAn on \emph {Eubacterium rectale}}{67}{subsubsection.8.5.1.2}%
+\contentsline {subsubsection}{\numberline {8.5.1.3}The infant gut microbiome in disease}{67}{subsubsection.8.5.1.3}%
+\contentsline {subsection}{\numberline {8.5.2}StrainPhlAn: a complementary approach}{67}{subsection.8.5.2}%
+\contentsline {subsection}{\numberline {8.5.3}StrainPhlAn applications}{68}{subsection.8.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.3.1}The stability of strains in the human gut}{68}{subsubsection.8.5.3.1}%
+\contentsline {subsubsection}{\numberline {8.5.3.2}Identification of subspecies}{69}{subsubsection.8.5.3.2}%
+\contentsline {subsection}{\numberline {8.5.4}Uncharacterized species}{69}{subsection.8.5.4}%
+\contentsline {subsection}{\numberline {8.5.5}Applications of strain-level metagenomic profiling}{70}{subsection.8.5.5}%
+\contentsline {subsubsection}{\numberline {8.5.5.1}\emph {E.rectale} refined population genomics}{70}{subsubsection.8.5.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.5.2}\emph {Prevotella copri} is strongly lifestyle-associated}{71}{subsubsection.8.5.5.2}%
+\contentsline {subsubsection}{\numberline {8.5.5.3}Identification of \emph {Akkermansia} candidate subspecies}{72}{subsubsection.8.5.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.5.4}An example of eukaryotic microorganism: \emph {Blastocystis}}{73}{subsubsection.8.5.5.4}%
+\contentsline {subsubsection}{\numberline {8.5.5.5}Bacteriophages profiling}{73}{subsubsection.8.5.5.5}%
+\contentsline {subsection}{\numberline {8.5.6}HUMAnN2: Functional profiling}{74}{subsection.8.5.6}%
+\contentsline {chapter}{\numberline {9}Staphylococcus aureus}{76}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Immune evasion strategies}{76}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Antibiotic resistance in \emph {S. aureus}}{77}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Methicillin-resistant \emph {S. aureus} (MRSA)}{77}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Methicillin resistance: where is it encoded?}{77}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Methicillin-resistant \emph {S. aureus} (MRSA)}{78}{subsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.3.1}\emph {S.aureus} worldwide}{78}{subsubsection.9.2.3.1}%
+\contentsline {section}{\numberline {9.3}Whole genome epidemiology, characterization, and phylogenetic reconstruction of \emph {S. aureus} strains in a pediatric hospitals}{79}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Methods}{79}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Typing methods}{80}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}MLST}{80}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.4}Spa-typing}{80}{subsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.3.5}SCC\emph {mec}}{81}{subsection.9.3.5}%
+\contentsline {subsection}{\numberline {9.3.6}PVL}{81}{subsection.9.3.6}%
+\contentsline {subsection}{\numberline {9.3.7}The cohort}{82}{subsection.9.3.7}%
+\contentsline {subsection}{\numberline {9.3.8}Typing highlights common clones and newly sequenced ones}{82}{subsection.9.3.8}%
+\contentsline {subsection}{\numberline {9.3.9}Co-presence of local, global, animal-associated and hypervirulent clones}{82}{subsection.9.3.9}%
+\contentsline {subsection}{\numberline {9.3.10}Genomic signature of chronic versus acute \emph {S. aureus} infections}{83}{subsection.9.3.10}%
+\contentsline {subsection}{\numberline {9.3.11}Variability in SCC\emph {mec} cassettes}{83}{subsection.9.3.11}%
+\contentsline {subsection}{\numberline {9.3.12}Diversity of virulence factors and antigens}{83}{subsection.9.3.12}%
+\contentsline {subsection}{\numberline {9.3.13}Virulence factors with available vaccines targets}{84}{subsection.9.3.13}%
+\contentsline {subsection}{\numberline {9.3.14}Phylogenetic of specific STs highlights the aggressive spread of a novel independently acquired ST$1$ clone}{84}{subsection.9.3.14}%
+\contentsline {subsection}{\numberline {9.3.15}Conclusions}{85}{subsection.9.3.15}%
