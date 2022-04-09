@@ -1,149 +1,188 @@
 \graphicspath{{chapters/images/03/}}
 
-\chapter{NGS principles (second gen. sequencing) - From Sanger to third gen sequencing}
+\chapter{Next generation sequencing}
+
+\section{Introduction}
+Next generation sequencing is the gold standard for sequencing nowadays.
+A series of discoveries allowed for the development of this technology:
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $1959$: first homogeneous DNA purified.
+        \item $1970$: first discovery of type $II$ restriction enzymes.
+        \item $1972$: first RNA gene sequence published.
+        \item $1975$: Sanger publishes his plus-minus method of sequencing, unable to distinguish homopolymers.
+        \item $1977$: Maxam and Gilbert publish their method that could distinguish homopolymers.
+        \item $1977$: Sanger publishes the dideoxy-sequencing method.
+    \end{itemize}
+\end{multicols}
+
+    \subsection{Progresses of sequencing}
+    As can be seen in the graph \ref{moore} the cost of DNA sequencing is decreasing by a greater rate than the one predicted by Moore's law.
+    This allows for greater number of samples and the sequencing of a different number of genomes.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth]{sequencingCost}
+        \caption{}
+        \label{moore}
+    \end{figure}
+
+    \subsection{Methods of sequencing}
+    The methods of sequencing can be grouped in three groups:
+
+    \begin{multicols}{2}
+        \begin{itemize}
+          \item Chemical degradation of DNA: like the method of Maxam-Gilbert.
+          \item Sequencing by synthesis (“SBS”): the most common approach and the first to be developed.
+              It uses DNA polymerases in primer extension reactions.
+              This technology is used by Illumina, Pacific Bioscences, Ion Torren and 454.
+          \item Ligation-based: sequencing using short probes that hybridize to the template.
+              This technology is used by SOLiD and Complete Genomics.
+          \item Others like nanopores.
+        \end{itemize}
+    \end{multicols}
+
+    \subsection{The Chain Terminators}
+
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{DNA-molecule}
+            \caption{Normal DNA molecule, with oxydrilic group ligated to $3'$-ends}
+            \label{normalDNAaddition}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{chain-term}
+            \caption{Figure representing the difference between a normal DNA chain and one with chain terminators}
+            \label{ChainTerm}
+        \end{subfigure}
+        \caption{Normal DNA synthesys \textit{vs} Chain terminators}
+    \end{figure}
+
+    Normally, the addition of new nucleotides to a generated molecule of DNA happens with the $3'$-end of the nucleotide chain \ref{normalDNAaddition}.
+    Chain terminators are dideoxy nucleotides, ddNTPs, that cannot be further extended.
+    These nucleotides don't have the oxydrilic group at their $3'$-end, so the DNA polymerase cannot further add other nucleotides to the chain \ref{ChainTerm}.
+
+\section{Sanger method}
 
 \begin{figure}[h]
-\caption{}
-\includegraphics[width=0.6\textwidth]{history-seq}
-\label{discoveries-sequencing}
-\end{figure}
-
-NGS stands for \textbf{\textit{Next Generation Sequencing}}, and it represents the method of sequencing most used nowadays. Before that, a series of other discoveries were done, elencated in the figure \ref{discoveries-sequencing}.
-
-\section{History of Sequencing}
-\subsection{Progresses of sequencing}
-As the time passes, the cost of sequencing the DNA is diminishing. The rate of decrease actually is higher than the one predicted by the \textbf{Moore's Law}, \textit{"Democratization of sequencing"} is seen nowadays, because of the costs lowering. After the Human genome project, several other animals and plants' genomes were sequenced.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.6\textwidth]{sequencingCost}
-\label{Moore's law graph}
-\end{figure}
-
-The methods of sequencing actually can be grouped in three \textbf{groups}, that are:
-
-\begin{itemize}
-	\item \textbf{Chemical degradation} of DNA: it includes the method of Maxam-Gilbert
-	\item \textbf{Sequencing by synthesis (“SBS”)} which is the most common approach and the first to be developed. It uses DNA polymerases in primer extension reactions Illumina, Pacific Bioscences, Ion Torren and 454
-	\item \textbf{Ligation-based}: sequencing using short probes that hybridize to the template, the technologies perteining to this class are SOLiD, Complete Genomics
-	\item \textbf{Other:} Nanopores
-\end{itemize}
-
-\subsection{The Chain Terminators}
-
-\begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{Sanger}
+    \caption{Sanger's method process}
+    \label{Sanger}
+\end{figure}
+
+The first method ever used to sequence DNA was designed by Frederick Sanger.
+The Sanger manual sequencing system consists in an \textit{in vitro} process described in figure \ref{Sanger}.
+It is also named a primer extension method.
+It is performed over a single-filament DNA sample, and it uses chain terminators nucleotides, one for each type of nucleobase: ddATP, ddGTP, ddTTP, ddCTP.
+The reaction is done inside four different reactions tubes, each containing:
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item The sample DNA to be reproduced.
+        \item A DNA polymerase.
+        \item The normal nucleotides.
+        \item One of the four possible chain terminator marked with sulfur-35.
+            In each tube, the corresponding dideoxy-nucleotide was used with a concentration 10 times lower than the other normal nucleotides.
+    \end{itemize}
+\end{multicols}
+The polymerization reactions produces several molecules of DNA with different length: each replicative cycle is terminated after the addition of a chain terminator nucleotide.
+The initial DNA sequence is reconstructed using a long PAGE gel with high concentration of urea ($6 - 7 M$) to avoid the coiling of the DNA single-filaments.
+High voltages are required to achieve a highly risolutive run.
+This high resolution was needed as DNA's fragments are different only for a nucleotide.
+After having run it the bands were visualized through auto-radiography in order to evidentiate the phosphorescent signals.
+
+The sequence is read starting from the shortest fragments at the end of the gel and going up along it, looking for the first presence of a band in one of the four runs.
+
+    \subsection{Automatic sequencing}
+    To automatize the Sanger methods fluorescent proteins substituted the radioactive signal.
+    Several versions were developed:
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+          \item Fluorescent primers marked with a single fluorochrome.
+          \item Four aliquotes of the same primer were used marked with four different fluorochromes, able to emit different fluorescences.
+          \item Four different fluorochromes were used to mark the single ddNTPs
+        \end{enumerate}
+    \end{multicols}
+
+    Thanks to the use of 4 different fluorochromes, it was possible to use a single electrophoretic lane to carry the sequencing reaction.
+    Also a cyclic replicative reaction was performed with this procedure using a thermal cycler:
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+          \item Denaturation at $95$°C of the DNA to be sequences
+          \item Annealing at $50-70$°C of the primer specific to one of the two filaments
+          \item Extension at $72$°C by using a \textit{Taq}-polymerase to avoid the formation of coiled structures in the DNA molecule to be sequenced.
+        \end{enumerate}
+    \end{multicols}
+
+    The resulting molecules are run through a long PAGE gel and fluorescence is triggered irradiating the DNA molecules.
+
+    \begin{figure}[h]
+        \caption{}
         \centering
-        \includegraphics[width=\textwidth]{DNA-molecule}
-        \caption{Normal DNA molecule, with oxydrilic group ligated to $3'$-ends}
-        \label{normalDNAaddition}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=0.8\textwidth]{automaticSang}
+        \label{}
+    \end{figure}
+
+    More usefully, this sequencing method is performed by using a capillar filled with a synthetic polymer with the same function of polyacrillamide.
+    The analysis produces an electropherogram, with a color depicting the probability of each base being in each position.
+    The electropherogram is refined through algorithms that can boost the signal to noise ration, correct the dye effect and reduce all systematic errors.
+
+        \begin{figure}[h]
+        \caption{}
         \centering
-        \includegraphics[width=\textwidth]{chain-term}
-        \caption{Figure representing the difference between a normal DNA chain and one with chain terminators}
-        \label{ChainTerm}
-    \end{subfigure}
-    \caption{Normal DNA synthesys \textit{vs} Chain terminators}
-\end{figure}
+        \includegraphics[width=0.8\textwidth]{elettroferogramma}
+        \label{}
+    \end{figure}
 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{progressSangerMachines}
+        \caption{The implementation of capillary sequencing machines gave the possibility to make more runs than with the others.
+                    $\tilde 1000$ fold productivity increase was allowed
+                }
+        \label{}
+    \end{figure}
 
-Normally, the addition of new nucleotides to a generated molecule of DNA happens with the $3'$-end of the nucleotide chain (figure \ref{normalDNAaddition}). Chain terminators are dideoxy nucleotides, ddNTPs, that cannot be further extended. These nucleotides aren't able to add a new nucleotide on the $3'$-end, as they have not the needed oxydrilic group (figure \ref{ChainTerm}).
-
-\subsection{Sanger method: the first one}
-
-\begin{figure}[h]
-\caption{The \textit{Sanger}'s method process}
-\centering
-\includegraphics[width=\textwidth]{Sanger}
-\label{Sanger}
-\end{figure}
-
-The first method ever used to sequence DNA was designed by Frederick Sanger. The Sanger manual sequencing system consists in an \textit{in vitro} process, which is described in figure \ref{Sanger}, also named as \textit{"primer extension"} method. It is performed over a single-filament DNA sample, and it uses the chain terminators nucleotides, a type for each nucleobase: ddATP, ddGTP, ddTTP, ddCTP.
-
-The reaction is done inside four different reactions tubes, each containing the sample DNA to be reproduced, a DNA polymerase, the normal nucleotides and one of the four possible chain terminator. The chain terminators are marked with sulfur-35, a radioactive atom. In each tube, the corresponding dideoxy-nucleotide was used with a concentration 10 times lower than the other "normal" nucleotides.
-
-From the polymerization reactions, several molecules of DNA were produced, with different length: each replicative cycle is in fact terminated after the addition of a chain terminator nucleotide.
-
-To reconstruct the initial DNA sequence, a long PAGE gel was prepeared, with high concentration of urea ($6 - 7 M$) to avoid the coiling of the DNA single-filaments. To run the gel, high voltages were required and it had to be higly resolutive, as DNA's fragments are different only for a nucleotide. It was needed to do an auto-radiography of the gel in order to see the bands, in order to evidentiate the fosphorescent signals.
-
-To read the sequence you have to start from the shortest fragments, at the end of the gel, and carefully go up along the gel, looking for the first presence of a band in one of the four runs. \\
-
-\textbf{Past procedures: }In the past, the Klenow's fragment (part of the $1^{st}$ DNA polymerase) was used to perform the Sanger method, and the DNA to be sequenced was inserted inside the genome of an M13 phage.
-
-
-\subsubsection{Automatic sequencing}
-It does not use the radioactive signals, instead it uses fluorescent proteins. Several versions were developed after modifications of the Sanger method, in this order:
-
-\begin{enumerate}
-	\item fluorescent primers marked with a single fluorochrome.
-	\item four aliquotes of the same primer were used marked with four different fluorochromes, able to emit different fluorescences.
-	\item four different fluorochromes were used to mark the single ddNTPs
-\end{enumerate}
-
-Thanks to the use of 4 different fluorochromes, it was possible to use a single electrophoretic lane to carry the sequencing reaction. For this type of sequencing also, a cyclic replicative reaction was performed, with this procedure, made possible by using a thermal cycler:
-
-\begin{enumerate}
-	\item \textbf{Denaturation at $95$°C} of the DNA to be sequences
-	\item \textbf{Annealing at $50-70$°C} of the primer specific to one of the two filaments
-	\item \textbf{Extension at $72$°C} by using a \textit{Taq}-polymerase. The use of the Taq-polymerase makes it possible to avoid the formation of coiled structures in the DNA molecule to be sequenced.
-\end{enumerate}
-
-Traditionally, also in this type of sequencing it is used a long PAGE gel, as the Sanger's one, but with a great difference: all the ddNTPs are inserted in the same electrophoretic run, and after it, it is not needed an auto-radiography. Fluorescence, instead, can be triggered simply by irradiating the DNA molecules synthesyzed, which produce different fluorescences with different wavelengths.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{automaticSang}
-\label{}
-\end{figure}
-
-
-More usefully, this sequencing method is performed by using a capillar, filled with a synthetic polymer, with the same function of polyacrillamide.
-
-At the end of the analysis, it is produced an electropherogram, with a color depicting the probability of each nytrogen base in each position. The production of the electropherogram is made better thanks to algorithms to boost signal/noise ratio, to correct the dye-effects, and other effects that generate systemic errors. %TODO dye-effects
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{elettroferogramma}
-\label{}
-\end{figure}
-
-\begin{figure}[h]
-\caption{The implementation of capillary sequencing machines gave the possiblity to make more runs than with the others. A $\tilde 1000$ fold productivity increase was allowed}
-\centering
-\includegraphics[width=0.8\textwidth]{progressSangerMachines}
-\label{}
-\end{figure}
-
-Regarding the Sanger machines in use, the upgrades viewable in figure \ref{progressSangerMachines}. Based on the same technology, new machines were developed and it was obtained a $\tilde 1000$ fold improvement.
-\\
-When talking about the \textbf{human projec}t, it is important to specify that most of the job was done by using the Sanger automatic sequencing method.
-
+    The Sanger automatic sequencing method was used extensively for the majority of the human project.
 
 \section{Development of Sequencing Machines}
-The way you can get to the point could be different based on technology and the wanted output, comprised quality.
+The method used for sequencing has to be chosen based on the wanted output, like the quality required and the type of input.
+Different technologies have different strengths and weaknesses:
 
-SOLID gave only $35$-$75$ sequenced bases, and it is not used anymore; Sanger sequencing, the capillary, can give up to 1000 read length, with a low output; on MINION it was possible to sequence an entire genome of \textit{E. coli}
-A pletora of sequence machines are available today. None of the machines are able to sequence DNA from a sample of blood, some things have to be done. Nowadays \underline{machines producing bigger outputs of short reads are prefeared}.
+\begin{multicols}{2}
+    \begin{itemize}
+        \item SOLID sequences reads long only $35$-$75$ bases and it is not used anymore.
+        \item Sanger sequencing, or the capillary, can read up to $1000$ bases, but has a low throughput.
+        \item MINION allowed to sequence an entire genome of \textit{E. coli}.
+    \end{itemize}
+\end{multicols}
+
+A plethora of sequencing machines are available today.
+None of them is able to sequence DNA directly from a sample, requiring different preparation step.
+Today machines producing high-throughput output of short reads are preferred.
 
 \begin{figure}[H]
-\caption{It can be noticed how recent developments had the scope of increasing the output data}
 \centering
 \includegraphics[width=1\textwidth]{sequencingMachines}
+\caption{It can be noticed how recent developments had the scope of increasing the output data}
 \label{}
 \end{figure}
 
-At the top of the market nowadays there are ILLUMINA machines, that use sequencing by synthesis method, NovaSeq is the biggest one. They need to amplify the signal through clusters formation.
+The most wide-spread machines are from ILLUMINA like NovaSeq.
+They use sequencing by synthesis and they amplify the signal through the use of clusters.
 
 \begin{figure}[H]
-\caption{}
 \centering
 \includegraphics[width=0.8\textwidth]{sequencingMachinesIllumina}
+\caption{}
 \label{}
 \end{figure}
 
