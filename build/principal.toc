@@ -144,25 +144,27 @@
 \contentsline {subsection}{\numberline {8.3.5}Bacteriophages profiling}{68}{subsection.8.3.5}%
 \contentsline {subsection}{\numberline {8.3.6}HUMAnN2: Functional profiling}{68}{subsection.8.3.6}%
 \contentsline {chapter}{\numberline {9}Staphylococcus aureus}{70}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Immune evasion strategies}{70}{section.9.1}%
+\contentsline {section}{\numberline {9.1}Introduction}{70}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Immune evasion strategies}{70}{subsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.1}Prevention of the engagement of the host immune system}{70}{subsubsection.9.1.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.2}Overactivation of the non-specific immune system}{71}{subsubsection.9.1.1.2}%
 \contentsline {section}{\numberline {9.2}Antibiotic resistance in \emph {S. aureus}}{71}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}Methicillin-resistant \emph {S. aureus} (MRSA)}{71}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Methicillin resistance: where is it encoded?}{71}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}Coding of methicillin resistance}{71}{subsection.9.2.2}%
 \contentsline {subsection}{\numberline {9.2.3}Methicillin-resistant \emph {S. aureus} (MRSA)}{72}{subsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.3.1}\emph {S.aureus} worldwide}{72}{subsubsection.9.2.3.1}%
+\contentsline {subsection}{\numberline {9.2.4}\emph {S.aureus} worldwide}{72}{subsection.9.2.4}%
 \contentsline {section}{\numberline {9.3}Whole genome epidemiology, characterization, and phylogenetic reconstruction of \emph {S. aureus} strains in a pediatric hospitals}{73}{section.9.3}%
 \contentsline {subsection}{\numberline {9.3.1}Methods}{73}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Typing methods}{74}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}MLST}{74}{subsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.3.4}Spa-typing}{74}{subsection.9.3.4}%
-\contentsline {subsection}{\numberline {9.3.5}SCC\emph {mec}}{75}{subsection.9.3.5}%
-\contentsline {subsection}{\numberline {9.3.6}PVL}{75}{subsection.9.3.6}%
-\contentsline {subsection}{\numberline {9.3.7}The cohort}{76}{subsection.9.3.7}%
-\contentsline {subsection}{\numberline {9.3.8}Typing highlights common clones and newly sequenced ones}{76}{subsection.9.3.8}%
-\contentsline {subsection}{\numberline {9.3.9}Co-presence of local, global, animal-associated and hypervirulent clones}{76}{subsection.9.3.9}%
-\contentsline {subsection}{\numberline {9.3.10}Genomic signature of chronic versus acute \emph {S. aureus} infections}{77}{subsection.9.3.10}%
-\contentsline {subsection}{\numberline {9.3.11}Variability in SCC\emph {mec} cassettes}{77}{subsection.9.3.11}%
-\contentsline {subsection}{\numberline {9.3.12}Diversity of virulence factors and antigens}{77}{subsection.9.3.12}%
-\contentsline {subsection}{\numberline {9.3.13}Virulence factors with available vaccines targets}{78}{subsection.9.3.13}%
-\contentsline {subsection}{\numberline {9.3.14}Phylogenetic of specific STs highlights the aggressive spread of a novel independently acquired ST$1$ clone}{78}{subsection.9.3.14}%
-\contentsline {subsection}{\numberline {9.3.15}Conclusions}{79}{subsection.9.3.15}%
+\contentsline {subsection}{\numberline {9.3.2}Typing methods}{73}{subsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.2.1}MLST}{74}{subsubsection.9.3.2.1}%
+\contentsline {subsubsection}{\numberline {9.3.2.2}Spa-typing}{74}{subsubsection.9.3.2.2}%
+\contentsline {subsubsection}{\numberline {9.3.2.3}SCC\emph {mec}}{74}{subsubsection.9.3.2.3}%
+\contentsline {subsubsection}{\numberline {9.3.2.4}PVL}{75}{subsubsection.9.3.2.4}%
+\contentsline {subsection}{\numberline {9.3.3}The cohort}{75}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.4}Co-presence of local, global, animal-associated and hypervirulent clones}{75}{subsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.3.5}Genomic signature of chronic versus acute \emph {S. aureus} infections}{76}{subsection.9.3.5}%
+\contentsline {subsection}{\numberline {9.3.6}Variability in SSC\emph {mec} cassettes}{77}{subsection.9.3.6}%
+\contentsline {subsection}{\numberline {9.3.7}Diversity of virulence factors and antigens}{77}{subsection.9.3.7}%
+\contentsline {subsection}{\numberline {9.3.8}Virulence factors with available vaccines targets}{77}{subsection.9.3.8}%
+\contentsline {subsection}{\numberline {9.3.9}Phylogenetic of specific STs highlights the aggressive spread of a novel independently acquired ST$1$ clone}{77}{subsection.9.3.9}%
+\contentsline {subsection}{\numberline {9.3.10}Conclusions}{78}{subsection.9.3.10}%
