@@ -13,7 +13,7 @@ Mapping and assembly are the operations that allow us to understand sequencing d
 \end{multicols}
 
 A consensus sequence is the calculated order of most frequent residues, either nucleotide or amino acid, found at each position in a sequence alignment.
-In many cases, someone may have already assembled the genome or part of the genome (available reference sequences), so sequence assembly is nod needed.
+In many cases, someone may have already assembled the genome or part of the genome (available reference sequences), so sequence assembly is not needed.
 Assembly will be needed however when studying new organisms.
 Mapping and assembly need to solve some problem related to the sequencing data:
 
@@ -105,7 +105,7 @@ This algorithm is very naive and does not take into account insertions and delet
       \end{itemize}
     \end{multicols}
 
-    The pair of segments with maximum similarity is found first by locating the maximum elemnt of $H$.
+    The pair of segments with maximum similarity is found first by locating the maximum element of $H$.
     The other elements are determined sequentially with a traceback procedure ending with an element of $H$ equal to $0$.
     This procedure other than identifying the elements produces their alignment.
     The parameters  where:
@@ -243,7 +243,7 @@ This algorithm is very naive and does not take into account insertions and delet
 
     \subsection{Burrow-Wheeler alignment}
     The Burrows-Wheeler algorithm is used in BowTie and Bowtie2.
-    The Borrow-Wheeler algorithm is based on a very efficient way to store the reference genome, based on the BW transformation, that allows to have a reference hast table much smaller than the one of the speed seed approach.
+    The Borrow-Wheeler algorithm is based on a very efficient way to store the reference genome, based on the BW transformation, that allows to have a reference hash table much smaller than the one of the speed seed approach.
     This particular method is successful because the compression is reversible and so the reference does not need to be decompressed.
     It is this reversible property in fact that guarantees that the reads can be found in the genome.
     The search is based on finding suffixes of the reads in the BW structure.
@@ -281,7 +281,7 @@ This algorithm is very naive and does not take into account insertions and delet
         \subsubsection{LF (Last-First) property}
         The LF property is then applied to the matrix of all rotations to get back the input sequence.
         This is possible because the $ith$ occurrence of character $X$ in the last column corresponds to the same text character as the $ith$ occurrence of $X$ in the first column.
-        Following this property the word is reconstructed backwardL
+        Following this property the word is reconstructed backward:
 
         \begin{multicols}{2}
             \begin{enumerate}
@@ -297,7 +297,7 @@ This algorithm is very naive and does not take into account insertions and delet
         Backward exact mapping works by calculating the range of matrix rows beginning with successively longer suffixes of the query.
         Doing the backward matching we exploit the characteristics of the BWT transform.
         This same approach could be used to find a match between a query read and a reference genome which has been compressed using the BW alignment.
-        The problem is that it does not take into accounts indels, mismatches.
+        The problem is that it does not take into accounts indels or mismatches.
 
         \subsubsection{Inexact mapping}
         A possible solution to this problem could be the inexact mapping.
