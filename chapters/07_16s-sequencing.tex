@@ -134,7 +134,7 @@
       \item Group related sequences into OTUs (operational taxonomic units), which means grouping sequences that share some common variants.
         Since SNPs in the microbial genome are present, the similarity threshold between sequences cannot be too restrictive.
         OTUs can be used to define the relative abundance of each species in the sample, but in order to do so it is necessary to normalize for the copy number of the 16S gene sequence.
-        This is very difficult since an accurate estimate can be made only if long reach sequencing has been performed on the organism, which is almost never the case since for microbes that basically corresponds to full genome mapping.
+        This is very difficult since an accurate estimate can be made only if long read sequencing has been performed on the organism, which is almost never the case since for microbes that basically corresponds to full genome mapping.
       \item Build phylogenetic tree using one representative for each OTU.
       \item Annotate the OTUs using 16S gene databases.
       \item Downstream analysis is performed, such as clustering to visualize similarities among samples.
@@ -156,8 +156,8 @@
   \subsection{OTU clustering}
   Defining OTUs requires using multiple sequence alignment.
   Since this approach is a generalization of the mapping algorithm it is quite complex in terms of speed, but still feasible.
-  Generally greedy algorithms which add the lowest possible amount of gaps, are used to perform multiple sequence alignment.
-  fter the alignment, sequences are split into OTUs (operational taxonomic units), which are groups of 16S sequences very similar to each other.
+  Generally greedy algorithms which add the lowest possible amount of gaps are used to perform multiple sequence alignment.
+  After the alignment, sequences are split into OTUs (operational taxonomic units), which are groups of 16S sequences very similar to each other.
   Generally a sequence is defined as the representative of the OTU, meaning that it has a certain threshold of identity with all other sequences in the OTU, usually $97\%$ when considering species and that minimizes the differences of all other sequences of the OTU with itself.
   Some OTUs can be assigned univocally to a species, some others may be associated to more species, some others cannot be mapped to know species.
   The fact that a species may map to multiple OTUs is often an error but it may sometimes allow to find subspecies.
@@ -252,7 +252,7 @@
   High alpha diversity are usually associated with populations that are more robust and resilient to changes.
   For examples gut microbiome with a high richness is usually associated with healthy state, instead of disease.
   Alpha diversity can be compared only between samples with the same sequencing depth.
-  TO do so between different samples usually a depth cut-off is chosen.
+  To do so between different samples usually a depth cut-off is chosen.
 
   \subsection{Beta diversity analysis}
   Beta diversity analysis is a measure of how different two microbial communities are.

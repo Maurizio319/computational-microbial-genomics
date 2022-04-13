@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.30)  12 APR 2022 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  13 APR 2022 05:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1686,7 +1686,7 @@ ts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 dist/fonts/type1/public/tex-gyre/qbkbi.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/tex-gyre/qbkr.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qbkr
 i.pfb>
-Output written on ./build/principal.pdf (79 pages, 11875533 bytes).
+Output written on ./build/principal.pdf (79 pages, 11875539 bytes).
 PDF statistics:
  1510 PDF objects out of 1728 (max. 8388607)
  1253 compressed objects within 13 object streams
