@@ -1,187 +1,179 @@
 \graphicspath{{chapters/images/04/}}
 \chapter{Sequencing data}
-After all, genetics/genomics studies a code of a digital information (4bases/2bits). We should try to be as hypothesis driven as possible and use the already available and processed data to guide new data analysis. Be aware that, in genomics, data generation is the starting point of the study (the ratio of wet experiments vs computational effort is ~1:10)!\\
-Given the biological problem at hand, we need to choose the optimal sequencing machine. To achieve this, we need to consider:
-\begin{itemize}
-\item Throughput;
-\item Cost;
-\item Read lenghts, 
-\item Data output (reads per run);
-\item Coverage; 
-\item Seuencing errors (indel, substitution, CG delation, AT bias). Altough the error rate is decreasing wit new technologies;
-\item Library preparation compatibility;
-\item Speed (run time)
-\end{itemize}
-Suppose that we want to sequence a genome of a bacterium: which is the best machine that we can use?
 
-\begin{description}
-\item[Illumina NovaSeq]: if one wants to sequence a lot of DNA molecules at the same time, genomes, metagenomes. It can’t go over the 300 bp readlines runned, but it has the highest throughput so far (3TB of output). It is capable of multiplexing, so we have a unique barcode for any input sample. 
-\item[Illumina iSeq]: If you need to sequence shorter genomes. From iSeq to NextSeq (increasing the reads lengths). 
-\item[NanoPore (minion)]: pocket-sized wet-lab free sequencer for DNA, RNA and (possibly) proteins, but the read lengths is smaller than Illumina's. The machine is cheap; the running flow is more expensive (going down by time). It's a real-time sequencer. 
-\item[PacBio]: carries a high amount of error. A solution to this is using more than one technology for the same project. For example, if the goal is to put together a genome of a bacterium, the challenge of using PacBio is errors in the sequence, while Illumina is unable to reconstruct the sample because there are ambiguities. By using both technologies, PacBio will construct the genome and Illumina will correct the sequence.\\
-Anyway in the case of bacteria, you can use only PacBio because you have to sequence more and more, and since the PacBio error is random (not systematic), you will able to overlap the reads and solve the errors. PacBio has problem with homopolymers (same base or same set of bases repeated multiple times), which is a systematic error, more difficult to overcome just by sequencing more. If one wants to sequence a complex sample - with more than one genome - we cannot do the trick of overlapping, because we don’t know a priori which reads are coming from which organism. Another trick to work on this problem (complex samples), adopted by miniON and also PacBio, is to sequence the same molecule multiple times. By doing this you will have a molecule sequenced multiple times, and then we can go on with the other reads, and in conclusion do the consensus on that (sequencing error is usually declared by the machine). 
+\section{Choosing the optimal technology}
+When performing a genetics or genomics study it is best to be as hypothesis driven as possible and use already available data to guide the new analysis.
+Moreover to choose the optimal sequencer the parameters that need to be considered are:
 
-\section{Intro to sequencing raw data}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Throughput.
+		\item Cost.
+		\item Read lengths.
+		\item Data output (reads per run).
+		\item Coverage.
+		\item Sequencing errors (indel, substitution, CG deletion, AT bias).
+		\item Library preparation compatibility.
+		\item Speed (run time).
+	\end{itemize}
+\end{multicols}
 
-All sequencing platforms can produce FASTQ output files or they can at least convert their format to FASTQ. FASTQ contains the sequencing reads and the quality of each base and needs to be stored in a compressed format.\\
-The first output is an internal output, not directly accessible by the user. You will see only the translation of the raw signal (FASTQ format). The internal raw signal can be completely different (ionTorrent measures pH, Illumina tkes photos of light signals, nanoPore looks at a signal coming from a little hole, …). However, all machines, internally, interpret this physical signal into a file which is in FASTQ format (the standard format). 
-\\
-Sequencing might lead to short (~100nt) strings of few digital values (A T G C), puzzles of ~3,000 M letters (solved then by assembling and mapping) or thousands of puzzles of ~5 M up to ~5,000 M letters, meaning ~3 TB of letters that need to be made sense of. Furthermore, many pieces do not fit due to sequencing error/SNP/structural variant or low complexity region/microsatellite/repeat.
-\\
-More on the FASTQ format will be covered in section \ref{subsection:fastq}.
-\subsection{Base caller}
-A base caller is an instrument (algorithm) inside the machine needed to understand how to work with the sequence, in particular, it translates the analogical signal of the reading into numbers/nucleotides. The most popular algorithm is \textbf{Phred}.
-\\
-Phred is an algorithm based on ideas about what might go wrong in a sequencing reaction and in electrophoresis. It was tested on a huge dataset of ‘gold standard’ sequences (finished human and C. elegans sequences generated by highly-redundant sequencing). Its results were compared with the ABI base caller and Phred was considerably more accurate (40-50\% fewer error). \\
-NB: When things are getting too messy, the algorithm needs to understand that it is impossible to recover an high quality sequencing and so the base caller just needs to be able to give up for some reads (the ones without a high quality). The confidence that the base caller has to call a certain nucleotide ATCG is annotated in the FASTQ file, so one can later decide what to do with the bases that are not supported or clear.
+	\subsection{Comparing different sequencing technologies}
 
-\subsubsection{Errors solved by Ilumina's base caller}
-\begin{description}
-\item[Phasing noise $\phi$]: when a certain base is not seen frequently, the first time in which you will see this specific base (or pair of bases) there will be a peak (a spike) in the graph, increasing the signal of the nearby bases. There are going to be some errors in estimating the real nucleotide that is occurring in the site. This problem can be solved by waiting more time between a reading and another, but the sequencing will be less efficient (slower) and the throughput will be lower. So the machine needs to find a trade-off between the efficiency and the clear reading.
-\item[Signal decay $\delta$]: after a while one has read the same base, or the same repeated couple of bases, the signal will go down and at some point will be indistinct (so at some point you will need to cut the read since it will be not trustable after a while).
-\item[Mixed cluster $\mu$]: when you have a cluster mixed in two sequences, the machine will read the signal resulting by this two strings simultaneously. 
-\item[Boundary effects $\omega$]:  in this case the machine needs to interpret an image (a digital object.. and a blue point will appear if you magnify it a little bit). To estimate the intensity of the blue charter here you should probably look at the internal part here and average out all the pixels. Putting the edge of the internal part is tricky, since it is a gradient and not clear.  So this error occurs when you can’t figure out what is the signal and what is the around background. 
-\item[Cross-talk $\mathcal{X}$] %non nelle slides
-\item[Fluophore accumulation $\tau$]
-\end{description}
+	\begin{multicols}{2}
+		\begin{description}
+			\item[Illumina NovaSeq]: optimal for sequencing a lot of DNA molecules at the same time like in the case of genomes or metagenomes.
+				It can’t go over $300 bp$ readlines run, but it has the highest throughput so far.
+				It is capable of multiplexing, differentiating the different samples with an unique barcode.
+			\item[Illumina iSeq]: optimal for sequencing shorter genomes.
+			\item[NanoPore (minion)]: it is a pocket-sized wet-lab free sequencer for DNA, RNA and (possibly) proteins, but the read lengths is smaller than Illumina's.
+				The machine is cheap;, but the running flow is more expensive over time.
+				It's a real-time sequencer.
+			\item[PacBio]: has very long reads but carries a high amount of error.
+		\end{description}
+	\end{multicols}
 
-\subsubsection{Density on the flow cell}
-There is an optimal clustering in the flow cell and the presence of readings that go one through the other represent a problem. In the case of the dark yellow spots, the one that are too closer are going to be considered as a single peak. It is even more a problem if the spots are of different colours, and the signal will be a result of different bases. 
-\\
-In the case of under clustered the machine doesn’t read simultaneously as many reads as it should do (and it is not a problem of the sequencing technology, it is a problem for the researcher who did not optimize the method). By increasing the flow’ density you will have an optimal clustering. If you increase the density too much you will have and over clustered sequencing. 
+	A solution to reduce the impact of error or weaknesses of one of the sequencers is to use more than one for the same project.
+	Consider there is a need to sequence the genome of a bacterium: PachBio would give a lot of sequence errors, while Illumina wuild be unable to reconstruct the sample due to assembly ambiguities.
+	In the end PacBio will construct the genome and Illumina will correct sequence errors.
+	This solution doesn't work in complex sample with more than one genome, because there is no way to a priori which reads are coming from one organism.
+	Another widely adopted solution is to sequence multiple times one molecule so to reduce random errors.
+	This is effective but does not resolve systematic error like the one of PacBio with homopolymers.
 
-\subsubsection{An ecology of base callers}
-With base callers the matter is finding a satisfying trade-off between accuracy and computational efficiency.
-\\
-The quality associated to a single nucleotide is internally estimated by the machine. We need to check later if the quality of the read is right. This quality is the estimation of the probability that that nucleotide in that position is wrong. 
-\\
-There's a difference between PHRED score reported by base caller vs. PHRED score when mapped to a reference sequence. There are some base callers more calibrated than the others (like the Ibis). In general base callers need to be calibrated with a standard to make sure that the estimations of the quality are accurate enough. 
+	\subsection{Sequencers' output}
+	All sequencing platforms translate the physical read signal into files in FASTQ format.
+	This files contain the sequencing reads and the quality of each base.
 
-\subsection{FASTQ format}
-\label{subsection:fastq}
+\section{Base callers}
+A base caller is an algorithm that translates the analogical signal of the reading into numbers and nucleotides.
+The most popular algorithm is Phred.
+Phred tries to correct errors derived from the sequencing reaction and electrophoresis.
+It was tested on a huge dataset of gold standard sequences (finished human and C. elegans sequences generated by highly-redundant sequencing).
+Its results were compared with the traditional ABI base caller and Phred was considerably more accurate with $40$-$50\%$ fewer errors.
+This algorithm need to be able to understand when it is impossible to recover an high quality sequencing and so it needs to be able to give up for low-quality reads.
+The confidence that the base caller has to call a certain nucleotide ATCG is annotated in the FASTQ file, allowing for quality control downstream.
 
-\begin{enumerate}
-\item @SEQ\_ID 
-\item GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT x N 3. 
-\item + 
-\item !''*((((***+))\%\%\%++)(\%\%\%\%).1***-+*''))**55CCF>>>>>>CCCCCCC65 
-\end{enumerate}
+	\subsection{Errors solved by Ilumina's base caller}
 
-\begin{enumerate}
-\item ‘@’ followed by a sequence identifier. The sequence identifier contains the unique instrument name, the flowcell and tile number, the x and y coordinates of the cluster within the tile, the index number for multiplexing and the pair number of paired-end sequencing. In Illumina MiSeq, each flowcell has 8 microfluidic channels (lanes), each lane contains three columns with 96 tiles, i.e. 96 multiplexed samples.
-\item The sequence. It could be mate paired for paired end sequencing.
-\item ‘+’, optionally followed by a sequence Identifier.
-\item The quality scores. Quality is a number based on the estimated probability of error. $p$=probability  of error, $Q = -10 \dot p$ . We need a base quality of at least 20 to reach a small probability (1\%) [bq=40, p=0.01\%]. The FASTQ quality score is the phred score +33, converted in CHAR code.
-\end{enumerate}
-The FASTA file format is a FASTQ fomrat without the quality score reported and the seq ID is preceded by '>'.
+	\begin{multicols}{2}
+		\begin{description}
+			\item[Phasing noise $\phi$]: when a certain base is not seen frequently, the first time in which it will reappear there will be a spike in the graph, increasing the signal of the nearby bases.
+				This will cause errors in estimating the real nucleotide that is occurring in the site.
+				This problem can be solved by waiting more time between readings, but the sequencing will be less efficient and the throughput will be lower.
+				The machine needs to find a trade-off between efficiency and clear reading.
+			\item[Signal decay $\delta$]: after a while the sequencer has read the same base, or the same repeated couple of bases, the signal will go down and at some point will be indistinguishable.
+				At some point you will need to cut the read since it will be not trustable after a while.
+			\item[Mixed cluster $\mu$]: two different fragments can enter the same cluster and the sequencer will read the two signals simultaneously.
+			\item[Boundary effects $\omega$]:  in this case the machine needs to interpret an image and it cannot distinguish between the signal and the background.
+			\item[Cross-talk $\mathcal{X}$]
+			\item[Fluophore accumulation $\tau$]
+		\end{description}
+	\end{multicols}
 
-\subsubsection{Quality control: read length distribution}
-Quality scores are used typically for the operations of quality control and/or quality cleaning of the reads, which are then saved in FASTA files and used for other operations. However, since there exist algorithms, e.g. mappers, that take the reads and map them against a reference genome that can take into account the quality into a FASTQ directly. 
-\\
-Looking at the qualities will allow you to judge how well the sequencing run went. 
-In this case, for example, the read length is used as quality control. In the second graph we can see that something went wrong, there are too many short reads. In this case you can use the sequencing results, but make sure to get rid of short reads when you do another sequencing, to have an optimal use of the machine. 
-\\
-Another way to look at your sequencing output is to look at the quality score directly. Here the quality goes down as the length of the reads increases. This is typical, since the machines have more and more problems in estimating the nucleotides when in continuum. In this case you can only cut the last results since the quality is too low. 
-\\
-Another problem that can occur is the adapter content. Sometimes it happens that you see the adapter, which should not be part of the sequencing reads, since the machine should be able to identify and remove it. This happens frequently when you have very short fragments in your output. After the machine has sequenced the sample, it starts to sequence also the adapter (if you don’t identify the end of the sequencing you will have the adapter in the sequencing output). The main solution is to remove the adapter and what follows it (but be aware that you will remove even the part of the sequence in the middle). 
-\\
-We can use FastQC to plot the quality distribution of our data. FastQC on 
-Nanopore data: the reads are really long, but the quality is low (expected result). On PacBio data we also see the distribution falling entirely in the red zone, but here we have the box plot in the central part. 
-\\
-We can also plot differently the PacBio data. Here we still have PacBio, but in a different view. Instead of looking at each position separately, here we look at the average quality for the whole read. Probably you will discard the low-quality reads, like 1-2 score. When thinking at what technology use, think also at the length of the genome you want to sequence!
+	\subsection{Density on the flow cell}
+	The density of the flow cell is the number of cluster in it.
+	Under clustering will reduce the sequencer throughput, while over clustering will cause errors due to the limited resolution of the reading of the bases.
+	There is a need to find the optimal number of cluster that maximises the throughput without introducing overlapping in the reading of clusters.
 
-\subsubsection{FastQC on PacBio vs ONT}
-The analyses were performed using long-read and short-read data from E. coli strain K12 sub-strains DH5$\alpha$ and MG16. Substitutions were more frequent in  ONT, while insertions were more frequent in PacBio. On nanopore A>G, T>C, C>T and G>A are 3 times more frequent than the other, while in PacBio the frequencies are more alike.
-\\
-\textbf{k-mer frequencies}: we know the frequency in the reference, so we assume that if the sequencing is systematic, without biases and without errors we should have the same frequency. In this example, it’s clear that nanopore has done a better job.
-\\
-(By looking at 6-mer you have a larger potential combination, but it is easier to find errors in it). Moreover, one can look at which are the over-represented and the under-represented k-mers in the reads compared to the genome, and this may give you an idea about where the errors are. Both in nanopore and PacBio, the most troubling k-mers are those containing the same repeated nucleotide (this is a frequent sequencing error).
-\\
-This is interesting because the low entropy of the repeated sequences can be detected by the quality control software and are usually discarded. We will see that sometimes it is not the right thing to do, since in non bacterial genomes there are repeated sequences (consideration to take when you decide which technology use for your experiment).
+	\subsection{An ecology of base callers}
+	Base callers need to find a satisfying trade-off between accuracy and computational efficiency.
+	The quality is the estimation of the probability that the nucleotide in a certain position is correct.
+	The PHRED score reported by the base caller and the PHRED score of mapping to a reference sequence are different.
+	Base callers need to be calibrated with a standard to make sure that the estimation of the quality is accurate enough.
 
-\subsection{Duplication artifacts}
-It is not frequent to see duplication, but it can be a problem. If you want to reconstruct a genome from a scratch of a bacterium you don’t really care whether if there are duplicates or not. But if you want to quantify the gene expression or the copy number of genes in a bacterial genome, this can really skew your analysis. The distribution of the duplicates should be very similar to the distribution of the reads.
-\\
-There shouldn’t be any bias along the length of the reads.  If you see something like this, you probably sequenced the same thing over and over again, and so something went wrong. This happens when you sequence the adapter or the primer (they are always the same sequence).  
+\section{FASTQ format}
 
-\subsubsection{GC content analysis}
-We know that each single organism has a signature GC content. We expect to see a peak and a normal (gaussian) distribution. Therefor, if two peaks are seen, it means that we have sequenced two different organisms (maybe, a contamination). The problem is that these two organisms may share some sequences. 
+	\subsection{Composition}
+	The FASTQ format is composed by:
 
-\subsubsection{K-mers frequency plot}
-Frequent k-mers can be a signature, as the GC content. For example: 15-mer coverage model fit to 76x coverage of 36bp reads from E. coli. 
-The expected coverage of a k-mer with reads of length L:
-\begin{equation}
-L_{cov} = \frac{L-k+1}{L} \, \times \, Cov
-\end{equation}
-Than, given a k-mer, we can see in how many reads that k-mer was present. And in this case the coverage is around 40\%. However, there is a huge amount of k-mers present with coverage 1 (i.e. that you have seen only once in your reads). So, there are errors in that specific k-mers (remove these results). Instead, coverage higher than 80\% would mean that the k-mers are located in more than one position.
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item ‘@’ followed by a sequence identifier.
+				This identifier contains the unique instrument name, the flowcell and tile number, the x and y coordinates of the cluster within the tile, the index number for multiplexing and the pair number of paired-end sequencing.
+				In Illumina MiSeq, each flowcell has 8 microfluidic channels (lanes), each lane contains three columns with 96 tiles, and can sequence up to 96 multiplexed samples.
+			\item The sequence. It could be mate paired for paired end sequencing.
+			\item ‘+’, optionally followed by a sequence Identifier.
+			\item The quality scores.
+				Quality is a number based on the estimated probability of error.
+				$p$=probability  of error, $Q = -10 \dot p$ .
+				A base quality of at least $20$ is needed to reach  $1\%$ of error.
+				A base quality of $40$ means the probability of error is $0.01\%$.
+				The FASTQ quality score is the phred score +33, converted in CHAR code.
+		\end{enumerate}
+	\end{multicols}
 
-\subsubsection{Low-complexity artifacts}
-Same nucleotide repeats (especially A) are in a lot of cases artifacts. It’s an error of the machine and the quality control looking at the quality scores, that in this case are very high.\\
-How to measure their ‘artificiality’? Some parameters to take into consideration are:
-\begin{itemize}
-\item Low complexity 
-\item Low entropy 
-\item High compression (the artifacts increase the information inside the file) 
-\end{itemize}
-But some low-complexity sequences are not artifacts!
-\begin{itemize}
-\item Hydrophobic transmembrane alpha-helical sequences in membrane proteins 
-\item CAG repeats in genes causing Huntington disease, spinal and bulbar muscular atrophy, dentatorubropallidoluysian atrophy. 
-\item Proline-rich regions in proteins 
-\item Poly-A tails in nucleotide sequence 
-\item Micro-satellites 
-\end{itemize}
+	The FASTA file format is a FASTQ fomrat without the quality score reported and the seq ID is preceded by '>'.
 
-\subsection{FASTQ quality control (QC)}
-This is the first step (or sub-pipeline) in any NGS pipeline 
-\begin{description}
-\item[Clipping/trimming]: removing (low quality) parts of reads
-\item[Masking]: avoiding to consider (e.g. low entropy) parts of reads
-\item[Read removal]: discard low quality reads or reads that are too short after clipping
-\end{description}
-
-Additional features that can be exploited for QC are the GC content, clustering for contamination detection, TAG identification,ambiguous bases. 
+	\subsection{Quality control: read length distribution}
+	Quality scores are typically used to perform quality control and cleaning of the reads.
+	This result in a FASTA output file to be used downstream.
+	However there are algorithms that can use directly FASTQ files, performing autonomously the cleaning and quality control of the reads.
+	The quality score is an indication of how well the sequencing run went.
+	Typically the quality decreases when the read length increases due to the fact that sequencers have problem when are run in continuum.
+	A solution to this problem is to cut the reads when the quality becomes too low.
+	Another problem happens when the adapter is included into the read.
+	This happens typically with short reads and a solution is to cut it and a part of the sequence.
+	FastQC can be used to plot the quality distribution of the data.
+	Another way to asses read quality is to consider the average quality of the entire read, discarding the low-quality ones.
 
 
+	\subsection{Duplication artifacts}
+	It is not frequent to see duplication, but it can be a problem especially when there is a need to quantify gene expression or copy number of genes in a bacterial genome.
+	The distribution of the duplicates should be the same of the distribution of the reads.
+	There should’t be any bias along the length of the reads, but if there is it should be due to a repetition of sequencing of the same read or when the adapter and primer have been read.
 
+	\subsection{GC content analysis}
+	Each organism has a signature GC content, so when plotting it a normal distribution is expected.
+	Multiple peaks are an indicator of the presence of two different organisms.
 
+	\subsection{K-mers frequency plot}
+	K-mer frequencies are a way to catch systematic sequencing error: when mapping a genome it is now the relative frequency of each K-mer.
+	That can be compared with the K-mers frequencies to catch systematic errors in sequencing and to assess its quality.
+	Frequent k-mers can be a signature, as the GC content.
+	The expected coverage of a k-mer with reads of length L:
 
+	$$L_{cov} = \frac{L-k+1}{L} \, \times \, Cov$$
 
+	Then, given a k-mer, it can be seen in how many reads it is present.
+	For a typical K-mer its coverage should be around $40\%$.
+	Coverage higher than $80\%$ should indicate that this k-mer is located in more than one position.
+	Other values arises from errors.
 
+	\subsection{Low-complexity artefacts}
+	Same nucleotide repeats (especially A) are in a lot of cases artefacts.
+	This is due to systematic error and can be evidenced through quality control.
+	To measure if these sequence are in fact artefacts parameters to take into consideration are:
 
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Low complexity.
+			\item Low entropy.
+			\item High compression (the artefacts increase the information inside the file).
+		\end{itemize}
+	\end{multicols}
 
+	But some low-complexity sequences are not artefacts:
 
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Hydrophobic transmembrane alpha-helical sequences in membrane proteins.
+			\item CAG repeats in genes causing Huntington disease, spinal and bulbar muscular atrophy, dentatorubropallidoluysian atrophy.
+			\item Proline-rich regions in proteins.
+			\item Poly-A tails in nucleotide sequence.
+			\item Micro-satellites.
+		\end{itemize}
+	\end{multicols}
 
+	\subsection{FASTQ quality control (QC)}
+	FASTQ quality control is the first step in any NGS pipeline.
+	It consists of:
 
+	\begin{multicols}{2}
+		\begin{description}
+			\item[Clipping/trimming]: removing (low quality) parts of reads.
+			\item[Masking]: avoiding to consider parts of reads that can have low entropy for example.
+			\item[Read removal]: discard low quality reads or reads that are too short after clipping.
+		\end{description}
+	\end{multicols}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\end{description}
+	Additional features that can be exploited for QC are the GC content, clustering for contamination detection, TAG identification,ambiguous bases.

@@ -1,281 +1,316 @@
 \graphicspath{{chapters/images/03/}}
 
-\chapter{NGS principles (second gen. sequencing) - From Sanger to third gen sequencing}
+\chapter{Next generation sequencing}
+
+\section{Introduction}
+Next generation sequencing is the gold standard for sequencing nowadays.
+A series of discoveries allowed for the development of this technology:
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $1959$: first homogeneous DNA purified.
+        \item $1970$: first discovery of type $II$ restriction enzymes.
+        \item $1972$: first RNA gene sequence published.
+        \item $1975$: Sanger publishes his plus-minus method of sequencing, unable to distinguish homopolymers.
+        \item $1977$: Maxam and Gilbert publish their method that could distinguish homopolymers.
+        \item $1977$: Sanger publishes the dideoxy-sequencing method.
+    \end{itemize}
+\end{multicols}
+
+    \subsection{Progresses of sequencing}
+    As can be seen in the graph \ref{moore} the cost of DNA sequencing is decreasing by a greater rate than the one predicted by Moore's law.
+    This allows for greater number of samples and the sequencing of a different number of genomes.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth]{sequencingCost}
+        \caption{}
+        \label{moore}
+    \end{figure}
+
+    \subsection{Methods of sequencing}
+    The methods of sequencing can be grouped in three groups:
+
+    \begin{multicols}{2}
+        \begin{itemize}
+          \item Chemical degradation of DNA: like the method of Maxam-Gilbert.
+          \item Sequencing by synthesis (“SBS”): the most common approach and the first to be developed.
+              It uses DNA polymerases in primer extension reactions.
+              This technology is used by Illumina, Pacific Bioscences, Ion Torren and 454.
+          \item Ligation-based: sequencing using short probes that hybridize to the template.
+              This technology is used by SOLiD and Complete Genomics.
+          \item Others like nanopores.
+        \end{itemize}
+    \end{multicols}
+
+    \subsection{The Chain Terminators}
+
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{DNA-molecule}
+            \caption{Normal DNA molecule, with oxydrilic group ligated to $3'$-ends}
+            \label{normalDNAaddition}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{chain-term}
+            \caption{Figure representing the difference between a normal DNA chain and one with chain terminators}
+            \label{ChainTerm}
+        \end{subfigure}
+        \caption{Normal DNA synthesys \textit{vs} Chain terminators}
+    \end{figure}
+
+    Normally, the addition of new nucleotides to a generated molecule of DNA happens with the $3'$-end of the nucleotide chain \ref{normalDNAaddition}.
+    Chain terminators are dideoxy nucleotides, ddNTPs, that cannot be further extended.
+    These nucleotides don't have the oxydrilic group at their $3'$-end, so the DNA polymerase cannot further add other nucleotides to the chain \ref{ChainTerm}.
+
+\section{Sanger method}
 
 \begin{figure}[h]
-\caption{}
-\includegraphics[width=0.6\textwidth]{history-seq}
-\label{discoveries-sequencing}
-\end{figure}
-
-NGS stands for \textbf{\textit{Next Generation Sequencing}}, and it represents the method of sequencing most used nowadays. Before that, a series of other discoveries were done, elencated in the figure \ref{discoveries-sequencing}.
-
-\section{History of Sequencing}
-\subsection{Progresses of sequencing}
-As the time passes, the cost of sequencing the DNA is diminishing. The rate of decrease actually is higher than the one predicted by the \textbf{Moore's Law}, \textit{"Democratization of sequencing"} is seen nowadays, because of the costs lowering. After the Human genome project, several other animals and plants' genomes were sequenced.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.6\textwidth]{sequencingCost}
-\label{Moore's law graph}
-\end{figure}
-
-The methods of sequencing actually can be grouped in three \textbf{groups}, that are:
-
-\begin{itemize}
-	\item \textbf{Chemical degradation} of DNA: it includes the method of Maxam-Gilbert
-	\item \textbf{Sequencing by synthesis (“SBS”)} which is the most common approach and the first to be developed. It uses DNA polymerases in primer extension reactions Illumina, Pacific Bioscences, Ion Torren and 454
-	\item \textbf{Ligation-based}: sequencing using short probes that hybridize to the template, the technologies perteining to this class are SOLiD, Complete Genomics
-	\item \textbf{Other:} Nanopores
-\end{itemize}
-
-\subsection{The Chain Terminators}
-
-\begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{Sanger}
+    \caption{Sanger's method process}
+    \label{Sanger}
+\end{figure}
+
+The first method ever used to sequence DNA was designed by Frederick Sanger.
+The Sanger manual sequencing system consists in an \textit{in vitro} process described in figure \ref{Sanger}.
+It is also named a primer extension method.
+It is performed over a single-filament DNA sample, and it uses chain terminators nucleotides, one for each type of nucleobase: ddATP, ddGTP, ddTTP, ddCTP.
+The reaction is done inside four different reactions tubes, each containing:
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item The sample DNA to be reproduced.
+        \item A DNA polymerase.
+        \item The normal nucleotides.
+        \item One of the four possible chain terminator marked with sulfur-35.
+            In each tube, the corresponding dideoxy-nucleotide was used with a concentration 10 times lower than the other normal nucleotides.
+    \end{itemize}
+\end{multicols}
+The polymerization reactions produces several molecules of DNA with different length: each replicative cycle is terminated after the addition of a chain terminator nucleotide.
+The initial DNA sequence is reconstructed using a long PAGE gel with high concentration of urea ($6 - 7 M$) to avoid the coiling of the DNA single-filaments.
+High voltages are required to achieve a highly risolutive run.
+This high resolution was needed as DNA's fragments are different only for a nucleotide.
+After having run it the bands were visualized through auto-radiography in order to evidentiate the phosphorescent signals.
+
+The sequence is read starting from the shortest fragments at the end of the gel and going up along it, looking for the first presence of a band in one of the four runs.
+
+    \subsection{Automatic sequencing}
+    To automatize the Sanger methods fluorescent proteins substituted the radioactive signal.
+    Several versions were developed:
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+          \item Fluorescent primers marked with a single fluorochrome.
+          \item Four aliquotes of the same primer were used marked with four different fluorochromes, able to emit different fluorescences.
+          \item Four different fluorochromes were used to mark the single ddNTPs
+        \end{enumerate}
+    \end{multicols}
+
+    Thanks to the use of 4 different fluorochromes, it was possible to use a single electrophoretic lane to carry the sequencing reaction.
+    Also a cyclic replicative reaction was performed with this procedure using a thermal cycler:
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+          \item Denaturation at $95$°C of the DNA to be sequences
+          \item Annealing at $50-70$°C of the primer specific to one of the two filaments
+          \item Extension at $72$°C by using a \textit{Taq}-polymerase to avoid the formation of coiled structures in the DNA molecule to be sequenced.
+        \end{enumerate}
+    \end{multicols}
+
+    The resulting molecules are run through a long PAGE gel and fluorescence is triggered irradiating the DNA molecules.
+
+    \begin{figure}[h]
+        \caption{}
         \centering
-        \includegraphics[width=\textwidth]{DNA-molecule}
-        \caption{Normal DNA molecule, with oxydrilic group ligated to $3'$-ends}
-        \label{normalDNAaddition}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=0.8\textwidth]{automaticSang}
+        \label{}
+    \end{figure}
+
+    More usefully, this sequencing method is performed by using a capillar filled with a synthetic polymer with the same function of polyacrillamide.
+    The analysis produces an electropherogram, with a color depicting the probability of each base being in each position.
+    The electropherogram is refined through algorithms that can boost the signal to noise ration, correct the dye effect and reduce all systematic errors.
+
+        \begin{figure}[h]
+        \caption{}
         \centering
-        \includegraphics[width=\textwidth]{chain-term}
-        \caption{Figure representing the difference between a normal DNA chain and one with chain terminators}
-        \label{ChainTerm}
-    \end{subfigure}
-    \caption{Normal DNA synthesys \textit{vs} Chain terminators}
-\end{figure}
+        \includegraphics[width=0.8\textwidth]{elettroferogramma}
+        \label{}
+    \end{figure}
 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{progressSangerMachines}
+        \caption{The implementation of capillary sequencing machines gave the possibility to make more runs than with the others.
+                    $\sim 1000$ fold productivity increase was allowed
+                }
+        \label{}
+    \end{figure}
 
-Normally, the addition of new nucleotides to a generated molecule of DNA happens with the $3'$-end of the nucleotide chain (figure \ref{normalDNAaddition}). Chain terminators are dideoxy nucleotides, ddNTPs, that cannot be further extended. These nucleotides aren't able to add a new nucleotide on the $3'$-end, as they have not the needed oxydrilic group (figure \ref{ChainTerm}).
-
-\subsection{Sanger method: the first one}
-
-\begin{figure}[h]
-\caption{The \textit{Sanger}'s method process}
-\centering
-\includegraphics[width=\textwidth]{Sanger}
-\label{Sanger}
-\end{figure}
-
-The first method ever used to sequence DNA was designed by Frederick Sanger. The Sanger manual sequencing system consists in an \textit{in vitro} process, which is described in figure \ref{Sanger}, also named as \textit{"primer extension"} method. It is performed over a single-filament DNA sample, and it uses the chain terminators nucleotides, a type for each nucleobase: ddATP, ddGTP, ddTTP, ddCTP.
-
-The reaction is done inside four different reactions tubes, each containing the sample DNA to be reproduced, a DNA polymerase, the normal nucleotides and one of the four possible chain terminator. The chain terminators are marked with sulfur-35, a radioactive atom. In each tube, the corresponding dideoxy-nucleotide was used with a concentration 10 times lower than the other "normal" nucleotides.
-
-From the polymerization reactions, several molecules of DNA were produced, with different length: each replicative cycle is in fact terminated after the addition of a chain terminator nucleotide.
-
-To reconstruct the initial DNA sequence, a long PAGE gel was prepeared, with high concentration of urea ($6 - 7 M$) to avoid the coiling of the DNA single-filaments. To run the gel, high voltages were required and it had to be higly resolutive, as DNA's fragments are different only for a nucleotide. It was needed to do an auto-radiography of the gel in order to see the bands, in order to evidentiate the fosphorescent signals.
-
-To read the sequence you have to start from the shortest fragments, at the end of the gel, and carefully go up along the gel, looking for the first presence of a band in one of the four runs. \\
-
-\textbf{Past procedures: }In the past, the Klenow's fragment (part of the $1^{st}$ DNA polymerase) was used to perform the Sanger method, and the DNA to be sequenced was inserted inside the genome of an M13 phage.
-
-
-\subsubsection{Automatic sequencing}
-It does not use the radioactive signals, instead it uses fluorescent proteins. Several versions were developed after modifications of the Sanger method, in this order:
-
-\begin{enumerate}
-	\item fluorescent primers marked with a single fluorochrome.
-	\item four aliquotes of the same primer were used marked with four different fluorochromes, able to emit different fluorescences.
-	\item four different fluorochromes were used to mark the single ddNTPs
-\end{enumerate}
-
-Thanks to the use of 4 different fluorochromes, it was possible to use a single electrophoretic lane to carry the sequencing reaction. For this type of sequencing also, a cyclic replicative reaction was performed, with this procedure, made possible by using a thermal cycler:
-
-\begin{enumerate}
-	\item \textbf{Denaturation at $95$°C} of the DNA to be sequences
-	\item \textbf{Annealing at $50-70$°C} of the primer specific to one of the two filaments
-	\item \textbf{Extension at $72$°C} by using a \textit{Taq}-polymerase. The use of the Taq-polymerase makes it possible to avoid the formation of coiled structures in the DNA molecule to be sequenced.
-\end{enumerate}
-
-Traditionally, also in this type of sequencing it is used a long PAGE gel, as the Sanger's one, but with a great difference: all the ddNTPs are inserted in the same electrophoretic run, and after it, it is not needed an auto-radiography. Fluorescence, instead, can be triggered simply by irradiating the DNA molecules synthesyzed, which produce different fluorescences with different wavelengths.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{automaticSang}
-\label{}
-\end{figure}
-
-
-More usefully, this sequencing method is performed by using a capillar, filled with a synthetic polymer, with the same function of polyacrillamide.
-
-At the end of the analysis, it is produced an electropherogram, with a color depicting the probability of each nytrogen base in each position. The production of the electropherogram is made better thanks to algorithms to boost signal/noise ratio, to correct the dye-effects, and other effects that generate systemic errors. %TODO dye-effects
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{elettroferogramma}
-\label{}
-\end{figure}
-
-\begin{figure}[h]
-\caption{The implementation of capillary sequencing machines gave the possiblity to make more runs than with the others. A $\tilde 1000$ fold productivity increase was allowed}
-\centering
-\includegraphics[width=0.8\textwidth]{progressSangerMachines}
-\label{}
-\end{figure}
-
-Regarding the Sanger machines in use, the upgrades viewable in figure \ref{progressSangerMachines}. Based on the same technology, new machines were developed and it was obtained a $\tilde 1000$ fold improvement.
-\\
-When talking about the \textbf{human projec}t, it is important to specify that most of the job was done by using the Sanger automatic sequencing method.
-
+    The Sanger automatic sequencing method was used extensively for the majority of the human project.
 
 \section{Development of Sequencing Machines}
-The way you can get to the point could be different based on technology and the wanted output, comprised quality.
+The method used for sequencing has to be chosen based on the wanted output, like the quality required and the type of input.
+Different technologies have different strengths and weaknesses:
 
-SOLID gave only $35$-$75$ sequenced bases, and it is not used anymore; Sanger sequencing, the capillary, can give up to 1000 read length, with a low output; on MINION it was possible to sequence an entire genome of \textit{E. coli}
-A pletora of sequence machines are available today. None of the machines are able to sequence DNA from a sample of blood, some things have to be done. Nowadays \underline{machines producing bigger outputs of short reads are prefeared}.
+\begin{multicols}{2}
+    \begin{itemize}
+        \item SOLID sequences reads long only $35$-$75$ bases and it is not used anymore.
+        \item Sanger sequencing, or the capillary, can read up to $1000$ bases, but has a low throughput.
+        \item MINION allowed to sequence an entire genome of \textit{E. coli}.
+    \end{itemize}
+\end{multicols}
+
+A plethora of sequencing machines are available today.
+None of them is able to sequence DNA directly from a sample, requiring different preparation step.
+Today machines producing high-throughput output of short reads are preferred.
 
 \begin{figure}[H]
-\caption{It can be noticed how recent developments had the scope of increasing the output data}
 \centering
 \includegraphics[width=1\textwidth]{sequencingMachines}
+\caption{It can be noticed how recent developments had the scope of increasing the output data}
 \label{}
 \end{figure}
 
-At the top of the market nowadays there are ILLUMINA machines, that use sequencing by synthesis method, NovaSeq is the biggest one. They need to amplify the signal through clusters formation.
+The most wide-spread machines are from ILLUMINA like NovaSeq.
+They use sequencing by synthesis and they amplify the signal through the use of clusters.
 
 \begin{figure}[H]
-\caption{}
 \centering
 \includegraphics[width=0.8\textwidth]{sequencingMachinesIllumina}
+\caption{}
 \label{}
 \end{figure}
 
-\section{Next Generation Sequencing NGS}
+\section{Next Generation Sequencing}
+The NGS protocol requires $3$ steps:
 
-The NGS protocol requires $3$ steps, that are:
+\begin{multicols}{2}
+    \begin{enumerate}
+          \item Sample preparation: series of fragments added.
+          \item Clonal amplification: needed to replicate fragments attached to the solid surfaces, since machines are not sensible to single molecules.
+          \item Sequencing: ILLUMINA sequencing is one of the techniques used to obtain sequence data nowadays.
+    \end{enumerate}
+\end{multicols}
 
-\begin{enumerate}
-	\item \textbf{Sample preparation}: series of fragments added
-	\item \textbf{Clonal amplification}: which is is needed to replicate fragments attached to the solid surfaces, since machines are not sensible to single molecules
-	\item \textbf{Sequencing}: ILLUMINA sequencing is one of the techniques used to obtain sequence data nowadays
-\end{enumerate}
+$3^{rd}$ generation allow to read a molecule without replicating it.
 
-Tools pertaining to the $3^{rd}$ generation are those that permit to read a molecule without replicating it.
+    \subsection{ILLUMINA sequencing}
 
-\subsection{Fragments/Library preparation}
-Most of the sequences sequenced are fragmented in short read sequences, since most of the machines today used aren't able to sequence reads longer than some hundreds of nucleotides.
+        \subsubsection{Fragments and Library preparation}
+        During fragmentation the DNA or RNA polymers that need to be sequenced are fragmented in short read sequences.
+        This is because the machines are able to sequence only read with a length of a few hundred nucleotides.
+        These fragments need to be tagmented: in this process one or two indexes, or barcodes are added to the fragment so that it has two sequencing primer binding sites and regions complementary to the oligonucleotides in the chamber.
+        Indexes allow to distinguish between sample and, in the case of pair end sequencing, allow to distinguish between the forward and reverse read.
 
-% Fragmantation is so required to generate shorter filaments from the sequences. In the case of mRNA (cDNA libraries) the fragmentation process is not needed, as the lengths are already short enough.
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.8\textwidth]{tagmentedFragments}
+            \caption{Figure representing the a good prepeared fragment, it has two indexes, two sequencing primer binding sites and regions complementary to the oligonucleotides present in the chamber}
+            \label{}
+        \end{figure}
 
-The fragments obtained have to be prepeared for the sequencing process, through a process called \textbf{tagmentation}. The obtained fragments are shown in the figure. Those fragments are provided with one or two indexes, called also barcodes, two sequencing primer binding sites and regions complementary to the oligonucleotides present in the chamber (see in Clonal amplification chapter). The fragments' length has to be checked, depending on the scope of the process. Indexes are needed to run sequencing process on multiple samples, they are needed to distinguish those; when they are two, they permit to distinguisch also the 2 types of sequencing that are performed, forward and reverse.
+        \subsubsection{Clonal amplification and ILLUMINA sequencing procedure}
 
-P5 and P7 are the oligos needed to attach fragments to ILLUMINA sequencing machines.
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.6\textwidth]{clusterAmplification}
+            \caption{}
+            \label{clusters}
+        \end{figure}
 
-\begin{figure}[h]
-\caption{Figure representing the a good prepeared fragment, it has two indexes, two sequencing primer binding sites and regions complementary to the oligonucleotides present in the chamber}
-\centering
-\includegraphics[width=0.8\textwidth]{tagmentedFragments}
-\label{}
-\end{figure}
+        Clonal amplification is necessary to amplify the signal from each fragment.
+        ILLUMINA machines make use of clusters to sequence DNA: group of DNA strand positioned near each other that generate from a single fragment.
+        Each cluter represents thousands of copies of the same DNA strand in a $1$-$2\mu m$ spot \ref{clusters}.
 
-%what is a good fragment? %TODO
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.8\textwidth]{rigidGeneration}
+            \caption{}
+            \label{rigid}
+        \end{figure}
 
-\subsection{Clonal amplification and ILLUMINA sequencing procedure}
+        The clonal amplification process happens in flow cells, slides of glass in which fragments flow over channels.
+        Changes in temperature allow for ligations and separations.
+        The surface of the cells is functionalized with a series of oligos complementary to library adapters.
+        These flow cell can be patterned (cluster in specific positions) or random (cluster randomly positioned).
+        In the former the location of the cluster can be known (rigid registration \ref{rigid}) or unknown.
 
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.6\textwidth]{clusterAmplification}
-\label{clusters}
-\end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.6\textwidth]{randomPatternCells}
+            \caption{}
+            \label{}
+        \end{figure}
 
-Clonal amplification are necessary to amplify the signal from each single fragment.
-ILLUMINA machines make use of clusters to sequence DNA. Clusters are a group of DNA
-strands positioned closely together and generated from a single DNA filament. Generally, Each cluster represents thousands of copies of the same DNA strand in a 1–2 micron spot (figure \ref{clusters}).
+        \subsubsection{Fragment attachment to the clusters}
+        Once the fragments start flowing over the chambers, they can bind only to one of the two oligos functionalizing the plate.
+        Once they are attached to the surface the sequencing process is controlled through solvents and temperature.
+        As shown in \ref{singDoubInd} the sequencing process differs between single end and paired end sequencing.
 
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{rigidGeneration}
-\label{rigid}
-\end{figure}
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}[b]{0.39\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{singleIndex}
+                \caption{single index}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[b]{0.60\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{doubleIndex}
+                \caption{double index}
+            \end{subfigure}
+            \caption{Single/double index for ILLUMINA sequencing}
+            \label{singDoubInd}
+        \end{figure}
 
-On patterned flow cells, the clusters' formation location could be known or not, in the first case it is said that there is a "Rigid registration" (figure \ref{rigid}).\\
+        \subsubsection{Sequencing}
 
+        \begin{figure}[H]
+            \caption{}
+            \centering
+            \includegraphics[width=0.7\textwidth]{ILLUMINArev}
+            \label{ILLUMINArev}
+        \end{figure}
 
-ILLUMINA sequencers normally use slides of glass, named flow cells, and the fragments to be sequenced are able to flow over the channels. The temperature inside the cells can be changed to produce ligations or separations. The surface of the cells is functionalized with a series of oligos complementary to library adapters.
+        Reversible terminators \ref{ILLUMINArev} allow a real time analysis of the sequencing through the syntheses reaction.
+        The fluorophore part of the terminator can be cleaved to eliminate the signal.
 
-Two kids of flow cells, the \textit{patterned} flow cell permits to create clusters in specific positions, inside nanowalls, contrarily to \textit{Random Flow Cell} which instead have randomly positioned clusters.
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.6\textwidth]{randomPatternCells}
-\label{}
-\end{figure}
-\\
+        \begin{figure}[h]
+        \caption{}
+        \centering
+        \includegraphics[width=0.8\textwidth]{ChannelILLUMINA}
+        \label{ChannelILLUMINA}
+        \end{figure}
 
-Once the fragments are made flow over the chambers, they can bind only to p5 or p7 (ILLUMINA oligos), the two oligos functionalizing the plate. Once the fragments are attached to the surface, using temperature and solvents flows you can control the sequencing process. To see the entire procedure:
-(procedure on Youtube: \href{https://www.youtube.com/watch?v=womKfikWlxM}{video about ILLUMINA sequencing}). In the video, it is shown the two index sequencing process.
-\\
-\\
+        Depending on the number of fluorescent molecules used ILLUMINA sequencers are distinguished in the $4$-channel, $2$-channel or $1$-channel type.
+        In the case of the $4$-channel $4$ images are taken in each cycle and each cluster apperas in only one of the four images \ref{ChannelILLUMINA}.
+        The highest intensity base in a cluster is the called base for that cluster.
+        In case no base is clearly related to a position the base calling returns $N$.
+        This reading process can be done through single end reads on a single extreme of the fragment or through paired-ends reading, where each fragment is read in a forward and reverse way.
+        This latter method gives structural information.
 
+    \subsection{Pacific Bioscience}
+    In the Pacific Bioscience PacBio sequencer the long DNA filament to be sequenced is attached to a polymerase, over the surface of a SMRT (Single Molecule Real Time) cell.
+    This cell is really small, and at each nucleation process a light signal is emitted.
+    The produced light is not able to get out of the walls, and its duration is extremely restricted.
+    The registration of the light signal correspond to a base calling.
+    Its main advantage over ILLUMINA is the possibility of sequencing really long DNA molecules.
 
-\begin{figure}[H]
+    \begin{figure}[H]
     \centering
-
-    \begin{subfigure}[b]{0.39\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{singleIndex}
-        \caption{single index}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.60\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{doubleIndex}
-        \caption{double index}
-    \end{subfigure}
-    \caption{Single/double index for ILLUMINA sequencing}
-    \label{singDoubInd}
-\end{figure}
-
-With 1 and 2 indexes the sequencing process actually differs, as shown in figure \ref{singDoubInd}
-
-
-\begin{figure}[H]
-\caption{}
-\centering
-\includegraphics[width=0.7\textwidth]{ILLUMINArev}
-\label{ILLUMINArev}
-\end{figure}
-
-To perform the sequencing process, ILLUMINA machines utilize \textit{reversible terminators} (figure \ref{ILLUMINArev}). They permit a real time analysis of the sequencing by synthesys reaction, and because of this they are different from the Sanger method. Fluorophores are reversible, they can be cleaved to eliminate the light signal.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=0.8\textwidth]{ChannelILLUMINA}
-\label{ChannelILLUMINA}
-\end{figure}
-
-To perform their activity, ILLUMINA sequencers could be of 3 different types: 4-Channel, 2-Channel or 1-Channel, depending on the number of fluorescent molecules used. In the case of the 4-Channel technology, 4 images are taken in each cycle, and each  cluster appears in only one of four images \ref{ChannelILLUMINA}. 2-Channel technique is used by some sequencing machines, like NextSeq 550, MiniSeq, NovaSeq 6000\\
-
-4-Colors base calling
-is needed to to make
-the true signal the purest, and after, The base with the highest intensity becomes the called base for that cluster. In the case no base is clearly related to a position, \textit{N} is the result.
-
-
-The reading process could be done in two ways: through single reads, on a single extreme of the fragments, of paired-end, on both the extremes. The second one in particular gives structural and 2 sequence  informations.
-
-
-\subsection{Pacific Bioscience (PacBio)}
-the long DNA filement to be sequenced is attached to a polymerase, over the surface of a SMRT (Single Molecule Real Time) cell. This cell is really small, and at each nucleation process a light signal is emitted. The produced light is not able to get out of the walls, and its duration is extremely restricted. Sequencing, also in this case, is made by sequencing, and the main advantage consists in the possiblity of sequencing really big DNA molecules.\\
-In the video \href{https://www.youtube.com/watch?v=_lD8JyAbwEo}{PacBio procedure} it is briefly shown how the process works and what are the strategies used to reduce errors.
-
-\begin{figure}[h]
-\caption{}
-\centering
-\includegraphics[width=1\textwidth]{PacBIO}
-\label{}
-\end{figure}
+    \includegraphics[width=1\textwidth]{PacBIO}
+    \caption{}
+    \label{}
+    \end{figure}
 
 
 \subsection{Nanopore sequencing}
-Intramembrane proteins are used, sequence detected through the passage of DNA nucleotides, which produce different voltage changes. During the first periods, this type of instruments gave great amount of errors, nowadays the technique is improving.
-\href{https://www.youtube.com/watch?v=E9-Rm5AoZGw}{Nanopore Sequencing}
+In nanopore sequencing the sequence is detected through the passage of DNA molecule into intramembrane protein.
+This produces a voltage changes that corresponds to a base calling.
+This technology is in constant development and is not widely used because of the, although improving, high error rate.
